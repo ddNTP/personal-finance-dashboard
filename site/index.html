@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基于微信支付账单聚合数据的个人收支分析仪表盘">
+  <meta name="theme-color" content="#07111f">
+  <title>个人收支分析仪表盘</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="eyebrow">PERSONAL FINANCE / WECHAT BILLING</div>
+      <div class="hero-grid">
+        <div>
+          <h1>把每一笔流动，<br><span>看成一条长期轨迹。</span></h1>
+          <p class="hero-copy">一份面向复盘的收支视图：把收入、支出、退款与日常消费拆开，看见真正影响现金流的月份和类别。</p>
+        </div>
+        <div class="hero-note">
+          <div class="hero-note-label">公开页面</div>
+          <p>只展示聚合数据。交易对方、商品、订单号和银行卡尾号均未发布；银行流水与支付平台分开展示。</p>
+          <div class="hero-note-line"><span>覆盖区间</span><strong id="coverage">读取中…</strong></div>
+          <div class="hero-note-line"><span>数据状态</span><strong id="freshness">读取中…</strong></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="toolbar" aria-label="视图筛选">
+        <div>
+          <div class="eyebrow">VIEW</div>
+          <h2>选择你要看的账户范围</h2>
+        </div>
+        <label class="select-wrap">
+          <span class="sr-only">账户范围</span>
+          <select id="accountSelect" aria-label="选择账户范围"></select>
+          <span class="select-chevron" aria-hidden="true">⌄</span>
+        </label>
+      </section>
+
+      <section id="metrics" class="kpi-grid" aria-live="polite"></section>
+
+      <section class="panel trend-panel">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">MONTHLY RHYTHM</div>
+            <h2>收入和支出，在哪些月份拉开差距</h2>
+            <p class="section-copy">有效消费扣除了账单中识别出的全额和部分退款；支付宝中性退款会做负向调整，转账与红包保留在收支总览中。</p>
+          </div>
+          <div class="legend" aria-label="图例">
+            <span><i class="legend-dot income"></i>收入</span>
+            <span><i class="legend-dot expense"></i>支出</span>
+            <span><i class="legend-dot consumption"></i>有效消费</span>
+          </div>
+        </div>
+        <div id="trendChart" class="chart-shell" aria-label="月度收入支出趋势图"></div>
+        <div id="trendTable" class="table-wrap"></div>
+      </section>
+
+      <section class="two-column">
+        <article class="panel">
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">SPENDING MIX</div>
+              <h2>钱主要流向哪里</h2>
+            </div>
+            <span class="section-tag">有效消费</span>
+          </div>
+          <div id="categoryChart" class="bars" aria-label="消费类别排名"></div>
+          <div id="categoryFootnote" class="chart-footnote"></div>
+        </article>
+
+        <article class="panel">
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">INCOME SOURCES</div>
+              <h2>收入来自哪些方向</h2>
+            </div>
+            <span class="section-tag warm">账单收入</span>
+          </div>
+          <div id="incomeChart" class="bars" aria-label="收入来源排名"></div>
+          <div id="incomeFootnote" class="chart-footnote"></div>
+        </article>
+      </section>
+
+      <section class="two-column lower-grid">
+        <article class="panel">
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">YEARLY LENS</div>
+              <h2>年度节奏</h2>
+            </div>
+            <span class="section-tag">2026 为不完整年度</span>
+          </div>
+          <div id="yearlyTable" class="table-wrap"></div>
+        </article>
+
+        <article class="panel insight-panel">
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">SIGNALS</div>
+              <h2>这份账单给出的信号</h2>
+            </div>
+            <span class="section-tag cool">规则化洞察</span>
+          </div>
+          <div id="insights" class="insights"></div>
+        </article>
+      </section>
+
+      <section class="panel methodology">
+        <div class="section-head compact">
+          <div>
+            <div class="eyebrow">METHOD</div>
+            <h2>口径和边界</h2>
+          </div>
+          <span class="section-tag">可重复生成</span>
+        </div>
+        <div class="method-grid">
+          <div>
+            <h3>怎么计算</h3>
+            <p>总收入、总支出和净现金流沿用各来源账单方向。有效消费排除转账、红包、投资理财和账户调拨，并从退款状态中扣掉退款金额。</p>
+          </div>
+          <div>
+            <h3>怎么保护隐私</h3>
+            <p>网页只发布按来源、月份、年度、类别和渠道聚合后的数字；原始 Excel、CSV、PDF、交易对方、商品、订单号、微信昵称和银行卡尾号没有进入公开仓库。</p>
+          </div>
+          <div>
+            <h3>如何更新</h3>
+            <p>把新的账单放回本地输入目录，运行 <code>python3 scripts/analyze.py</code>，检查来源质量和去重结果后再提交 <code>site/data/summary.json</code>。</p>
+          </div>
+        </div>
+        <div class="method-meta" id="methodMeta"></div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Personal Finance Dashboard</span>
+      <span>静态页面 · 仅发布聚合数据</span>
+    </footer>
+  </div>
+  <noscript>此页面需要启用 JavaScript 才能加载聚合数据和图表。</noscript>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4028 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-04T02:39:51.851779+08:00",
+  "meta": {
+    "title": "个人收支分析仪表盘",
+    "source": "微信支付、支付宝和招商银行流水（分层展示，仅发布聚合结果）",
+    "date_start": "2024-01-01",
+    "date_end": "2026-11-03",
+    "partial_year": 2026,
+    "account_count": 2,
+    "source_file_count": 10,
+    "record_count": 12427,
+    "platform_record_count": 12427,
+    "bank_record_count": 7086,
+    "bank_date_start": "2022-10-26",
+    "bank_date_end": "2026-10-31",
+    "privacy": "网页只发布按来源、月份、年度、类别和渠道聚合后的数据，不包含原始交易明细。",
+    "anti_double_counting": "招商银行流水与微信/支付宝支付平台分开展示，不纳入支付平台合计，避免快捷支付重复记账。",
+    "accounts": [
+      {
+        "id": "account-1",
+        "label": "账户 A",
+        "file_count": 6
+      },
+      {
+        "id": "account-2",
+        "label": "账户 B",
+        "file_count": 3
+      }
+    ],
+    "view_options": [
+      {
+        "id": "combined",
+        "label": "支付平台合计",
+        "description": "微信支付 + 支付宝"
+      },
+      {
+        "id": "account-1",
+        "label": "账户 A",
+        "description": "按账户合并支付平台"
+      },
+      {
+        "id": "account-2",
+        "label": "账户 B",
+        "description": "按账户合并支付平台"
+      },
+      {
+        "id": "wechat",
+        "label": "微信支付",
+        "description": "仅微信账单"
+      },
+      {
+        "id": "alipay",
+        "label": "支付宝",
+        "description": "仅支付宝账单"
+      },
+      {
+        "id": "bank",
+        "label": "招商银行",
+        "description": "银行流水，独立展示"
+      }
+    ]
+  },
+  "quality": {
+    "wechat": {
+      "source_files": 6,
+      "records_before_dedup": 6900,
+      "unparseable_dates": 0,
+      "unparseable_amounts": 0,
+      "unknown_directions": 0,
+      "duplicate_records_removed": 0,
+      "records_after_dedup": 6900
+    },
+    "alipay": {
+      "source_files": 3,
+      "records_before_dedup": 5534,
+      "unparseable_dates": 0,
+      "unparseable_amounts": 0,
+      "unknown_directions": 0,
+      "duplicate_records_removed": 7,
+      "records_after_dedup": 5527
+    },
+    "cmb": {
+      "source_files": 1,
+      "pages": 296,
+      "records_before_dedup": 7086,
+      "unparseable_dates": 0,
+      "unparseable_amounts": 0,
+      "unknown_directions": 0,
+      "duplicate_records_removed": 0,
+      "records_after_dedup": 7086
+    }
+  },
+  "views": {
+    "combined": {
+      "id": "combined",
+      "label": "支付平台合计",
+      "source_label": "微信支付 + 支付宝",
+      "file_count": 9,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 12427,
+        "gross_income": 1312217.99,
+        "gross_expense": 1832345.17,
+        "gross_neutral": 1200371.96,
+        "net_cashflow": -520127.18,
+        "consumption": 840776.81,
+        "consumption_count": 6354,
+        "refunds": 79682.18,
+        "income_ex_refunds": 1258512.31,
+        "transfer_like_expense": 936051.71
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 44533.21,
+          "income_ex_refunds": 38969.69,
+          "expense": 48677.44,
+          "neutral": 15515.11,
+          "refunds": 5563.52,
+          "consumption": 10229.44,
+          "consumption_count": 147,
+          "net_cashflow": -4144.23
+        },
+        {
+          "month": "2024-02",
+          "income": 15946.08,
+          "income_ex_refunds": 15797.03,
+          "expense": 29282.17,
+          "neutral": 3620.55,
+          "refunds": 149.05,
+          "consumption": 15912.57,
+          "consumption_count": 161,
+          "net_cashflow": -13336.09
+        },
+        {
+          "month": "2024-03",
+          "income": 36041.12,
+          "income_ex_refunds": 34570.0,
+          "expense": 25806.57,
+          "neutral": 14814.98,
+          "refunds": 1471.12,
+          "consumption": 10656.45,
+          "consumption_count": 157,
+          "net_cashflow": 10234.55
+        },
+        {
+          "month": "2024-04",
+          "income": 17034.4,
+          "income_ex_refunds": 16448.51,
+          "expense": 35514.08,
+          "neutral": 13780.84,
+          "refunds": 585.89,
+          "consumption": 21784.69,
+          "consumption_count": 173,
+          "net_cashflow": -18479.68
+        },
+        {
+          "month": "2024-05",
+          "income": 35415.6,
+          "income_ex_refunds": 34780.0,
+          "expense": 48767.26,
+          "neutral": 10538.98,
+          "refunds": 635.6,
+          "consumption": 14838.56,
+          "consumption_count": 221,
+          "net_cashflow": -13351.66
+        },
+        {
+          "month": "2024-06",
+          "income": 38406.3,
+          "income_ex_refunds": 38312.4,
+          "expense": 21359.4,
+          "neutral": 13919.3,
+          "refunds": 93.9,
+          "consumption": 9939.5,
+          "consumption_count": 171,
+          "net_cashflow": 17046.9
+        },
+        {
+          "month": "2024-07",
+          "income": 42586.9,
+          "income_ex_refunds": 42547.0,
+          "expense": 55003.19,
+          "neutral": 28775.07,
+          "refunds": 39.9,
+          "consumption": 23014.29,
+          "consumption_count": 175,
+          "net_cashflow": -12416.29
+        },
+        {
+          "month": "2024-08",
+          "income": 28288.0,
+          "income_ex_refunds": 28270.0,
+          "expense": 30493.29,
+          "neutral": 312.29,
+          "refunds": 18.0,
+          "consumption": 11026.29,
+          "consumption_count": 188,
+          "net_cashflow": -2205.29
+        },
+        {
+          "month": "2024-09",
+          "income": 50651.06,
+          "income_ex_refunds": 49052.16,
+          "expense": 46370.23,
+          "neutral": 1624.2,
+          "refunds": 1598.9,
+          "consumption": 24548.33,
+          "consumption_count": 180,
+          "net_cashflow": 4280.83
+        },
+        {
+          "month": "2024-10",
+          "income": 38940.62,
+          "income_ex_refunds": 36540.62,
+          "expense": 73790.38,
+          "neutral": 6147.4,
+          "refunds": 2400.0,
+          "consumption": 25927.38,
+          "consumption_count": 213,
+          "net_cashflow": -34849.76
+        },
+        {
+          "month": "2024-11",
+          "income": 27918.44,
+          "income_ex_refunds": 27878.54,
+          "expense": 65664.22,
+          "neutral": 232.08,
+          "refunds": 39.9,
+          "consumption": 12064.38,
+          "consumption_count": 199,
+          "net_cashflow": -37745.78
+        },
+        {
+          "month": "2024-12",
+          "income": 55490.9,
+          "income_ex_refunds": 54500.0,
+          "expense": 24909.55,
+          "neutral": 1145.0,
+          "refunds": 990.9,
+          "consumption": 8086.55,
+          "consumption_count": 163,
+          "net_cashflow": 30581.35
+        },
+        {
+          "month": "2025-01",
+          "income": 40502.69,
+          "income_ex_refunds": 38666.29,
+          "expense": 92160.36,
+          "neutral": 30256.1,
+          "refunds": 1836.4,
+          "consumption": 33772.86,
+          "consumption_count": 183,
+          "net_cashflow": -51657.67
+        },
+        {
+          "month": "2025-02",
+          "income": 49419.7,
+          "income_ex_refunds": 49143.0,
+          "expense": 69176.85,
+          "neutral": 16594.49,
+          "refunds": 276.7,
+          "consumption": 7967.65,
+          "consumption_count": 164,
+          "net_cashflow": -19757.15
+        },
+        {
+          "month": "2025-03",
+          "income": 31998.37,
+          "income_ex_refunds": 31439.37,
+          "expense": 57141.8,
+          "neutral": 22243.42,
+          "refunds": 559.0,
+          "consumption": 17673.8,
+          "consumption_count": 210,
+          "net_cashflow": -25143.43
+        },
+        {
+          "month": "2025-04",
+          "income": 58982.78,
+          "income_ex_refunds": 56355.5,
+          "expense": 73322.99,
+          "neutral": 33272.63,
+          "refunds": 2627.28,
+          "consumption": 36100.71,
+          "consumption_count": 186,
+          "net_cashflow": -14340.21
+        },
+        {
+          "month": "2025-05",
+          "income": 28114.81,
+          "income_ex_refunds": 27233.81,
+          "expense": 61418.71,
+          "neutral": 19433.2,
+          "refunds": 881.0,
+          "consumption": 18487.91,
+          "consumption_count": 210,
+          "net_cashflow": -33303.9
+        },
+        {
+          "month": "2025-06",
+          "income": 46323.05,
+          "income_ex_refunds": 45619.15,
+          "expense": 102899.95,
+          "neutral": 46528.93,
+          "refunds": 703.9,
+          "consumption": 44742.05,
+          "consumption_count": 168,
+          "net_cashflow": -56576.9
+        },
+        {
+          "month": "2025-07",
+          "income": 42329.28,
+          "income_ex_refunds": 35262.98,
+          "expense": 72543.71,
+          "neutral": 26585.6,
+          "refunds": 7066.3,
+          "consumption": 37683.91,
+          "consumption_count": 218,
+          "net_cashflow": -30214.43
+        },
+        {
+          "month": "2025-08",
+          "income": 48026.72,
+          "income_ex_refunds": 45457.52,
+          "expense": 71100.37,
+          "neutral": 27990.58,
+          "refunds": 2569.2,
+          "consumption": 25188.17,
+          "consumption_count": 224,
+          "net_cashflow": -23073.65
+        },
+        {
+          "month": "2025-09",
+          "income": 100828.64,
+          "income_ex_refunds": 94130.18,
+          "expense": 173018.36,
+          "neutral": 57348.71,
+          "refunds": 6698.46,
+          "consumption": 65528.94,
+          "consumption_count": 264,
+          "net_cashflow": -72189.72
+        },
+        {
+          "month": "2025-10",
+          "income": 42351.79,
+          "income_ex_refunds": 41452.33,
+          "expense": 53574.75,
+          "neutral": 108957.19,
+          "refunds": 899.46,
+          "consumption": 49151.24,
+          "consumption_count": 248,
+          "net_cashflow": -11222.96
+        },
+        {
+          "month": "2025-11",
+          "income": 30397.0,
+          "income_ex_refunds": 25721.49,
+          "expense": 9361.5,
+          "neutral": 21716.76,
+          "refunds": 4675.51,
+          "consumption": 1682.99,
+          "consumption_count": 128,
+          "net_cashflow": 21035.5
+        },
+        {
+          "month": "2025-12",
+          "income": 23195.8,
+          "income_ex_refunds": 23165.14,
+          "expense": 51110.96,
+          "neutral": 79258.1,
+          "refunds": 30.66,
+          "consumption": 35218.8,
+          "consumption_count": 159,
+          "net_cashflow": -27915.16
+        },
+        {
+          "month": "2026-01",
+          "income": 17967.84,
+          "income_ex_refunds": 14553.16,
+          "expense": 18461.41,
+          "neutral": 12149.38,
+          "refunds": 3414.68,
+          "consumption": 9395.63,
+          "consumption_count": 154,
+          "net_cashflow": -493.57
+        },
+        {
+          "month": "2026-02",
+          "income": 19692.31,
+          "income_ex_refunds": 19420.81,
+          "expense": 35976.88,
+          "neutral": 9458.19,
+          "refunds": 271.5,
+          "consumption": 23791.18,
+          "consumption_count": 175,
+          "net_cashflow": -16284.57
+        },
+        {
+          "month": "2026-03",
+          "income": 28333.77,
+          "income_ex_refunds": 26624.0,
+          "expense": 29219.31,
+          "neutral": 14531.09,
+          "refunds": 1709.77,
+          "consumption": 24021.34,
+          "consumption_count": 154,
+          "net_cashflow": -885.54
+        },
+        {
+          "month": "2026-04",
+          "income": 38961.79,
+          "income_ex_refunds": 38784.58,
+          "expense": 16412.62,
+          "neutral": 27063.71,
+          "refunds": 177.21,
+          "consumption": 10547.41,
+          "consumption_count": 147,
+          "net_cashflow": 22549.17
+        },
+        {
+          "month": "2026-05",
+          "income": 34052.7,
+          "income_ex_refunds": 33839.88,
+          "expense": 32352.43,
+          "neutral": 75054.51,
+          "refunds": 212.82,
+          "consumption": 12109.61,
+          "consumption_count": 200,
+          "net_cashflow": 1700.27
+        },
+        {
+          "month": "2026-06",
+          "income": 54823.63,
+          "income_ex_refunds": 48655.42,
+          "expense": 64496.18,
+          "neutral": 140558.06,
+          "refunds": 6168.21,
+          "consumption": 55774.77,
+          "consumption_count": 185,
+          "net_cashflow": -9672.55
+        },
+        {
+          "month": "2026-07",
+          "income": 31123.62,
+          "income_ex_refunds": 27901.68,
+          "expense": 66699.63,
+          "neutral": 195440.56,
+          "refunds": 3221.94,
+          "consumption": 31524.89,
+          "consumption_count": 186,
+          "net_cashflow": -35576.01
+        },
+        {
+          "month": "2026-08",
+          "income": 27710.86,
+          "income_ex_refunds": 26956.26,
+          "expense": 38612.82,
+          "neutral": 65856.5,
+          "refunds": 754.6,
+          "consumption": 11882.62,
+          "consumption_count": 190,
+          "net_cashflow": -10901.96
+        },
+        {
+          "month": "2026-09",
+          "income": 27339.94,
+          "income_ex_refunds": 12288.31,
+          "expense": 79810.65,
+          "neutral": 33809.72,
+          "refunds": 15051.63,
+          "consumption": 55809.02,
+          "consumption_count": 242,
+          "net_cashflow": -52470.71
+        },
+        {
+          "month": "2026-10",
+          "income": 58059.02,
+          "income_ex_refunds": 51959.0,
+          "expense": 57122.62,
+          "neutral": 25838.58,
+          "refunds": 6100.02,
+          "consumption": 43980.6,
+          "consumption_count": 190,
+          "net_cashflow": 936.4
+        },
+        {
+          "month": "2026-11",
+          "income": 429.25,
+          "income_ex_refunds": 240.0,
+          "expense": 712.53,
+          "neutral": 0.15,
+          "refunds": 189.25,
+          "consumption": 712.28,
+          "consumption_count": 21,
+          "net_cashflow": -283.28
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 431252.63,
+          "expense": 505637.78,
+          "consumption": 188028.43,
+          "refunds": 13586.68,
+          "net_cashflow": -74385.15,
+          "consumption_count": 2148
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 542470.63,
+          "expense": 886830.31,
+          "consumption": 373199.03,
+          "refunds": 28823.87,
+          "net_cashflow": -344359.68,
+          "consumption_count": 2362
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 338494.73,
+          "expense": 439877.08,
+          "consumption": 279549.35,
+          "refunds": 37271.63,
+          "net_cashflow": -101382.35,
+          "consumption_count": 1844
+        }
+      ],
+      "categories": [
+        {
+          "label": "购物",
+          "amount": 240389.85,
+          "count": 1064,
+          "share": 0.277345
+        },
+        {
+          "label": "住房生活",
+          "amount": 233665.08,
+          "count": 200,
+          "share": 0.269587
+        },
+        {
+          "label": "其他消费",
+          "amount": 195595.01,
+          "count": 1545,
+          "share": 0.225664
+        },
+        {
+          "label": "餐饮",
+          "amount": 98020.96,
+          "count": 1648,
+          "share": 0.11309
+        },
+        {
+          "label": "通讯数码",
+          "amount": 31431.47,
+          "count": 125,
+          "share": 0.036263
+        },
+        {
+          "label": "交通",
+          "amount": 28431.15,
+          "count": 1538,
+          "share": 0.032802
+        },
+        {
+          "label": "医疗健康",
+          "amount": 27235.31,
+          "count": 147,
+          "share": 0.031422
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 10245.58,
+          "count": 59,
+          "share": 0.011821
+        },
+        {
+          "label": "教育服务",
+          "amount": 1182.52,
+          "count": 25,
+          "share": 0.001364
+        },
+        {
+          "label": "生活服务",
+          "amount": 556.38,
+          "count": 3,
+          "share": 0.000642
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 1174236.88,
+          "count": 742,
+          "share": 0.894849
+        },
+        {
+          "label": "二维码收款",
+          "amount": 74176.55,
+          "count": 241,
+          "share": 0.056528
+        },
+        {
+          "label": "退款",
+          "amount": 53705.68,
+          "count": 161,
+          "share": 0.040927
+        },
+        {
+          "label": "红包收入",
+          "amount": 7255.9,
+          "count": 251,
+          "share": 0.005529
+        },
+        {
+          "label": "其他收入",
+          "amount": 2842.98,
+          "count": 16,
+          "share": 0.002167
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "银行卡",
+          "amount": 331633.16,
+          "count": 1798,
+          "share": 0.382615
+        },
+        {
+          "label": "零钱",
+          "amount": 282356.14,
+          "count": 2814,
+          "share": 0.325763
+        },
+        {
+          "label": "余额宝",
+          "amount": 67135.17,
+          "count": 77,
+          "share": 0.077456
+        },
+        {
+          "label": "零钱通",
+          "amount": 64738.59,
+          "count": 305,
+          "share": 0.074691
+        },
+        {
+          "label": "花呗",
+          "amount": 61124.64,
+          "count": 1255,
+          "share": 0.070521
+        },
+        {
+          "label": "其他",
+          "amount": 59447.21,
+          "count": 35,
+          "share": 0.068586
+        },
+        {
+          "label": "未标注",
+          "amount": 318.4,
+          "count": 70,
+          "share": 0.000367
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 111008.01,
+          "count": 998,
+          "share": 0.128073
+        },
+        {
+          "label": "周二",
+          "amount": 88443.69,
+          "count": 954,
+          "share": 0.10204
+        },
+        {
+          "label": "周三",
+          "amount": 126461.31,
+          "count": 970,
+          "share": 0.145902
+        },
+        {
+          "label": "周四",
+          "amount": 100534.17,
+          "count": 961,
+          "share": 0.115989
+        },
+        {
+          "label": "周五",
+          "amount": 115550.12,
+          "count": 876,
+          "share": 0.133314
+        },
+        {
+          "label": "周六",
+          "amount": 169699.1,
+          "count": 825,
+          "share": 0.195787
+        },
+        {
+          "label": "周日",
+          "amount": 155056.91,
+          "count": 770,
+          "share": 0.178894
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2025-09",
+          "detail": "该月有效消费 ¥65,528.94，占当前统计期有效消费的 7.8%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "购物",
+          "detail": "累计 ¥240,389.85，占有效消费 27.7%，共 1064 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周六",
+          "detail": "按星期汇总的有效消费最高，金额 ¥169,699.10。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥79,682.18",
+          "detail": "退款收入约占账单总支出的 4.3%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-520,127.18",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "account-1": {
+      "id": "account-1",
+      "label": "账户 A",
+      "source_label": "微信支付 + 支付宝（按账户）",
+      "file_count": 6,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 8266,
+        "gross_income": 150663.72,
+        "gross_expense": 575579.12,
+        "gross_neutral": 766697.95,
+        "net_cashflow": -424915.4,
+        "consumption": 455882.8,
+        "consumption_count": 4064,
+        "refunds": 56076.67,
+        "income_ex_refunds": 120563.55,
+        "transfer_like_expense": 77667.61
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 3264.69,
+          "income_ex_refunds": -2230.31,
+          "expense": 15295.17,
+          "neutral": 10314.91,
+          "refunds": 5495.0,
+          "consumption": 4080.17,
+          "consumption_count": 75,
+          "net_cashflow": -12030.48
+        },
+        {
+          "month": "2024-02",
+          "income": 5535.65,
+          "income_ex_refunds": 5431.05,
+          "expense": 4688.9,
+          "neutral": 120.05,
+          "refunds": 104.6,
+          "consumption": 4584.3,
+          "consumption_count": 81,
+          "net_cashflow": 846.75
+        },
+        {
+          "month": "2024-03",
+          "income": 754.5,
+          "income_ex_refunds": 0.0,
+          "expense": 8879.55,
+          "neutral": 1314.48,
+          "refunds": 754.5,
+          "consumption": 6985.05,
+          "consumption_count": 75,
+          "net_cashflow": -8125.05
+        },
+        {
+          "month": "2024-04",
+          "income": 2147.0,
+          "income_ex_refunds": 2097.01,
+          "expense": 18575.66,
+          "neutral": 13280.34,
+          "refunds": 49.99,
+          "consumption": 16191.07,
+          "consumption_count": 105,
+          "net_cashflow": -16428.66
+        },
+        {
+          "month": "2024-05",
+          "income": 2109.9,
+          "income_ex_refunds": 2000.0,
+          "expense": 7614.06,
+          "neutral": 538.98,
+          "refunds": 109.9,
+          "consumption": 7256.16,
+          "consumption_count": 158,
+          "net_cashflow": -5504.16
+        },
+        {
+          "month": "2024-06",
+          "income": 951.9,
+          "income_ex_refunds": 881.9,
+          "expense": 4850.99,
+          "neutral": 719.1,
+          "refunds": 70.0,
+          "consumption": 4704.99,
+          "consumption_count": 91,
+          "net_cashflow": -3899.09
+        },
+        {
+          "month": "2024-07",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 17344.04,
+          "neutral": 13274.57,
+          "refunds": 0.0,
+          "consumption": 15879.04,
+          "consumption_count": 130,
+          "net_cashflow": -17344.04
+        },
+        {
+          "month": "2024-08",
+          "income": 1800.0,
+          "income_ex_refunds": 1800.0,
+          "expense": 7211.65,
+          "neutral": 312.29,
+          "refunds": 0.0,
+          "consumption": 7141.65,
+          "consumption_count": 148,
+          "net_cashflow": -5411.65
+        },
+        {
+          "month": "2024-09",
+          "income": 2743.16,
+          "income_ex_refunds": 1273.16,
+          "expense": 7749.18,
+          "neutral": 1624.2,
+          "refunds": 1470.0,
+          "consumption": 3037.18,
+          "consumption_count": 121,
+          "net_cashflow": -5006.02
+        },
+        {
+          "month": "2024-10",
+          "income": 1000.0,
+          "income_ex_refunds": 1000.0,
+          "expense": 16488.5,
+          "neutral": 141.4,
+          "refunds": 0.0,
+          "consumption": 16288.5,
+          "consumption_count": 123,
+          "net_cashflow": -15488.5
+        },
+        {
+          "month": "2024-11",
+          "income": 174.54,
+          "income_ex_refunds": 174.54,
+          "expense": 10059.88,
+          "neutral": 232.08,
+          "refunds": 0.0,
+          "consumption": 3878.84,
+          "consumption_count": 132,
+          "net_cashflow": -9885.34
+        },
+        {
+          "month": "2024-12",
+          "income": 5000.0,
+          "income_ex_refunds": 5000.0,
+          "expense": 1871.41,
+          "neutral": 144.0,
+          "refunds": 0.0,
+          "consumption": 1871.41,
+          "consumption_count": 111,
+          "net_cashflow": 3128.59
+        },
+        {
+          "month": "2025-01",
+          "income": 379.59,
+          "income_ex_refunds": 379.59,
+          "expense": 19393.83,
+          "neutral": 256.1,
+          "refunds": 0.0,
+          "consumption": 18993.83,
+          "consumption_count": 100,
+          "net_cashflow": -19014.24
+        },
+        {
+          "month": "2025-02",
+          "income": 0.0,
+          "income_ex_refunds": -100.0,
+          "expense": 2623.47,
+          "neutral": 16594.49,
+          "refunds": 100.0,
+          "consumption": 2523.47,
+          "consumption_count": 115,
+          "net_cashflow": -2623.47
+        },
+        {
+          "month": "2025-03",
+          "income": 1900.0,
+          "income_ex_refunds": 1900.0,
+          "expense": 7638.37,
+          "neutral": 22243.42,
+          "refunds": 0.0,
+          "consumption": 7638.37,
+          "consumption_count": 125,
+          "net_cashflow": -5738.37
+        },
+        {
+          "month": "2025-04",
+          "income": 65.0,
+          "income_ex_refunds": 0.0,
+          "expense": 24750.03,
+          "neutral": 19759.13,
+          "refunds": 65.0,
+          "consumption": 24685.03,
+          "consumption_count": 103,
+          "net_cashflow": -24685.03
+        },
+        {
+          "month": "2025-05",
+          "income": 5.59,
+          "income_ex_refunds": -570.41,
+          "expense": 3234.1,
+          "neutral": 19433.2,
+          "refunds": 576.0,
+          "consumption": 2658.1,
+          "consumption_count": 123,
+          "net_cashflow": -3228.51
+        },
+        {
+          "month": "2025-06",
+          "income": 0.0,
+          "income_ex_refunds": -13.9,
+          "expense": 2774.05,
+          "neutral": 17000.93,
+          "refunds": 13.9,
+          "consumption": 1760.15,
+          "consumption_count": 108,
+          "net_cashflow": -2774.05
+        },
+        {
+          "month": "2025-07",
+          "income": 6195.45,
+          "income_ex_refunds": 177.15,
+          "expense": 29115.56,
+          "neutral": 23685.6,
+          "refunds": 6018.3,
+          "consumption": 20016.26,
+          "consumption_count": 150,
+          "net_cashflow": -22920.11
+        },
+        {
+          "month": "2025-08",
+          "income": 4508.4,
+          "income_ex_refunds": 1998.2,
+          "expense": 13091.27,
+          "neutral": 23786.38,
+          "refunds": 2510.2,
+          "consumption": 6925.07,
+          "consumption_count": 155,
+          "net_cashflow": -8582.87
+        },
+        {
+          "month": "2025-09",
+          "income": 34529.64,
+          "income_ex_refunds": 29134.18,
+          "expense": 70026.7,
+          "neutral": 26348.71,
+          "refunds": 5395.46,
+          "consumption": 41092.28,
+          "consumption_count": 198,
+          "net_cashflow": -35497.06
+        },
+        {
+          "month": "2025-10",
+          "income": 1567.3,
+          "income_ex_refunds": 700.34,
+          "expense": 12414.77,
+          "neutral": 94057.19,
+          "refunds": 866.96,
+          "consumption": 11600.76,
+          "consumption_count": 145,
+          "net_cashflow": -10847.47
+        },
+        {
+          "month": "2025-11",
+          "income": 0.0,
+          "income_ex_refunds": -4675.51,
+          "expense": 2146.1,
+          "neutral": 19516.76,
+          "refunds": 4675.51,
+          "consumption": -2555.41,
+          "consumption_count": 93,
+          "net_cashflow": -2146.1
+        },
+        {
+          "month": "2025-12",
+          "income": 5581.0,
+          "income_ex_refunds": 5555.0,
+          "expense": 22473.26,
+          "neutral": 14248.1,
+          "refunds": 26.0,
+          "consumption": 22473.26,
+          "consumption_count": 110,
+          "net_cashflow": -16892.26
+        },
+        {
+          "month": "2026-01",
+          "income": 32.16,
+          "income_ex_refunds": 32.16,
+          "expense": 2514.63,
+          "neutral": 12149.38,
+          "refunds": 0.0,
+          "consumption": 2498.63,
+          "consumption_count": 79,
+          "net_cashflow": -2482.47
+        },
+        {
+          "month": "2026-02",
+          "income": 3277.46,
+          "income_ex_refunds": 3205.46,
+          "expense": 9236.12,
+          "neutral": 9458.19,
+          "refunds": 72.0,
+          "consumption": 7414.12,
+          "consumption_count": 90,
+          "net_cashflow": -5958.66
+        },
+        {
+          "month": "2026-03",
+          "income": 3.0,
+          "income_ex_refunds": 3.0,
+          "expense": 21492.29,
+          "neutral": 14531.09,
+          "refunds": 0.0,
+          "consumption": 21492.29,
+          "consumption_count": 95,
+          "net_cashflow": -21489.29
+        },
+        {
+          "month": "2026-04",
+          "income": 0.0,
+          "income_ex_refunds": -18.42,
+          "expense": 10616.72,
+          "neutral": 27063.71,
+          "refunds": 18.42,
+          "consumption": 6598.3,
+          "consumption_count": 91,
+          "net_cashflow": -10616.72
+        },
+        {
+          "month": "2026-05",
+          "income": 2030.0,
+          "income_ex_refunds": 2030.0,
+          "expense": 6400.87,
+          "neutral": 75054.51,
+          "refunds": 0.0,
+          "consumption": 6400.87,
+          "consumption_count": 109,
+          "net_cashflow": -4370.87
+        },
+        {
+          "month": "2026-06",
+          "income": 2834.87,
+          "income_ex_refunds": -2678.71,
+          "expense": 61024.06,
+          "neutral": 69557.56,
+          "refunds": 5513.58,
+          "consumption": 53465.48,
+          "consumption_count": 140,
+          "net_cashflow": -58189.19
+        },
+        {
+          "month": "2026-07",
+          "income": 3066.98,
+          "income_ex_refunds": 1869.16,
+          "expense": 27304.9,
+          "neutral": 94432.15,
+          "refunds": 1197.82,
+          "consumption": 26107.08,
+          "consumption_count": 120,
+          "net_cashflow": -24237.92
+        },
+        {
+          "month": "2026-08",
+          "income": 2740.86,
+          "income_ex_refunds": 2096.26,
+          "expense": 9723.62,
+          "neutral": 65856.5,
+          "refunds": 644.6,
+          "consumption": 8039.02,
+          "consumption_count": 131,
+          "net_cashflow": -6982.76
+        },
+        {
+          "month": "2026-09",
+          "income": 18585.28,
+          "income_ex_refunds": 4159.15,
+          "expense": 52933.17,
+          "neutral": 33809.72,
+          "refunds": 14426.13,
+          "consumption": 36337.04,
+          "consumption_count": 173,
+          "net_cashflow": -34347.89
+        },
+        {
+          "month": "2026-10",
+          "income": 37879.8,
+          "income_ex_refunds": 31977.0,
+          "expense": 43674.23,
+          "neutral": 25838.58,
+          "refunds": 5902.8,
+          "consumption": 37472.43,
+          "consumption_count": 148,
+          "net_cashflow": -5794.43
+        },
+        {
+          "month": "2026-11",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 348.01,
+          "neutral": 0.15,
+          "refunds": 0.0,
+          "consumption": 348.01,
+          "consumption_count": 13,
+          "net_cashflow": -348.01
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 25481.34,
+          "expense": 120628.99,
+          "consumption": 91898.36,
+          "refunds": 8053.99,
+          "net_cashflow": -95147.65,
+          "consumption_count": 1350
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 54731.97,
+          "expense": 209681.51,
+          "consumption": 157811.17,
+          "refunds": 20247.33,
+          "net_cashflow": -154949.54,
+          "consumption_count": 1525
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 70450.41,
+          "expense": 245268.62,
+          "consumption": 206173.27,
+          "refunds": 27775.35,
+          "net_cashflow": -174818.21,
+          "consumption_count": 1189
+        }
+      ],
+      "categories": [
+        {
+          "label": "住房生活",
+          "amount": 204296.08,
+          "count": 68,
+          "share": 0.423975
+        },
+        {
+          "label": "购物",
+          "amount": 74499.45,
+          "count": 508,
+          "share": 0.154608
+        },
+        {
+          "label": "餐饮",
+          "amount": 63277.08,
+          "count": 1559,
+          "share": 0.131319
+        },
+        {
+          "label": "其他消费",
+          "amount": 54812.51,
+          "count": 197,
+          "share": 0.113752
+        },
+        {
+          "label": "通讯数码",
+          "amount": 30527.69,
+          "count": 103,
+          "share": 0.063354
+        },
+        {
+          "label": "交通",
+          "amount": 25746.88,
+          "count": 1473,
+          "share": 0.053432
+        },
+        {
+          "label": "医疗健康",
+          "amount": 18181.19,
+          "count": 92,
+          "share": 0.037731
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 8779.52,
+          "count": 36,
+          "share": 0.01822
+        },
+        {
+          "label": "教育服务",
+          "amount": 1182.52,
+          "count": 25,
+          "share": 0.002454
+        },
+        {
+          "label": "生活服务",
+          "amount": 556.38,
+          "count": 3,
+          "share": 0.001155
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 114720.56,
+          "count": 42,
+          "share": 0.761435
+        },
+        {
+          "label": "退款",
+          "amount": 30100.17,
+          "count": 46,
+          "share": 0.199784
+        },
+        {
+          "label": "其他收入",
+          "amount": 2799.1,
+          "count": 4,
+          "share": 0.018578
+        },
+        {
+          "label": "二维码收款",
+          "amount": 1819.55,
+          "count": 37,
+          "share": 0.012077
+        },
+        {
+          "label": "红包收入",
+          "amount": 1224.34,
+          "count": 99,
+          "share": 0.008126
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "银行卡",
+          "amount": 235871.37,
+          "count": 1785,
+          "share": 0.489503
+        },
+        {
+          "label": "余额宝",
+          "amount": 67135.17,
+          "count": 77,
+          "share": 0.139325
+        },
+        {
+          "label": "花呗",
+          "amount": 61124.64,
+          "count": 1255,
+          "share": 0.126852
+        },
+        {
+          "label": "其他",
+          "amount": 59447.21,
+          "count": 35,
+          "share": 0.12337
+        },
+        {
+          "label": "零钱",
+          "amount": 57962.51,
+          "count": 842,
+          "share": 0.120289
+        },
+        {
+          "label": "未标注",
+          "amount": 318.4,
+          "count": 70,
+          "share": 0.000661
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 62394.48,
+          "count": 668,
+          "share": 0.129487
+        },
+        {
+          "label": "周二",
+          "amount": 56681.16,
+          "count": 645,
+          "share": 0.11763
+        },
+        {
+          "label": "周三",
+          "amount": 47921.16,
+          "count": 612,
+          "share": 0.099451
+        },
+        {
+          "label": "周四",
+          "amount": 68489.15,
+          "count": 627,
+          "share": 0.142135
+        },
+        {
+          "label": "周五",
+          "amount": 43495.06,
+          "count": 571,
+          "share": 0.090265
+        },
+        {
+          "label": "周六",
+          "amount": 121286.49,
+          "count": 487,
+          "share": 0.251705
+        },
+        {
+          "label": "周日",
+          "amount": 81591.8,
+          "count": 454,
+          "share": 0.169327
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2026-06",
+          "detail": "该月有效消费 ¥53,465.48，占当前统计期有效消费的 11.7%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "住房生活",
+          "detail": "累计 ¥204,296.08，占有效消费 42.4%，共 68 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周六",
+          "detail": "按星期汇总的有效消费最高，金额 ¥121,286.49。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥56,076.67",
+          "detail": "退款收入约占账单总支出的 9.7%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-424,915.40",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "account-2": {
+      "id": "account-2",
+      "label": "账户 B",
+      "source_label": "微信支付 + 支付宝（按账户）",
+      "file_count": 3,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 4161,
+        "gross_income": 1161554.27,
+        "gross_expense": 1256766.05,
+        "gross_neutral": 433674.01,
+        "net_cashflow": -95211.78,
+        "consumption": 384894.01,
+        "consumption_count": 2290,
+        "refunds": 23605.51,
+        "income_ex_refunds": 1137948.76,
+        "transfer_like_expense": 858384.1
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 41268.52,
+          "income_ex_refunds": 41200.0,
+          "expense": 33382.27,
+          "neutral": 5200.2,
+          "refunds": 68.52,
+          "consumption": 6149.27,
+          "consumption_count": 72,
+          "net_cashflow": 7886.25
+        },
+        {
+          "month": "2024-02",
+          "income": 10410.43,
+          "income_ex_refunds": 10365.98,
+          "expense": 24593.27,
+          "neutral": 3500.5,
+          "refunds": 44.45,
+          "consumption": 11328.27,
+          "consumption_count": 80,
+          "net_cashflow": -14182.84
+        },
+        {
+          "month": "2024-03",
+          "income": 35286.62,
+          "income_ex_refunds": 34570.0,
+          "expense": 16927.02,
+          "neutral": 13500.5,
+          "refunds": 716.62,
+          "consumption": 3671.4,
+          "consumption_count": 82,
+          "net_cashflow": 18359.6
+        },
+        {
+          "month": "2024-04",
+          "income": 14887.4,
+          "income_ex_refunds": 14351.5,
+          "expense": 16938.42,
+          "neutral": 500.5,
+          "refunds": 535.9,
+          "consumption": 5593.62,
+          "consumption_count": 68,
+          "net_cashflow": -2051.02
+        },
+        {
+          "month": "2024-05",
+          "income": 33305.7,
+          "income_ex_refunds": 32780.0,
+          "expense": 41153.2,
+          "neutral": 10000.0,
+          "refunds": 525.7,
+          "consumption": 7582.4,
+          "consumption_count": 63,
+          "net_cashflow": -7847.5
+        },
+        {
+          "month": "2024-06",
+          "income": 37454.4,
+          "income_ex_refunds": 37430.5,
+          "expense": 16508.41,
+          "neutral": 13200.2,
+          "refunds": 23.9,
+          "consumption": 5234.51,
+          "consumption_count": 80,
+          "net_cashflow": 20945.99
+        },
+        {
+          "month": "2024-07",
+          "income": 42586.9,
+          "income_ex_refunds": 42547.0,
+          "expense": 37659.15,
+          "neutral": 15500.5,
+          "refunds": 39.9,
+          "consumption": 7135.25,
+          "consumption_count": 45,
+          "net_cashflow": 4927.75
+        },
+        {
+          "month": "2024-08",
+          "income": 26488.0,
+          "income_ex_refunds": 26470.0,
+          "expense": 23281.64,
+          "neutral": 0.0,
+          "refunds": 18.0,
+          "consumption": 3884.64,
+          "consumption_count": 40,
+          "net_cashflow": 3206.36
+        },
+        {
+          "month": "2024-09",
+          "income": 47907.9,
+          "income_ex_refunds": 47779.0,
+          "expense": 38621.05,
+          "neutral": 0.0,
+          "refunds": 128.9,
+          "consumption": 21511.15,
+          "consumption_count": 59,
+          "net_cashflow": 9286.85
+        },
+        {
+          "month": "2024-10",
+          "income": 37940.62,
+          "income_ex_refunds": 35540.62,
+          "expense": 57301.88,
+          "neutral": 6006.0,
+          "refunds": 2400.0,
+          "consumption": 9638.88,
+          "consumption_count": 90,
+          "net_cashflow": -19361.26
+        },
+        {
+          "month": "2024-11",
+          "income": 27743.9,
+          "income_ex_refunds": 27704.0,
+          "expense": 55604.34,
+          "neutral": 0.0,
+          "refunds": 39.9,
+          "consumption": 8185.54,
+          "consumption_count": 67,
+          "net_cashflow": -27860.44
+        },
+        {
+          "month": "2024-12",
+          "income": 50490.9,
+          "income_ex_refunds": 49500.0,
+          "expense": 23038.14,
+          "neutral": 1001.0,
+          "refunds": 990.9,
+          "consumption": 6215.14,
+          "consumption_count": 52,
+          "net_cashflow": 27452.76
+        },
+        {
+          "month": "2025-01",
+          "income": 40123.1,
+          "income_ex_refunds": 38286.7,
+          "expense": 72766.53,
+          "neutral": 30000.0,
+          "refunds": 1836.4,
+          "consumption": 14779.03,
+          "consumption_count": 83,
+          "net_cashflow": -32643.43
+        },
+        {
+          "month": "2025-02",
+          "income": 49419.7,
+          "income_ex_refunds": 49243.0,
+          "expense": 66553.38,
+          "neutral": 0.0,
+          "refunds": 176.7,
+          "consumption": 5444.18,
+          "consumption_count": 49,
+          "net_cashflow": -17133.68
+        },
+        {
+          "month": "2025-03",
+          "income": 30098.37,
+          "income_ex_refunds": 29539.37,
+          "expense": 49503.43,
+          "neutral": 0.0,
+          "refunds": 559.0,
+          "consumption": 10035.43,
+          "consumption_count": 85,
+          "net_cashflow": -19405.06
+        },
+        {
+          "month": "2025-04",
+          "income": 58917.78,
+          "income_ex_refunds": 56355.5,
+          "expense": 48572.96,
+          "neutral": 13513.5,
+          "refunds": 2562.28,
+          "consumption": 11415.68,
+          "consumption_count": 83,
+          "net_cashflow": 10344.82
+        },
+        {
+          "month": "2025-05",
+          "income": 28109.22,
+          "income_ex_refunds": 27804.22,
+          "expense": 58184.61,
+          "neutral": 0.0,
+          "refunds": 305.0,
+          "consumption": 15829.81,
+          "consumption_count": 87,
+          "net_cashflow": -30075.39
+        },
+        {
+          "month": "2025-06",
+          "income": 46323.05,
+          "income_ex_refunds": 45633.05,
+          "expense": 100125.9,
+          "neutral": 29528.0,
+          "refunds": 690.0,
+          "consumption": 42981.9,
+          "consumption_count": 60,
+          "net_cashflow": -53802.85
+        },
+        {
+          "month": "2025-07",
+          "income": 36133.83,
+          "income_ex_refunds": 35085.83,
+          "expense": 43428.15,
+          "neutral": 2900.0,
+          "refunds": 1048.0,
+          "consumption": 17667.65,
+          "consumption_count": 68,
+          "net_cashflow": -7294.32
+        },
+        {
+          "month": "2025-08",
+          "income": 43518.32,
+          "income_ex_refunds": 43459.32,
+          "expense": 58009.1,
+          "neutral": 4204.2,
+          "refunds": 59.0,
+          "consumption": 18263.1,
+          "consumption_count": 69,
+          "net_cashflow": -14490.78
+        },
+        {
+          "month": "2025-09",
+          "income": 66299.0,
+          "income_ex_refunds": 64996.0,
+          "expense": 102991.66,
+          "neutral": 31000.0,
+          "refunds": 1303.0,
+          "consumption": 24436.66,
+          "consumption_count": 66,
+          "net_cashflow": -36692.66
+        },
+        {
+          "month": "2025-10",
+          "income": 40784.49,
+          "income_ex_refunds": 40751.99,
+          "expense": 41159.98,
+          "neutral": 14900.0,
+          "refunds": 32.5,
+          "consumption": 37550.48,
+          "consumption_count": 103,
+          "net_cashflow": -375.49
+        },
+        {
+          "month": "2025-11",
+          "income": 30397.0,
+          "income_ex_refunds": 30397.0,
+          "expense": 7215.4,
+          "neutral": 2200.0,
+          "refunds": 0.0,
+          "consumption": 4238.4,
+          "consumption_count": 35,
+          "net_cashflow": 23181.6
+        },
+        {
+          "month": "2025-12",
+          "income": 17614.8,
+          "income_ex_refunds": 17610.14,
+          "expense": 28637.7,
+          "neutral": 65010.0,
+          "refunds": 4.66,
+          "consumption": 12745.54,
+          "consumption_count": 49,
+          "net_cashflow": -11022.9
+        },
+        {
+          "month": "2026-01",
+          "income": 17935.68,
+          "income_ex_refunds": 14521.0,
+          "expense": 15946.78,
+          "neutral": 0.0,
+          "refunds": 3414.68,
+          "consumption": 6897.0,
+          "consumption_count": 75,
+          "net_cashflow": 1988.9
+        },
+        {
+          "month": "2026-02",
+          "income": 16414.85,
+          "income_ex_refunds": 16215.35,
+          "expense": 26740.76,
+          "neutral": 0.0,
+          "refunds": 199.5,
+          "consumption": 16377.06,
+          "consumption_count": 85,
+          "net_cashflow": -10325.91
+        },
+        {
+          "month": "2026-03",
+          "income": 28330.77,
+          "income_ex_refunds": 26621.0,
+          "expense": 7727.02,
+          "neutral": 0.0,
+          "refunds": 1709.77,
+          "consumption": 2529.05,
+          "consumption_count": 59,
+          "net_cashflow": 20603.75
+        },
+        {
+          "month": "2026-04",
+          "income": 38961.79,
+          "income_ex_refunds": 38803.0,
+          "expense": 5795.9,
+          "neutral": 0.0,
+          "refunds": 158.79,
+          "consumption": 3949.11,
+          "consumption_count": 56,
+          "net_cashflow": 33165.89
+        },
+        {
+          "month": "2026-05",
+          "income": 32022.7,
+          "income_ex_refunds": 31809.88,
+          "expense": 25951.56,
+          "neutral": 0.0,
+          "refunds": 212.82,
+          "consumption": 5708.74,
+          "consumption_count": 91,
+          "net_cashflow": 6071.14
+        },
+        {
+          "month": "2026-06",
+          "income": 51988.76,
+          "income_ex_refunds": 51334.13,
+          "expense": 3472.12,
+          "neutral": 71000.5,
+          "refunds": 654.63,
+          "consumption": 2309.29,
+          "consumption_count": 45,
+          "net_cashflow": 48516.64
+        },
+        {
+          "month": "2026-07",
+          "income": 28056.64,
+          "income_ex_refunds": 26032.52,
+          "expense": 39394.73,
+          "neutral": 101008.41,
+          "refunds": 2024.12,
+          "consumption": 5417.81,
+          "consumption_count": 66,
+          "net_cashflow": -11338.09
+        },
+        {
+          "month": "2026-08",
+          "income": 24970.0,
+          "income_ex_refunds": 24860.0,
+          "expense": 28889.2,
+          "neutral": 0.0,
+          "refunds": 110.0,
+          "consumption": 3843.6,
+          "consumption_count": 59,
+          "net_cashflow": -3919.2
+        },
+        {
+          "month": "2026-09",
+          "income": 8754.66,
+          "income_ex_refunds": 8129.16,
+          "expense": 26877.48,
+          "neutral": 0.0,
+          "refunds": 625.5,
+          "consumption": 19471.98,
+          "consumption_count": 69,
+          "net_cashflow": -18122.82
+        },
+        {
+          "month": "2026-10",
+          "income": 20179.22,
+          "income_ex_refunds": 19982.0,
+          "expense": 13448.39,
+          "neutral": 0.0,
+          "refunds": 197.22,
+          "consumption": 6508.17,
+          "consumption_count": 42,
+          "net_cashflow": 6730.83
+        },
+        {
+          "month": "2026-11",
+          "income": 429.25,
+          "income_ex_refunds": 240.0,
+          "expense": 364.52,
+          "neutral": 0.0,
+          "refunds": 189.25,
+          "consumption": 364.27,
+          "consumption_count": 8,
+          "net_cashflow": 64.73
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 405771.29,
+          "expense": 385008.79,
+          "consumption": 96130.07,
+          "refunds": 5532.69,
+          "net_cashflow": 20762.5,
+          "consumption_count": 798
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 487738.66,
+          "expense": 677148.8,
+          "consumption": 215387.86,
+          "refunds": 8576.54,
+          "net_cashflow": -189410.14,
+          "consumption_count": 837
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 268044.32,
+          "expense": 194608.46,
+          "consumption": 73376.08,
+          "refunds": 9496.28,
+          "net_cashflow": 73435.86,
+          "consumption_count": 655
+        }
+      ],
+      "categories": [
+        {
+          "label": "购物",
+          "amount": 165890.4,
+          "count": 556,
+          "share": 0.431003
+        },
+        {
+          "label": "其他消费",
+          "amount": 140782.5,
+          "count": 1348,
+          "share": 0.36577
+        },
+        {
+          "label": "餐饮",
+          "amount": 34743.88,
+          "count": 89,
+          "share": 0.090269
+        },
+        {
+          "label": "住房生活",
+          "amount": 29369.0,
+          "count": 132,
+          "share": 0.076304
+        },
+        {
+          "label": "医疗健康",
+          "amount": 9054.12,
+          "count": 55,
+          "share": 0.023524
+        },
+        {
+          "label": "交通",
+          "amount": 2684.27,
+          "count": 65,
+          "share": 0.006974
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 1466.06,
+          "count": 23,
+          "share": 0.003809
+        },
+        {
+          "label": "通讯数码",
+          "amount": 903.78,
+          "count": 22,
+          "share": 0.002348
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 1059516.32,
+          "count": 700,
+          "share": 0.912154
+        },
+        {
+          "label": "二维码收款",
+          "amount": 72357.0,
+          "count": 204,
+          "share": 0.062293
+        },
+        {
+          "label": "退款",
+          "amount": 23605.51,
+          "count": 115,
+          "share": 0.020322
+        },
+        {
+          "label": "红包收入",
+          "amount": 6031.56,
+          "count": 152,
+          "share": 0.005193
+        },
+        {
+          "label": "其他收入",
+          "amount": 43.88,
+          "count": 12,
+          "share": 3.8e-05
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "零钱",
+          "amount": 224393.63,
+          "count": 1972,
+          "share": 0.583001
+        },
+        {
+          "label": "银行卡",
+          "amount": 95761.79,
+          "count": 13,
+          "share": 0.2488
+        },
+        {
+          "label": "零钱通",
+          "amount": 64738.59,
+          "count": 305,
+          "share": 0.168198
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 48613.53,
+          "count": 330,
+          "share": 0.126304
+        },
+        {
+          "label": "周二",
+          "amount": 31762.53,
+          "count": 309,
+          "share": 0.082523
+        },
+        {
+          "label": "周三",
+          "amount": 78540.15,
+          "count": 358,
+          "share": 0.204057
+        },
+        {
+          "label": "周四",
+          "amount": 32045.02,
+          "count": 334,
+          "share": 0.083257
+        },
+        {
+          "label": "周五",
+          "amount": 72055.06,
+          "count": 305,
+          "share": 0.187208
+        },
+        {
+          "label": "周六",
+          "amount": 48412.61,
+          "count": 338,
+          "share": 0.125782
+        },
+        {
+          "label": "周日",
+          "amount": 73465.11,
+          "count": 316,
+          "share": 0.190871
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2025-06",
+          "detail": "该月有效消费 ¥42,981.90，占当前统计期有效消费的 11.2%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "购物",
+          "detail": "累计 ¥165,890.40，占有效消费 43.1%，共 556 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周三",
+          "detail": "按星期汇总的有效消费最高，金额 ¥78,540.15。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥23,605.51",
+          "detail": "退款收入约占账单总支出的 1.9%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-95,211.78",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "wechat": {
+      "id": "wechat",
+      "label": "微信支付",
+      "source_label": "微信支付",
+      "file_count": 6,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 6900,
+        "gross_income": 1303394.33,
+        "gross_expense": 1529386.9,
+        "gross_neutral": 436774.01,
+        "net_cashflow": -225992.57,
+        "consumption": 565771.08,
+        "consumption_count": 4750,
+        "refunds": 53705.68,
+        "income_ex_refunds": 1249688.65,
+        "transfer_like_expense": 934101.71
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 41533.21,
+          "income_ex_refunds": 41464.69,
+          "expense": 40390.97,
+          "neutral": 5200.2,
+          "refunds": 68.52,
+          "consumption": 7437.97,
+          "consumption_count": 108,
+          "net_cashflow": 1142.24
+        },
+        {
+          "month": "2024-02",
+          "income": 15946.08,
+          "income_ex_refunds": 15827.53,
+          "expense": 27435.01,
+          "neutral": 3500.5,
+          "refunds": 118.55,
+          "consumption": 14095.91,
+          "consumption_count": 131,
+          "net_cashflow": -11488.93
+        },
+        {
+          "month": "2024-03",
+          "income": 36041.12,
+          "income_ex_refunds": 34570.0,
+          "expense": 23127.83,
+          "neutral": 14500.5,
+          "refunds": 1471.12,
+          "consumption": 7977.71,
+          "consumption_count": 129,
+          "net_cashflow": 12913.29
+        },
+        {
+          "month": "2024-04",
+          "income": 17034.4,
+          "income_ex_refunds": 16451.5,
+          "expense": 21087.4,
+          "neutral": 500.5,
+          "refunds": 582.9,
+          "consumption": 7666.0,
+          "consumption_count": 132,
+          "net_cashflow": -4053.0
+        },
+        {
+          "month": "2024-05",
+          "income": 35415.6,
+          "income_ex_refunds": 34780.0,
+          "expense": 46966.86,
+          "neutral": 10000.0,
+          "refunds": 635.6,
+          "consumption": 13038.16,
+          "consumption_count": 175,
+          "net_cashflow": -11551.26
+        },
+        {
+          "month": "2024-06",
+          "income": 38390.4,
+          "income_ex_refunds": 38296.5,
+          "expense": 20714.38,
+          "neutral": 13200.2,
+          "refunds": 93.9,
+          "consumption": 9294.48,
+          "consumption_count": 156,
+          "net_cashflow": 17676.02
+        },
+        {
+          "month": "2024-07",
+          "income": 42586.9,
+          "income_ex_refunds": 42547.0,
+          "expense": 41392.7,
+          "neutral": 15500.5,
+          "refunds": 39.9,
+          "consumption": 9403.8,
+          "consumption_count": 124,
+          "net_cashflow": 1194.2
+        },
+        {
+          "month": "2024-08",
+          "income": 28288.0,
+          "income_ex_refunds": 28270.0,
+          "expense": 29513.16,
+          "neutral": 0.0,
+          "refunds": 18.0,
+          "consumption": 10046.16,
+          "consumption_count": 136,
+          "net_cashflow": -1225.16
+        },
+        {
+          "month": "2024-09",
+          "income": 50651.06,
+          "income_ex_refunds": 50522.16,
+          "expense": 43953.15,
+          "neutral": 0.0,
+          "refunds": 128.9,
+          "consumption": 23601.25,
+          "consumption_count": 138,
+          "net_cashflow": 6697.91
+        },
+        {
+          "month": "2024-10",
+          "income": 38940.62,
+          "income_ex_refunds": 36540.62,
+          "expense": 73453.7,
+          "neutral": 6006.0,
+          "refunds": 2400.0,
+          "consumption": 25590.7,
+          "consumption_count": 168,
+          "net_cashflow": -34513.08
+        },
+        {
+          "month": "2024-11",
+          "income": 27918.44,
+          "income_ex_refunds": 27878.54,
+          "expense": 64794.18,
+          "neutral": 0.0,
+          "refunds": 39.9,
+          "consumption": 11215.38,
+          "consumption_count": 157,
+          "net_cashflow": -36875.74
+        },
+        {
+          "month": "2024-12",
+          "income": 55490.9,
+          "income_ex_refunds": 54500.0,
+          "expense": 24753.15,
+          "neutral": 1001.0,
+          "refunds": 990.9,
+          "consumption": 7930.15,
+          "consumption_count": 119,
+          "net_cashflow": 30737.75
+        },
+        {
+          "month": "2025-01",
+          "income": 40502.69,
+          "income_ex_refunds": 38666.29,
+          "expense": 76609.94,
+          "neutral": 30000.0,
+          "refunds": 1836.4,
+          "consumption": 18222.44,
+          "consumption_count": 144,
+          "net_cashflow": -36107.25
+        },
+        {
+          "month": "2025-02",
+          "income": 49419.7,
+          "income_ex_refunds": 49243.0,
+          "expense": 68832.23,
+          "neutral": 0.0,
+          "refunds": 176.7,
+          "consumption": 7723.03,
+          "consumption_count": 121,
+          "net_cashflow": -19412.53
+        },
+        {
+          "month": "2025-03",
+          "income": 31998.37,
+          "income_ex_refunds": 31439.37,
+          "expense": 51374.99,
+          "neutral": 0.0,
+          "refunds": 559.0,
+          "consumption": 11906.99,
+          "consumption_count": 141,
+          "net_cashflow": -19376.62
+        },
+        {
+          "month": "2025-04",
+          "income": 58982.78,
+          "income_ex_refunds": 56355.5,
+          "expense": 50082.43,
+          "neutral": 13513.5,
+          "refunds": 2627.28,
+          "consumption": 12860.15,
+          "consumption_count": 135,
+          "net_cashflow": 8900.35
+        },
+        {
+          "month": "2025-05",
+          "income": 28114.81,
+          "income_ex_refunds": 27809.81,
+          "expense": 60648.5,
+          "neutral": 0.0,
+          "refunds": 305.0,
+          "consumption": 18293.7,
+          "consumption_count": 148,
+          "net_cashflow": -32533.69
+        },
+        {
+          "month": "2025-06",
+          "income": 46323.05,
+          "income_ex_refunds": 45633.05,
+          "expense": 102515.56,
+          "neutral": 29528.0,
+          "refunds": 690.0,
+          "consumption": 44371.56,
+          "consumption_count": 117,
+          "net_cashflow": -56192.51
+        },
+        {
+          "month": "2025-07",
+          "income": 42329.28,
+          "income_ex_refunds": 35263.28,
+          "expense": 71757.21,
+          "neutral": 2900.0,
+          "refunds": 7066.0,
+          "consumption": 36897.71,
+          "consumption_count": 147,
+          "net_cashflow": -29427.93
+        },
+        {
+          "month": "2025-08",
+          "income": 48026.72,
+          "income_ex_refunds": 46846.32,
+          "expense": 67162.56,
+          "neutral": 4204.2,
+          "refunds": 1180.4,
+          "consumption": 22639.16,
+          "consumption_count": 140,
+          "net_cashflow": -19135.84
+        },
+        {
+          "month": "2025-09",
+          "income": 100822.14,
+          "income_ex_refunds": 95147.86,
+          "expense": 148064.75,
+          "neutral": 33100.0,
+          "refunds": 5674.28,
+          "consumption": 41599.51,
+          "consumption_count": 197,
+          "net_cashflow": -47242.61
+        },
+        {
+          "month": "2025-10",
+          "income": 42351.79,
+          "income_ex_refunds": 42252.33,
+          "expense": 46275.13,
+          "neutral": 14900.0,
+          "refunds": 99.46,
+          "consumption": 42651.62,
+          "consumption_count": 197,
+          "net_cashflow": -3923.34
+        },
+        {
+          "month": "2025-11",
+          "income": 30397.0,
+          "income_ex_refunds": 30397.0,
+          "expense": 9012.21,
+          "neutral": 2200.0,
+          "refunds": 0.0,
+          "consumption": 6009.21,
+          "consumption_count": 100,
+          "net_cashflow": 21384.79
+        },
+        {
+          "month": "2025-12",
+          "income": 23195.8,
+          "income_ex_refunds": 23165.14,
+          "expense": 31107.28,
+          "neutral": 65010.0,
+          "refunds": 30.66,
+          "consumption": 15215.12,
+          "consumption_count": 116,
+          "net_cashflow": -7911.48
+        },
+        {
+          "month": "2026-01",
+          "income": 17967.84,
+          "income_ex_refunds": 14553.16,
+          "expense": 17387.14,
+          "neutral": 0.0,
+          "refunds": 3414.68,
+          "consumption": 8321.36,
+          "consumption_count": 130,
+          "net_cashflow": 580.7
+        },
+        {
+          "month": "2026-02",
+          "income": 19692.31,
+          "income_ex_refunds": 19420.81,
+          "expense": 35708.19,
+          "neutral": 0.0,
+          "refunds": 271.5,
+          "consumption": 23522.49,
+          "consumption_count": 155,
+          "net_cashflow": -16015.88
+        },
+        {
+          "month": "2026-03",
+          "income": 28333.77,
+          "income_ex_refunds": 26624.0,
+          "expense": 10009.06,
+          "neutral": 0.0,
+          "refunds": 1709.77,
+          "consumption": 4811.09,
+          "consumption_count": 145,
+          "net_cashflow": 18324.71
+        },
+        {
+          "month": "2026-04",
+          "income": 38961.79,
+          "income_ex_refunds": 38803.0,
+          "expense": 11744.76,
+          "neutral": 0.0,
+          "refunds": 158.79,
+          "consumption": 5897.97,
+          "consumption_count": 122,
+          "net_cashflow": 27217.03
+        },
+        {
+          "month": "2026-05",
+          "income": 32022.7,
+          "income_ex_refunds": 31809.88,
+          "expense": 30005.02,
+          "neutral": 0.0,
+          "refunds": 212.82,
+          "consumption": 9762.2,
+          "consumption_count": 181,
+          "net_cashflow": 2017.68
+        },
+        {
+          "month": "2026-06",
+          "income": 53568.26,
+          "income_ex_refunds": 51557.63,
+          "expense": 12039.54,
+          "neutral": 71000.5,
+          "refunds": 2010.63,
+          "consumption": 7475.71,
+          "consumption_count": 131,
+          "net_cashflow": 41528.72
+        },
+        {
+          "month": "2026-07",
+          "income": 31123.62,
+          "income_ex_refunds": 27987.52,
+          "expense": 43486.71,
+          "neutral": 101008.41,
+          "refunds": 3136.1,
+          "consumption": 8397.81,
+          "consumption_count": 109,
+          "net_cashflow": -12363.09
+        },
+        {
+          "month": "2026-08",
+          "income": 27222.4,
+          "income_ex_refunds": 26592.4,
+          "expense": 34266.53,
+          "neutral": 0.0,
+          "refunds": 630.0,
+          "consumption": 7660.93,
+          "consumption_count": 120,
+          "net_cashflow": -7044.13
+        },
+        {
+          "month": "2026-09",
+          "income": 27095.71,
+          "income_ex_refunds": 18054.16,
+          "expense": 52512.31,
+          "neutral": 0.0,
+          "refunds": 9041.55,
+          "consumption": 36170.76,
+          "consumption_count": 142,
+          "net_cashflow": -25416.6
+        },
+        {
+          "month": "2026-10",
+          "income": 56275.82,
+          "income_ex_refunds": 50178.6,
+          "expense": 40582.14,
+          "neutral": 0.0,
+          "refunds": 6097.22,
+          "consumption": 27442.92,
+          "consumption_count": 124,
+          "net_cashflow": 15693.68
+        },
+        {
+          "month": "2026-11",
+          "income": 429.25,
+          "income_ex_refunds": 240.0,
+          "expense": 620.22,
+          "neutral": 0.0,
+          "refunds": 189.25,
+          "consumption": 619.97,
+          "consumption_count": 15,
+          "net_cashflow": -190.97
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 428236.73,
+          "expense": 457582.49,
+          "consumption": 147297.67,
+          "refunds": 6588.19,
+          "net_cashflow": -29345.76,
+          "consumption_count": 1673
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 542464.13,
+          "expense": 783442.79,
+          "consumption": 278390.2,
+          "refunds": 20245.18,
+          "net_cashflow": -240978.66,
+          "consumption_count": 1703
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 332693.47,
+          "expense": 288361.62,
+          "consumption": 140083.21,
+          "refunds": 26872.31,
+          "net_cashflow": 44331.85,
+          "consumption_count": 1374
+        }
+      ],
+      "categories": [
+        {
+          "label": "购物",
+          "amount": 221994.32,
+          "count": 993,
+          "share": 0.392375
+        },
+        {
+          "label": "其他消费",
+          "amount": 154682.93,
+          "count": 1488,
+          "share": 0.273402
+        },
+        {
+          "label": "餐饮",
+          "amount": 80863.8,
+          "count": 1370,
+          "share": 0.142927
+        },
+        {
+          "label": "住房生活",
+          "amount": 48616.25,
+          "count": 145,
+          "share": 0.085929
+        },
+        {
+          "label": "通讯数码",
+          "amount": 19556.3,
+          "count": 61,
+          "share": 0.034566
+        },
+        {
+          "label": "交通",
+          "amount": 18763.91,
+          "count": 564,
+          "share": 0.033165
+        },
+        {
+          "label": "医疗健康",
+          "amount": 13648.13,
+          "count": 70,
+          "share": 0.024123
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 6512.72,
+          "count": 36,
+          "share": 0.011511
+        },
+        {
+          "label": "教育服务",
+          "amount": 1132.72,
+          "count": 23,
+          "share": 0.002002
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 1166819.72,
+          "count": 732,
+          "share": 0.895216
+        },
+        {
+          "label": "二维码收款",
+          "amount": 74176.55,
+          "count": 241,
+          "share": 0.05691
+        },
+        {
+          "label": "退款",
+          "amount": 53705.68,
+          "count": 161,
+          "share": 0.041204
+        },
+        {
+          "label": "红包收入",
+          "amount": 7255.9,
+          "count": 251,
+          "share": 0.005567
+        },
+        {
+          "label": "其他收入",
+          "amount": 1436.48,
+          "count": 14,
+          "share": 0.001102
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "零钱",
+          "amount": 282356.14,
+          "count": 2814,
+          "share": 0.499064
+        },
+        {
+          "label": "银行卡",
+          "amount": 218676.35,
+          "count": 1631,
+          "share": 0.38651
+        },
+        {
+          "label": "零钱通",
+          "amount": 64738.59,
+          "count": 305,
+          "share": 0.114425
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 67351.34,
+          "count": 716,
+          "share": 0.119043
+        },
+        {
+          "label": "周二",
+          "amount": 60356.45,
+          "count": 684,
+          "share": 0.10668
+        },
+        {
+          "label": "周三",
+          "amount": 93223.57,
+          "count": 719,
+          "share": 0.164773
+        },
+        {
+          "label": "周四",
+          "amount": 50911.37,
+          "count": 703,
+          "share": 0.089986
+        },
+        {
+          "label": "周五",
+          "amount": 92009.27,
+          "count": 648,
+          "share": 0.162626
+        },
+        {
+          "label": "周六",
+          "amount": 90042.58,
+          "count": 663,
+          "share": 0.15915
+        },
+        {
+          "label": "周日",
+          "amount": 111876.5,
+          "count": 617,
+          "share": 0.197742
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2025-06",
+          "detail": "该月有效消费 ¥44,371.56，占当前统计期有效消费的 7.8%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "购物",
+          "detail": "累计 ¥221,994.32，占有效消费 39.2%，共 993 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周日",
+          "detail": "按星期汇总的有效消费最高，金额 ¥111,876.50。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥53,705.68",
+          "detail": "退款收入约占账单总支出的 3.5%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-225,992.57",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "alipay": {
+      "id": "alipay",
+      "label": "支付宝",
+      "source_label": "支付宝",
+      "file_count": 3,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 5527,
+        "gross_income": 8823.66,
+        "gross_expense": 302958.27,
+        "gross_neutral": 763597.95,
+        "net_cashflow": -294134.61,
+        "consumption": 275005.73,
+        "consumption_count": 1604,
+        "refunds": 25976.5,
+        "income_ex_refunds": 8823.66,
+        "transfer_like_expense": 1950.0
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 3000.0,
+          "income_ex_refunds": -2495.0,
+          "expense": 8286.47,
+          "neutral": 10314.91,
+          "refunds": 5495.0,
+          "consumption": 2791.47,
+          "consumption_count": 39,
+          "net_cashflow": -5286.47
+        },
+        {
+          "month": "2024-02",
+          "income": 0.0,
+          "income_ex_refunds": -30.5,
+          "expense": 1847.16,
+          "neutral": 120.05,
+          "refunds": 30.5,
+          "consumption": 1816.66,
+          "consumption_count": 30,
+          "net_cashflow": -1847.16
+        },
+        {
+          "month": "2024-03",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 2678.74,
+          "neutral": 314.48,
+          "refunds": 0.0,
+          "consumption": 2678.74,
+          "consumption_count": 28,
+          "net_cashflow": -2678.74
+        },
+        {
+          "month": "2024-04",
+          "income": 0.0,
+          "income_ex_refunds": -2.99,
+          "expense": 14426.68,
+          "neutral": 13280.34,
+          "refunds": 2.99,
+          "consumption": 14118.69,
+          "consumption_count": 41,
+          "net_cashflow": -14426.68
+        },
+        {
+          "month": "2024-05",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 1800.4,
+          "neutral": 538.98,
+          "refunds": 0.0,
+          "consumption": 1800.4,
+          "consumption_count": 46,
+          "net_cashflow": -1800.4
+        },
+        {
+          "month": "2024-06",
+          "income": 15.9,
+          "income_ex_refunds": 15.9,
+          "expense": 645.02,
+          "neutral": 719.1,
+          "refunds": 0.0,
+          "consumption": 645.02,
+          "consumption_count": 15,
+          "net_cashflow": -629.12
+        },
+        {
+          "month": "2024-07",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 13610.49,
+          "neutral": 13274.57,
+          "refunds": 0.0,
+          "consumption": 13610.49,
+          "consumption_count": 51,
+          "net_cashflow": -13610.49
+        },
+        {
+          "month": "2024-08",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 980.13,
+          "neutral": 312.29,
+          "refunds": 0.0,
+          "consumption": 980.13,
+          "consumption_count": 52,
+          "net_cashflow": -980.13
+        },
+        {
+          "month": "2024-09",
+          "income": 0.0,
+          "income_ex_refunds": -1470.0,
+          "expense": 2417.08,
+          "neutral": 1624.2,
+          "refunds": 1470.0,
+          "consumption": 947.08,
+          "consumption_count": 42,
+          "net_cashflow": -2417.08
+        },
+        {
+          "month": "2024-10",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 336.68,
+          "neutral": 141.4,
+          "refunds": 0.0,
+          "consumption": 336.68,
+          "consumption_count": 45,
+          "net_cashflow": -336.68
+        },
+        {
+          "month": "2024-11",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 870.04,
+          "neutral": 232.08,
+          "refunds": 0.0,
+          "consumption": 849.0,
+          "consumption_count": 42,
+          "net_cashflow": -870.04
+        },
+        {
+          "month": "2024-12",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 156.4,
+          "neutral": 144.0,
+          "refunds": 0.0,
+          "consumption": 156.4,
+          "consumption_count": 44,
+          "net_cashflow": -156.4
+        },
+        {
+          "month": "2025-01",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 15550.42,
+          "neutral": 256.1,
+          "refunds": 0.0,
+          "consumption": 15550.42,
+          "consumption_count": 39,
+          "net_cashflow": -15550.42
+        },
+        {
+          "month": "2025-02",
+          "income": 0.0,
+          "income_ex_refunds": -100.0,
+          "expense": 344.62,
+          "neutral": 16594.49,
+          "refunds": 100.0,
+          "consumption": 244.62,
+          "consumption_count": 43,
+          "net_cashflow": -344.62
+        },
+        {
+          "month": "2025-03",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 5766.81,
+          "neutral": 22243.42,
+          "refunds": 0.0,
+          "consumption": 5766.81,
+          "consumption_count": 69,
+          "net_cashflow": -5766.81
+        },
+        {
+          "month": "2025-04",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 23240.56,
+          "neutral": 19759.13,
+          "refunds": 0.0,
+          "consumption": 23240.56,
+          "consumption_count": 51,
+          "net_cashflow": -23240.56
+        },
+        {
+          "month": "2025-05",
+          "income": 0.0,
+          "income_ex_refunds": -576.0,
+          "expense": 770.21,
+          "neutral": 19433.2,
+          "refunds": 576.0,
+          "consumption": 194.21,
+          "consumption_count": 62,
+          "net_cashflow": -770.21
+        },
+        {
+          "month": "2025-06",
+          "income": 0.0,
+          "income_ex_refunds": -13.9,
+          "expense": 384.39,
+          "neutral": 17000.93,
+          "refunds": 13.9,
+          "consumption": 370.49,
+          "consumption_count": 51,
+          "net_cashflow": -384.39
+        },
+        {
+          "month": "2025-07",
+          "income": 0.0,
+          "income_ex_refunds": -0.3,
+          "expense": 786.5,
+          "neutral": 23685.6,
+          "refunds": 0.3,
+          "consumption": 786.2,
+          "consumption_count": 71,
+          "net_cashflow": -786.5
+        },
+        {
+          "month": "2025-08",
+          "income": 0.0,
+          "income_ex_refunds": -1388.8,
+          "expense": 3937.81,
+          "neutral": 23786.38,
+          "refunds": 1388.8,
+          "consumption": 2549.01,
+          "consumption_count": 84,
+          "net_cashflow": -3937.81
+        },
+        {
+          "month": "2025-09",
+          "income": 6.5,
+          "income_ex_refunds": -1017.68,
+          "expense": 24953.61,
+          "neutral": 24248.71,
+          "refunds": 1024.18,
+          "consumption": 23929.43,
+          "consumption_count": 67,
+          "net_cashflow": -24947.11
+        },
+        {
+          "month": "2025-10",
+          "income": 0.0,
+          "income_ex_refunds": -800.0,
+          "expense": 7299.62,
+          "neutral": 94057.19,
+          "refunds": 800.0,
+          "consumption": 6499.62,
+          "consumption_count": 51,
+          "net_cashflow": -7299.62
+        },
+        {
+          "month": "2025-11",
+          "income": 0.0,
+          "income_ex_refunds": -4675.51,
+          "expense": 349.29,
+          "neutral": 19516.76,
+          "refunds": 4675.51,
+          "consumption": -4326.22,
+          "consumption_count": 28,
+          "net_cashflow": -349.29
+        },
+        {
+          "month": "2025-12",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 20003.68,
+          "neutral": 14248.1,
+          "refunds": 0.0,
+          "consumption": 20003.68,
+          "consumption_count": 43,
+          "net_cashflow": -20003.68
+        },
+        {
+          "month": "2026-01",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 1074.27,
+          "neutral": 12149.38,
+          "refunds": 0.0,
+          "consumption": 1074.27,
+          "consumption_count": 24,
+          "net_cashflow": -1074.27
+        },
+        {
+          "month": "2026-02",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 268.69,
+          "neutral": 9458.19,
+          "refunds": 0.0,
+          "consumption": 268.69,
+          "consumption_count": 20,
+          "net_cashflow": -268.69
+        },
+        {
+          "month": "2026-03",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 19210.25,
+          "neutral": 14531.09,
+          "refunds": 0.0,
+          "consumption": 19210.25,
+          "consumption_count": 9,
+          "net_cashflow": -19210.25
+        },
+        {
+          "month": "2026-04",
+          "income": 0.0,
+          "income_ex_refunds": -18.42,
+          "expense": 4667.86,
+          "neutral": 27063.71,
+          "refunds": 18.42,
+          "consumption": 4649.44,
+          "consumption_count": 25,
+          "net_cashflow": -4667.86
+        },
+        {
+          "month": "2026-05",
+          "income": 2030.0,
+          "income_ex_refunds": 2030.0,
+          "expense": 2347.41,
+          "neutral": 75054.51,
+          "refunds": 0.0,
+          "consumption": 2347.41,
+          "consumption_count": 19,
+          "net_cashflow": -317.41
+        },
+        {
+          "month": "2026-06",
+          "income": 1255.37,
+          "income_ex_refunds": -2902.21,
+          "expense": 52456.64,
+          "neutral": 69557.56,
+          "refunds": 4157.58,
+          "consumption": 48299.06,
+          "consumption_count": 54,
+          "net_cashflow": -51201.27
+        },
+        {
+          "month": "2026-07",
+          "income": 0.0,
+          "income_ex_refunds": -85.84,
+          "expense": 23212.92,
+          "neutral": 94432.15,
+          "refunds": 85.84,
+          "consumption": 23127.08,
+          "consumption_count": 77,
+          "net_cashflow": -23212.92
+        },
+        {
+          "month": "2026-08",
+          "income": 488.46,
+          "income_ex_refunds": 363.86,
+          "expense": 4346.29,
+          "neutral": 65856.5,
+          "refunds": 124.6,
+          "consumption": 4221.69,
+          "consumption_count": 70,
+          "net_cashflow": -3857.83
+        },
+        {
+          "month": "2026-09",
+          "income": 244.23,
+          "income_ex_refunds": -5765.85,
+          "expense": 27298.34,
+          "neutral": 33809.72,
+          "refunds": 6010.08,
+          "consumption": 19638.26,
+          "consumption_count": 100,
+          "net_cashflow": -27054.11
+        },
+        {
+          "month": "2026-10",
+          "income": 1783.2,
+          "income_ex_refunds": 1780.4,
+          "expense": 16540.48,
+          "neutral": 25838.58,
+          "refunds": 2.8,
+          "consumption": 16537.68,
+          "consumption_count": 66,
+          "net_cashflow": -14757.28
+        },
+        {
+          "month": "2026-11",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 92.31,
+          "neutral": 0.15,
+          "refunds": 0.0,
+          "consumption": 92.31,
+          "consumption_count": 6,
+          "net_cashflow": -92.31
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 3015.9,
+          "expense": 48055.29,
+          "consumption": 40730.76,
+          "refunds": 6998.49,
+          "net_cashflow": -45039.39,
+          "consumption_count": 475
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 6.5,
+          "expense": 103387.52,
+          "consumption": 94808.83,
+          "refunds": 8578.69,
+          "net_cashflow": -103381.02,
+          "consumption_count": 659
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 5801.26,
+          "expense": 151515.46,
+          "consumption": 139466.14,
+          "refunds": 10399.32,
+          "net_cashflow": -145714.2,
+          "consumption_count": 470
+        }
+      ],
+      "categories": [
+        {
+          "label": "住房生活",
+          "amount": 185048.83,
+          "count": 55,
+          "share": 0.614816
+        },
+        {
+          "label": "其他消费",
+          "amount": 40912.08,
+          "count": 57,
+          "share": 0.135929
+        },
+        {
+          "label": "购物",
+          "amount": 18395.53,
+          "count": 71,
+          "share": 0.061118
+        },
+        {
+          "label": "餐饮",
+          "amount": 17157.16,
+          "count": 278,
+          "share": 0.057004
+        },
+        {
+          "label": "医疗健康",
+          "amount": 13587.18,
+          "count": 77,
+          "share": 0.045143
+        },
+        {
+          "label": "通讯数码",
+          "amount": 11875.17,
+          "count": 64,
+          "share": 0.039455
+        },
+        {
+          "label": "交通",
+          "amount": 9667.24,
+          "count": 974,
+          "share": 0.032119
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 3732.86,
+          "count": 23,
+          "share": 0.012402
+        },
+        {
+          "label": "生活服务",
+          "amount": 556.38,
+          "count": 3,
+          "share": 0.001849
+        },
+        {
+          "label": "教育服务",
+          "amount": 49.8,
+          "count": 2,
+          "share": 0.000165
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 7417.16,
+          "count": 10,
+          "share": 0.840599
+        },
+        {
+          "label": "其他收入",
+          "amount": 1406.5,
+          "count": 2,
+          "share": 0.159401
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "银行卡",
+          "amount": 112956.81,
+          "count": 167,
+          "share": 0.375294
+        },
+        {
+          "label": "余额宝",
+          "amount": 67135.17,
+          "count": 77,
+          "share": 0.223054
+        },
+        {
+          "label": "花呗",
+          "amount": 61124.64,
+          "count": 1255,
+          "share": 0.203084
+        },
+        {
+          "label": "其他",
+          "amount": 59447.21,
+          "count": 35,
+          "share": 0.197511
+        },
+        {
+          "label": "未标注",
+          "amount": 318.4,
+          "count": 70,
+          "share": 0.001058
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 43656.67,
+          "count": 282,
+          "share": 0.145047
+        },
+        {
+          "label": "周二",
+          "amount": 28087.24,
+          "count": 270,
+          "share": 0.093319
+        },
+        {
+          "label": "周三",
+          "amount": 33237.74,
+          "count": 251,
+          "share": 0.110431
+        },
+        {
+          "label": "周四",
+          "amount": 49622.8,
+          "count": 258,
+          "share": 0.16487
+        },
+        {
+          "label": "周五",
+          "amount": 23540.85,
+          "count": 228,
+          "share": 0.078213
+        },
+        {
+          "label": "周六",
+          "amount": 79656.52,
+          "count": 162,
+          "share": 0.264655
+        },
+        {
+          "label": "周日",
+          "amount": 43180.41,
+          "count": 153,
+          "share": 0.143465
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2026-06",
+          "detail": "该月有效消费 ¥48,299.06，占当前统计期有效消费的 17.6%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "住房生活",
+          "detail": "累计 ¥185,048.83，占有效消费 61.5%，共 55 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周六",
+          "detail": "按星期汇总的有效消费最高，金额 ¥79,656.52。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥25,976.50",
+          "detail": "退款收入约占账单总支出的 8.6%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-294,134.61",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "bank": {
+      "id": "bank",
+      "label": "招商银行",
+      "source_label": "招商银行流水（与支付平台分开）",
+      "file_count": 1,
+      "date_start": "2022-10-26",
+      "date_end": "2026-10-31",
+      "metrics": {
+        "records": 7086,
+        "gross_income": 1843111.9,
+        "gross_expense": 1787874.43,
+        "gross_neutral": 0.0,
+        "net_cashflow": 55237.47,
+        "consumption": 529723.61,
+        "consumption_count": 2772,
+        "refunds": 31215.41,
+        "income_ex_refunds": 1811896.49,
+        "transfer_like_expense": 200200.0
+      },
+      "monthly": [
+        {
+          "month": "2022-10",
+          "income": 1640.0,
+          "income_ex_refunds": 1640.0,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 1640.0
+        },
+        {
+          "month": "2022-11",
+          "income": 7540.0,
+          "income_ex_refunds": 7540.0,
+          "expense": 1640.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 5900.0
+        },
+        {
+          "month": "2022-12",
+          "income": 7541.11,
+          "income_ex_refunds": 7541.11,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 7541.11
+        },
+        {
+          "month": "2023-01",
+          "income": 5650.0,
+          "income_ex_refunds": 5650.0,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 5650.0
+        },
+        {
+          "month": "2023-02",
+          "income": 6996.4,
+          "income_ex_refunds": 6996.4,
+          "expense": 14810.06,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 14810.06,
+          "consumption_count": 31,
+          "net_cashflow": -7813.66
+        },
+        {
+          "month": "2023-03",
+          "income": 6989.34,
+          "income_ex_refunds": 6989.34,
+          "expense": 2662.24,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2662.24,
+          "consumption_count": 73,
+          "net_cashflow": 4327.1
+        },
+        {
+          "month": "2023-04",
+          "income": 6538.65,
+          "income_ex_refunds": 6237.61,
+          "expense": 22592.49,
+          "neutral": 0.0,
+          "refunds": 301.04,
+          "consumption": 22592.49,
+          "consumption_count": 60,
+          "net_cashflow": -16053.84
+        },
+        {
+          "month": "2023-05",
+          "income": 6983.44,
+          "income_ex_refunds": 6983.44,
+          "expense": 1129.19,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1129.19,
+          "consumption_count": 28,
+          "net_cashflow": 5854.25
+        },
+        {
+          "month": "2023-06",
+          "income": 6986.16,
+          "income_ex_refunds": 6986.16,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 6986.16
+        },
+        {
+          "month": "2023-07",
+          "income": 13245.52,
+          "income_ex_refunds": 13245.52,
+          "expense": 12851.69,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 12851.69,
+          "consumption_count": 21,
+          "net_cashflow": 393.83
+        },
+        {
+          "month": "2023-08",
+          "income": 7772.56,
+          "income_ex_refunds": 7772.56,
+          "expense": 3924.34,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 3924.34,
+          "consumption_count": 68,
+          "net_cashflow": 3848.22
+        },
+        {
+          "month": "2023-09",
+          "income": 7055.39,
+          "income_ex_refunds": 7005.49,
+          "expense": 4661.5,
+          "neutral": 0.0,
+          "refunds": 49.9,
+          "consumption": 4661.5,
+          "consumption_count": 24,
+          "net_cashflow": 2393.89
+        },
+        {
+          "month": "2023-10",
+          "income": 6190.0,
+          "income_ex_refunds": 6190.0,
+          "expense": 16276.58,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 16276.58,
+          "consumption_count": 44,
+          "net_cashflow": -10086.58
+        },
+        {
+          "month": "2023-11",
+          "income": 17672.39,
+          "income_ex_refunds": 17672.39,
+          "expense": 21796.47,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2664.17,
+          "consumption_count": 21,
+          "net_cashflow": -4124.08
+        },
+        {
+          "month": "2023-12",
+          "income": 7213.54,
+          "income_ex_refunds": 7213.54,
+          "expense": 1588.05,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1588.05,
+          "consumption_count": 38,
+          "net_cashflow": 5625.49
+        },
+        {
+          "month": "2024-01",
+          "income": 25408.24,
+          "income_ex_refunds": 25408.24,
+          "expense": 32550.58,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 12778.39,
+          "consumption_count": 35,
+          "net_cashflow": -7142.34
+        },
+        {
+          "month": "2024-02",
+          "income": 3166.22,
+          "income_ex_refunds": 3081.22,
+          "expense": 5228.21,
+          "neutral": 0.0,
+          "refunds": 85.0,
+          "consumption": 5228.21,
+          "consumption_count": 28,
+          "net_cashflow": -2061.99
+        },
+        {
+          "month": "2024-03",
+          "income": 5628.74,
+          "income_ex_refunds": 5628.74,
+          "expense": 4643.53,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 4643.53,
+          "consumption_count": 46,
+          "net_cashflow": 985.21
+        },
+        {
+          "month": "2024-04",
+          "income": 8060.52,
+          "income_ex_refunds": 8060.52,
+          "expense": 4388.98,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 3088.98,
+          "consumption_count": 29,
+          "net_cashflow": 3671.54
+        },
+        {
+          "month": "2024-05",
+          "income": 13852.92,
+          "income_ex_refunds": 13752.92,
+          "expense": 6611.9,
+          "neutral": 0.0,
+          "refunds": 100.0,
+          "consumption": 2711.9,
+          "consumption_count": 41,
+          "net_cashflow": 7241.02
+        },
+        {
+          "month": "2024-06",
+          "income": 73.0,
+          "income_ex_refunds": 3.0,
+          "expense": 6114.1,
+          "neutral": 0.0,
+          "refunds": 70.0,
+          "consumption": 6114.1,
+          "consumption_count": 68,
+          "net_cashflow": -6041.1
+        },
+        {
+          "month": "2024-07",
+          "income": 34203.5,
+          "income_ex_refunds": 34203.5,
+          "expense": 15865.5,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 15765.5,
+          "consumption_count": 84,
+          "net_cashflow": 18338.0
+        },
+        {
+          "month": "2024-08",
+          "income": 28331.56,
+          "income_ex_refunds": 28331.56,
+          "expense": 8257.3,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 8049.04,
+          "consumption_count": 113,
+          "net_cashflow": 20074.26
+        },
+        {
+          "month": "2024-09",
+          "income": 58928.73,
+          "income_ex_refunds": 57728.73,
+          "expense": 78899.46,
+          "neutral": 0.0,
+          "refunds": 1200.0,
+          "consumption": 10180.35,
+          "consumption_count": 63,
+          "net_cashflow": -19970.73
+        },
+        {
+          "month": "2024-10",
+          "income": 28488.17,
+          "income_ex_refunds": 28488.17,
+          "expense": 15845.71,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 15704.31,
+          "consumption_count": 60,
+          "net_cashflow": 12642.46
+        },
+        {
+          "month": "2024-11",
+          "income": 33187.58,
+          "income_ex_refunds": 33187.58,
+          "expense": 11917.22,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 11750.62,
+          "consumption_count": 68,
+          "net_cashflow": 21270.36
+        },
+        {
+          "month": "2024-12",
+          "income": 28445.0,
+          "income_ex_refunds": 28445.0,
+          "expense": 2933.1,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2789.1,
+          "consumption_count": 64,
+          "net_cashflow": 25511.9
+        },
+        {
+          "month": "2025-01",
+          "income": 34028.23,
+          "income_ex_refunds": 30221.17,
+          "expense": 24075.05,
+          "neutral": 0.0,
+          "refunds": 3807.06,
+          "consumption": 23818.95,
+          "consumption_count": 61,
+          "net_cashflow": 9953.18
+        },
+        {
+          "month": "2025-02",
+          "income": 29302.7,
+          "income_ex_refunds": 29076.8,
+          "expense": 82204.85,
+          "neutral": 0.0,
+          "refunds": 225.9,
+          "consumption": 20883.25,
+          "consumption_count": 63,
+          "net_cashflow": -52902.15
+        },
+        {
+          "month": "2025-03",
+          "income": 90913.71,
+          "income_ex_refunds": 90913.71,
+          "expense": 29509.88,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 11251.37,
+          "consumption_count": 83,
+          "net_cashflow": 61403.83
+        },
+        {
+          "month": "2025-04",
+          "income": 38870.94,
+          "income_ex_refunds": 38750.05,
+          "expense": 46181.47,
+          "neutral": 0.0,
+          "refunds": 120.89,
+          "consumption": 29923.97,
+          "consumption_count": 77,
+          "net_cashflow": -7310.53
+        },
+        {
+          "month": "2025-05",
+          "income": 53276.4,
+          "income_ex_refunds": 52700.4,
+          "expense": 123999.12,
+          "neutral": 0.0,
+          "refunds": 576.0,
+          "consumption": 6204.41,
+          "consumption_count": 60,
+          "net_cashflow": -70722.72
+        },
+        {
+          "month": "2025-06",
+          "income": 96327.28,
+          "income_ex_refunds": 96294.88,
+          "expense": 71524.07,
+          "neutral": 0.0,
+          "refunds": 32.4,
+          "consumption": 2371.51,
+          "consumption_count": 34,
+          "net_cashflow": 24803.21
+        },
+        {
+          "month": "2025-07",
+          "income": 35339.95,
+          "income_ex_refunds": 35321.65,
+          "expense": 54306.4,
+          "neutral": 0.0,
+          "refunds": 18.3,
+          "consumption": 33552.25,
+          "consumption_count": 125,
+          "net_cashflow": -18966.45
+        },
+        {
+          "month": "2025-08",
+          "income": 33407.22,
+          "income_ex_refunds": 29417.21,
+          "expense": 40386.37,
+          "neutral": 0.0,
+          "refunds": 3990.01,
+          "consumption": 20765.17,
+          "consumption_count": 117,
+          "net_cashflow": -6979.15
+        },
+        {
+          "month": "2025-09",
+          "income": 168092.56,
+          "income_ex_refunds": 165233.69,
+          "expense": 161840.09,
+          "neutral": 0.0,
+          "refunds": 2858.87,
+          "consumption": 16783.89,
+          "consumption_count": 126,
+          "net_cashflow": 6252.47
+        },
+        {
+          "month": "2025-10",
+          "income": 38059.97,
+          "income_ex_refunds": 37732.79,
+          "expense": 22845.7,
+          "neutral": 0.0,
+          "refunds": 327.18,
+          "consumption": 8023.98,
+          "consumption_count": 108,
+          "net_cashflow": 15214.27
+        },
+        {
+          "month": "2025-11",
+          "income": 28762.54,
+          "income_ex_refunds": 28527.77,
+          "expense": 17291.67,
+          "neutral": 0.0,
+          "refunds": 234.77,
+          "consumption": 5309.23,
+          "consumption_count": 100,
+          "net_cashflow": 11470.87
+        },
+        {
+          "month": "2025-12",
+          "income": 27130.91,
+          "income_ex_refunds": 27104.91,
+          "expense": 23678.88,
+          "neutral": 0.0,
+          "refunds": 26.0,
+          "consumption": 13202.26,
+          "consumption_count": 94,
+          "net_cashflow": 3452.03
+        },
+        {
+          "month": "2026-01",
+          "income": 36866.9,
+          "income_ex_refunds": 36337.05,
+          "expense": 66312.15,
+          "neutral": 0.0,
+          "refunds": 529.85,
+          "consumption": 5526.74,
+          "consumption_count": 60,
+          "net_cashflow": -29445.25
+        },
+        {
+          "month": "2026-02",
+          "income": 31480.15,
+          "income_ex_refunds": 31458.15,
+          "expense": 14452.08,
+          "neutral": 0.0,
+          "refunds": 22.0,
+          "consumption": 7519.17,
+          "consumption_count": 36,
+          "net_cashflow": 17028.07
+        },
+        {
+          "month": "2026-03",
+          "income": 201531.34,
+          "income_ex_refunds": 201531.34,
+          "expense": 19991.16,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 8954.53,
+          "consumption_count": 60,
+          "net_cashflow": 181540.18
+        },
+        {
+          "month": "2026-04",
+          "income": 30284.89,
+          "income_ex_refunds": 30125.29,
+          "expense": 31972.66,
+          "neutral": 0.0,
+          "refunds": 159.6,
+          "consumption": 7615.06,
+          "consumption_count": 44,
+          "net_cashflow": -1687.77
+        },
+        {
+          "month": "2026-05",
+          "income": 129538.36,
+          "income_ex_refunds": 129538.36,
+          "expense": 81367.48,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 39945.55,
+          "consumption_count": 87,
+          "net_cashflow": 48170.88
+        },
+        {
+          "month": "2026-06",
+          "income": 53807.9,
+          "income_ex_refunds": 52313.45,
+          "expense": 196168.32,
+          "neutral": 0.0,
+          "refunds": 1494.45,
+          "consumption": 15693.67,
+          "consumption_count": 114,
+          "net_cashflow": -142360.42
+        },
+        {
+          "month": "2026-07",
+          "income": 35258.47,
+          "income_ex_refunds": 34146.49,
+          "expense": 136765.92,
+          "neutral": 0.0,
+          "refunds": 1111.98,
+          "consumption": 12579.44,
+          "consumption_count": 52,
+          "net_cashflow": -101507.45
+        },
+        {
+          "month": "2026-08",
+          "income": 171779.2,
+          "income_ex_refunds": 171259.2,
+          "expense": 141267.77,
+          "neutral": 0.0,
+          "refunds": 520.0,
+          "consumption": 12437.91,
+          "consumption_count": 81,
+          "net_cashflow": 30511.43
+        },
+        {
+          "month": "2026-09",
+          "income": 49173.65,
+          "income_ex_refunds": 45705.98,
+          "expense": 56923.34,
+          "neutral": 0.0,
+          "refunds": 3467.67,
+          "consumption": 21756.99,
+          "consumption_count": 49,
+          "net_cashflow": -7749.69
+        },
+        {
+          "month": "2026-10",
+          "income": 46089.95,
+          "income_ex_refunds": 36203.41,
+          "expense": 47621.8,
+          "neutral": 0.0,
+          "refunds": 9886.54,
+          "consumption": 23639.97,
+          "consumption_count": 34,
+          "net_cashflow": -1531.85
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2022,
+          "label": "2022",
+          "complete": true,
+          "income": 16721.11,
+          "expense": 1640.0,
+          "consumption": 0.0,
+          "refunds": 0.0,
+          "net_cashflow": 15081.11,
+          "consumption_count": 0
+        },
+        {
+          "year": 2023,
+          "label": "2023",
+          "complete": true,
+          "income": 99293.39,
+          "expense": 102292.61,
+          "consumption": 83160.31,
+          "refunds": 350.94,
+          "net_cashflow": -2999.22,
+          "consumption_count": 408
+        },
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 267774.18,
+          "expense": 193255.59,
+          "consumption": 98804.03,
+          "refunds": 1455.0,
+          "net_cashflow": 74518.59,
+          "consumption_count": 699
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 673512.41,
+          "expense": 697843.55,
+          "consumption": 192090.24,
+          "refunds": 12217.38,
+          "net_cashflow": -24331.14,
+          "consumption_count": 1048
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至10-31）",
+          "complete": false,
+          "income": 785810.81,
+          "expense": 792842.68,
+          "consumption": 155669.03,
+          "refunds": 17192.09,
+          "net_cashflow": -7031.87,
+          "consumption_count": 617
+        }
+      ],
+      "categories": [
+        {
+          "label": "其他消费",
+          "amount": 342043.47,
+          "count": 1438,
+          "share": 0.645702
+        },
+        {
+          "label": "餐饮",
+          "amount": 128995.73,
+          "count": 1008,
+          "share": 0.243515
+        },
+        {
+          "label": "购物",
+          "amount": 37535.02,
+          "count": 156,
+          "share": 0.070858
+        },
+        {
+          "label": "医疗健康",
+          "amount": 10215.57,
+          "count": 19,
+          "share": 0.019285
+        },
+        {
+          "label": "交通",
+          "amount": 8670.91,
+          "count": 111,
+          "share": 0.016369
+        },
+        {
+          "label": "住房生活",
+          "amount": 913.9,
+          "count": 7,
+          "share": 0.001725
+        },
+        {
+          "label": "教育服务",
+          "amount": 751.71,
+          "count": 22,
+          "share": 0.001419
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 547.3,
+          "count": 9,
+          "share": 0.001033
+        },
+        {
+          "label": "通讯数码",
+          "amount": 50.0,
+          "count": 2,
+          "share": 9.4e-05
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 1247006.17,
+          "count": 69,
+          "share": 0.676576
+        },
+        {
+          "label": "其他收入",
+          "amount": 559917.47,
+          "count": 559,
+          "share": 0.303789
+        },
+        {
+          "label": "退款",
+          "amount": 31215.41,
+          "count": 85,
+          "share": 0.016936
+        },
+        {
+          "label": "二维码收款",
+          "amount": 4972.85,
+          "count": 11,
+          "share": 0.002698
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "银行卡",
+          "amount": 529723.61,
+          "count": 2772,
+          "share": 1.0
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 58503.05,
+          "count": 405,
+          "share": 0.110441
+        },
+        {
+          "label": "周二",
+          "amount": 92248.24,
+          "count": 451,
+          "share": 0.174144
+        },
+        {
+          "label": "周三",
+          "amount": 47200.78,
+          "count": 398,
+          "share": 0.089105
+        },
+        {
+          "label": "周四",
+          "amount": 57729.32,
+          "count": 438,
+          "share": 0.10898
+        },
+        {
+          "label": "周五",
+          "amount": 68561.96,
+          "count": 440,
+          "share": 0.12943
+        },
+        {
+          "label": "周六",
+          "amount": 106101.81,
+          "count": 356,
+          "share": 0.200297
+        },
+        {
+          "label": "周日",
+          "amount": 99378.45,
+          "count": 284,
+          "share": 0.187604
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2026-05",
+          "detail": "该月有效消费 ¥39,945.55，占当前统计期有效消费的 7.5%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "其他消费",
+          "detail": "累计 ¥342,043.47，占有效消费 64.6%，共 1438 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周六",
+          "detail": "按星期汇总的有效消费最高，金额 ¥106,101.81。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥31,215.41",
+          "detail": "退款收入约占账单总支出的 1.7%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥55,237.47",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    }
+  }
+}
