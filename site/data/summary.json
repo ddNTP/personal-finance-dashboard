@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-04T02:39:51.851779+08:00",
+  "generated_at": "2026-11-04T11:56:19.453575+08:00",
   "meta": {
     "title": "个人收支分析仪表盘",
     "source": "微信支付、支付宝和招商银行流水（分层展示，仅发布聚合结果）",
@@ -19,12 +19,12 @@
     "accounts": [
       {
         "id": "account-1",
-        "label": "账户 A",
+        "label": "罗文培",
         "file_count": 6
       },
       {
         "id": "account-2",
-        "label": "账户 B",
+        "label": "胡国凤",
         "file_count": 3
       }
     ],
@@ -36,12 +36,12 @@
       },
       {
         "id": "account-1",
-        "label": "账户 A",
+        "label": "罗文培",
         "description": "按账户合并支付平台"
       },
       {
         "id": "account-2",
-        "label": "账户 B",
+        "label": "胡国凤",
         "description": "按账户合并支付平台"
       },
       {
@@ -715,6 +715,2498 @@
           "share": 0.178894
         }
       ],
+      "counterparties": [
+        {
+          "label": "爸比 (罗勇)",
+          "income": 794141.0,
+          "expense": 343644.0,
+          "net": 450497.0,
+          "count": 527,
+          "years": {
+            "2024": {
+              "income": 278616.0,
+              "expense": 173350.0,
+              "net": 105266.0,
+              "count": 285
+            },
+            "2025": {
+              "income": 347575.0,
+              "expense": 156294.0,
+              "net": 191281.0,
+              "count": 198
+            },
+            "2026": {
+              "income": 167950.0,
+              "expense": 14000.0,
+              "net": 153950.0,
+              "count": 44
+            }
+          }
+        },
+        {
+          "label": "杨云18000719886一楼租客 (杨云18000719886)",
+          "income": 46000.0,
+          "expense": 220.0,
+          "net": 45780.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 16000.0,
+              "expense": 0.0,
+              "net": 16000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 17000.0,
+              "expense": 220.0,
+              "net": 16780.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 13000.0,
+              "expense": 0.0,
+              "net": 13000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "熊国荣",
+          "income": 0.0,
+          "expense": 45000.0,
+          "net": -45000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 45000.0,
+              "net": -45000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "百度袁星 (袁星)",
+          "income": 40680.0,
+          "expense": 0.0,
+          "net": 40680.0,
+          "count": 5,
+          "years": {
+            "2026": {
+              "income": 40680.0,
+              "expense": 0.0,
+              "net": 40680.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "门窗专家",
+          "income": 1000.0,
+          "expense": 39000.0,
+          "net": -38000.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 39000.0,
+              "net": -39000.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗寰",
+          "income": 666.0,
+          "expense": 30000.0,
+          "net": -29334.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 666.0,
+              "expense": 0.0,
+              "net": 666.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 30000.0,
+              "net": -30000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "富富",
+          "income": 31400.0,
+          "expense": 2960.0,
+          "net": 28440.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 2160.0,
+              "net": -2160.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 31400.0,
+              "expense": 800.0,
+              "net": 30600.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "王书舒 (Sue)",
+          "income": 14664.0,
+          "expense": 39128.01,
+          "net": -24464.01,
+          "count": 34,
+          "years": {
+            "2024": {
+              "income": 12127.0,
+              "expense": 13255.0,
+              "net": -1128.0,
+              "count": 19
+            },
+            "2025": {
+              "income": 2537.0,
+              "expense": 25873.01,
+              "net": -23336.01,
+              "count": 15
+            }
+          }
+        },
+        {
+          "label": "凤凤",
+          "income": 39066.0,
+          "expense": 14710.0,
+          "net": 24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5800.0,
+              "expense": 5000.0,
+              "net": 800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 30000.0,
+              "expense": 4210.0,
+              "net": 25790.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 3266.0,
+              "expense": 5500.0,
+              "net": -2234.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "培 (Tao)",
+          "income": 14710.0,
+          "expense": 39066.0,
+          "net": -24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 5800.0,
+              "net": -800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 4210.0,
+              "expense": 30000.0,
+              "net": -25790.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 5500.0,
+              "expense": 3266.0,
+              "net": 2234.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "顺其牛L",
+          "income": 6016.0,
+          "expense": 27444.0,
+          "net": -21428.0,
+          "count": 10,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 3550.0,
+              "net": 1450.0,
+              "count": 4
+            },
+            "2025": {
+              "income": 250.0,
+              "expense": 1600.0,
+              "net": -1350.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 766.0,
+              "expense": 22294.0,
+              "net": -21528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "龙妹 (锦红烟酒)",
+          "income": 2875.0,
+          "expense": 22805.0,
+          "net": -19930.0,
+          "count": 32,
+          "years": {
+            "2024": {
+              "income": 400.0,
+              "expense": 1980.0,
+              "net": -1580.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 2475.0,
+              "expense": 15125.0,
+              "net": -12650.0,
+              "count": 27
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 5700.0,
+              "net": -5700.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "赵凌",
+          "income": 33000.0,
+          "expense": 51000.0,
+          "net": -18000.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 13000.0,
+              "expense": 23000.0,
+              "net": -10000.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 8000.0,
+              "net": -8000.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 20000.0,
+              "expense": 20000.0,
+              "net": 0.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "寰宇板材专卖店江亚珍13870965452",
+          "income": 236.0,
+          "expense": 16713.0,
+          "net": -16477.0,
+          "count": 7,
+          "years": {
+            "2025": {
+              "income": 236.0,
+              "expense": 16713.0,
+              "net": -16477.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "抡啵💛文博 (l)",
+          "income": 20333.0,
+          "expense": 6015.0,
+          "net": 14318.0,
+          "count": 53,
+          "years": {
+            "2024": {
+              "income": 4240.0,
+              "expense": 5000.0,
+              "net": -760.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 7418.5,
+              "expense": 800.0,
+              "net": 6618.5,
+              "count": 9
+            },
+            "2026": {
+              "income": 8674.5,
+              "expense": 215.0,
+              "net": 8459.5,
+              "count": 37
+            }
+          }
+        },
+        {
+          "label": "国爱 (胡国爱)",
+          "income": 7758.5,
+          "expense": 21849.5,
+          "net": -14091.0,
+          "count": 36,
+          "years": {
+            "2024": {
+              "income": 3220.0,
+              "expense": 20000.0,
+              "net": -16780.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 2480.5,
+              "expense": 1319.5,
+              "net": 1161.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 2058.0,
+              "expense": 530.0,
+              "net": 1528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "木工老周13870653103",
+          "income": 0.0,
+          "expense": 13000.0,
+          "net": -13000.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 13000.0,
+              "net": -13000.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "斯帝罗兰🇮🇹中歌门窗 谭兢",
+          "income": 0.0,
+          "expense": 11890.0,
+          "net": -11890.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 11890.0,
+              "net": -11890.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "异样年华🤷‍♀️熊乐 (ག异样一ᩚᜧ年华💰࿐)",
+          "income": 177.32,
+          "expense": 11287.0,
+          "net": -11109.68,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 177.32,
+              "expense": 11287.0,
+              "net": -11109.68,
+              "count": 8
+            }
+          }
+        },
+        {
+          "label": "林一",
+          "income": 0.0,
+          "expense": 10000.0,
+          "net": -10000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 10000.0,
+              "net": -10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗文婷",
+          "income": 10250.0,
+          "expense": 350.0,
+          "net": 9900.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 250.0,
+              "expense": 350.0,
+              "net": -100.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 10000.0,
+              "expense": 0.0,
+              "net": 10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "兔子，熊加平",
+          "income": 0.0,
+          "expense": 9200.0,
+          "net": -9200.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 8500.0,
+              "net": -8500.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 700.0,
+              "net": -700.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "纪辉庆",
+          "income": 0.0,
+          "expense": 7800.0,
+          "net": -7800.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7800.0,
+              "net": -7800.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "华艺卫浴老罗",
+          "income": 0.0,
+          "expense": 7000.0,
+          "net": -7000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7000.0,
+              "net": -7000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胡菊根",
+          "income": 7300.0,
+          "expense": 600.0,
+          "net": 6700.0,
+          "count": 5,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 7300.0,
+              "expense": 0.0,
+              "net": 7300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "白兔鹰牌威尔斯黄湾湾15179514755",
+          "income": 0.0,
+          "expense": 6056.0,
+          "net": -6056.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6056.0,
+              "net": -6056.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A肖国斌15070070389🇨🇳",
+          "income": 0.0,
+          "expense": 6000.0,
+          "net": -6000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6000.0,
+              "net": -6000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "Suki",
+          "income": 5500.0,
+          "expense": 0.0,
+          "net": 5500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 5500.0,
+              "expense": 0.0,
+              "net": 5500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "光泽妈 (CC)",
+          "income": 0.0,
+          "expense": 4980.0,
+          "net": -4980.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 4980.0,
+              "net": -4980.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "国珍 (国贞)",
+          "income": 3130.0,
+          "expense": 8050.0,
+          "net": -4920.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 2240.0,
+              "expense": 6540.0,
+              "net": -4300.0,
+              "count": 17
+            },
+            "2025": {
+              "income": 500.0,
+              "expense": 1390.0,
+              "net": -890.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 390.0,
+              "expense": 120.0,
+              "net": 270.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "老妈 (熊玉梅)",
+          "income": 10.0,
+          "expense": 4500.0,
+          "net": -4490.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 10.0,
+              "expense": 0.0,
+              "net": 10.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 2700.0,
+              "net": -2700.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 1800.0,
+              "net": -1800.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "熊桂兰13870871152做窗帘的",
+          "income": 0.0,
+          "expense": 3518.0,
+          "net": -3518.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3518.0,
+              "net": -3518.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "无法言喻根妹 (千百味餐饮收银熊根妹13576131082)",
+          "income": 8145.0,
+          "expense": 4997.0,
+          "net": 3148.0,
+          "count": 63,
+          "years": {
+            "2024": {
+              "income": 3910.0,
+              "expense": 3152.0,
+              "net": 758.0,
+              "count": 27
+            },
+            "2025": {
+              "income": 3280.0,
+              "expense": 1450.0,
+              "net": 1830.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 955.0,
+              "expense": 395.0,
+              "net": 560.0,
+              "count": 10
+            }
+          }
+        },
+        {
+          "label": "AAA南昌集成吊顶18179131819",
+          "income": 0.0,
+          "expense": 3000.0,
+          "net": -3000.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3000.0,
+              "net": -3000.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "Sue(王书舒)",
+          "income": 3000.0,
+          "expense": 0.0,
+          "net": 3000.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 3000.0,
+              "expense": 0.0,
+              "net": 3000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "AA维度宠物18702503515",
+          "income": 0.0,
+          "expense": 2710.0,
+          "net": -2710.0,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2170.0,
+              "net": -2170.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 540.0,
+              "net": -540.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "天德装饰（天洪门业）",
+          "income": 0.0,
+          "expense": 2620.0,
+          "net": -2620.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2620.0,
+              "net": -2620.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "渤海车险 露露",
+          "income": 2501.0,
+          "expense": 0.0,
+          "net": 2501.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 899.0,
+              "expense": 0.0,
+              "net": 899.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 1497.0,
+              "expense": 0.0,
+              "net": 1497.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 105.0,
+              "expense": 0.0,
+              "net": 105.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小弟 (胡zhu强)",
+          "income": 2401.0,
+          "expense": 0.0,
+          "net": 2401.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 2401.0,
+              "expense": 0.0,
+              "net": 2401.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "众安在线财产保险股份有限公司",
+          "income": 2371.26,
+          "expense": 0.0,
+          "net": 2371.26,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 2371.26,
+              "expense": 0.0,
+              "net": 2371.26,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "橙小橙美业～连连 (橙小橙～连连)",
+          "income": 0.0,
+          "expense": 2100.0,
+          "net": -2100.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2100.0,
+              "net": -2100.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "新多门业  18907083562",
+          "income": 2080.0,
+          "expense": 0.0,
+          "net": 2080.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 2080.0,
+              "expense": 0.0,
+              "net": 2080.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "Blade_blood",
+          "income": 2030.0,
+          "expense": 0.0,
+          "net": 2030.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 2030.0,
+              "expense": 0.0,
+              "net": 2030.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "支付宝小荷包(wafase业务资金)",
+          "income": 0.0,
+          "expense": 1650.0,
+          "net": -1650.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1650.0,
+              "net": -1650.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "零玲 (琳N)",
+          "income": 35083.0,
+          "expense": 36675.0,
+          "net": -1592.0,
+          "count": 135,
+          "years": {
+            "2024": {
+              "income": 16800.0,
+              "expense": 26290.0,
+              "net": -9490.0,
+              "count": 50
+            },
+            "2025": {
+              "income": 10587.0,
+              "expense": 6974.0,
+              "net": 3613.0,
+              "count": 64
+            },
+            "2026": {
+              "income": 7696.0,
+              "expense": 3411.0,
+              "net": 4285.0,
+              "count": 21
+            }
+          }
+        },
+        {
+          "label": "胡金莹 (世界和平)",
+          "income": 0.0,
+          "expense": 1560.0,
+          "net": -1560.0,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1560.0,
+              "net": -1560.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "A雨虹防水修缮回填陶粒自流平胡涛",
+          "income": 4350.0,
+          "expense": 2798.0,
+          "net": 1552.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 4350.0,
+              "expense": 2798.0,
+              "net": 1552.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "莲",
+          "income": 2000.0,
+          "expense": 460.0,
+          "net": 1540.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 460.0,
+              "net": -460.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2000.0,
+              "expense": 0.0,
+              "net": 2000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗勇",
+          "income": 4500.0,
+          "expense": 3000.0,
+          "net": 1500.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2500.0,
+              "expense": 1000.0,
+              "net": 1500.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 2000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "张睿卿 (Rachel Zhang)",
+          "income": 1500.0,
+          "expense": 0.0,
+          "net": 1500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 1500.0,
+              "expense": 0.0,
+              "net": 1500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "雅迪学院路旗舰店13521407895",
+          "income": 0.0,
+          "expense": 1400.0,
+          "net": -1400.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 1400.0,
+              "net": -1400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张光泽13808835574",
+          "income": 1635.5,
+          "expense": 262.0,
+          "net": 1373.5,
+          "count": 17,
+          "years": {
+            "2025": {
+              "income": 1200.0,
+              "expense": 0.0,
+              "net": 1200.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 435.5,
+              "expense": 262.0,
+              "net": 173.5,
+              "count": 16
+            }
+          }
+        },
+        {
+          "label": "爱家晶钢门橱门18170085593",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "钟师傅开荒保洁15387906801",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老陈",
+          "income": 0.0,
+          "expense": 1290.0,
+          "net": -1290.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1290.0,
+              "net": -1290.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "尚城石材贺明艳",
+          "income": 0.0,
+          "expense": 1200.0,
+          "net": -1200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1200.0,
+              "net": -1200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "华盛石材",
+          "income": 0.0,
+          "expense": 1160.0,
+          "net": -1160.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1160.0,
+              "net": -1160.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "许文 (许雯)",
+          "income": 230.0,
+          "expense": 1388.0,
+          "net": -1158.0,
+          "count": 11,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 252.0,
+              "net": -252.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 230.0,
+              "expense": 1136.0,
+              "net": -906.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "南昌通达五金  五金批发",
+          "income": 0.0,
+          "expense": 1090.0,
+          "net": -1090.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 790.0,
+              "net": -790.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芳 (财运🌸小喵)",
+          "income": 201.0,
+          "expense": 1208.0,
+          "net": -1007.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 20.0,
+              "net": -20.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 146.0,
+              "expense": 440.0,
+              "net": -294.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 55.0,
+              "expense": 748.0,
+              "net": -693.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "随风洒脱煤气 (随风洒脱)",
+          "income": 0.0,
+          "expense": 1000.0,
+          "net": -1000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "有乐坤沙 (胡)",
+          "income": 0.0,
+          "expense": 960.0,
+          "net": -960.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 960.0,
+              "net": -960.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "女神经秧子 (💼 财神爷的小宝贝)",
+          "income": 920.0,
+          "expense": 0.0,
+          "net": 920.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 920.0,
+              "expense": 0.0,
+              "net": 920.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "韩国TACK窗膜-安柏莱家居膜南昌店",
+          "income": 0.0,
+          "expense": 850.0,
+          "net": -850.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 850.0,
+              "net": -850.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A 燕子",
+          "income": 0.0,
+          "expense": 709.9,
+          "net": -709.9,
+          "count": 14,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 214.3,
+              "net": -214.3,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 285.6,
+              "net": -285.6,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "胡花",
+          "income": 0.0,
+          "expense": 600.0,
+          "net": -600.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "守望者国水 (粲驯)",
+          "income": 600.0,
+          "expense": 0.0,
+          "net": 600.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 600.0,
+              "expense": 0.0,
+              "net": 600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "南昌立军百货18070391199",
+          "income": 0.0,
+          "expense": 558.0,
+          "net": -558.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 558.0,
+              "net": -558.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "北京再兴鸿南昌八达好运五金工具有",
+          "income": 72.0,
+          "expense": 580.0,
+          "net": -508.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 580.0,
+              "net": -508.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "王栋 (东方宇痕)",
+          "income": 500.0,
+          "expense": 0.0,
+          "net": 500.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 100.0,
+              "expense": 0.0,
+              "net": 100.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "刘勇刚",
+          "income": 466.0,
+          "expense": 0.0,
+          "net": 466.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 466.0,
+              "expense": 0.0,
+              "net": 466.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "阿鹏",
+          "income": 860.0,
+          "expense": 450.0,
+          "net": 410.0,
+          "count": 4,
+          "years": {
+            "2026": {
+              "income": 860.0,
+              "expense": 450.0,
+              "net": 410.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "罗艳红",
+          "income": 500.0,
+          "expense": 90.0,
+          "net": 410.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 90.0,
+              "net": -90.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 500.0,
+              "expense": 0.0,
+              "net": 500.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "AAA收购门窗，包拆，多多关照小弟",
+          "income": 400.0,
+          "expense": 0.0,
+          "net": 400.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "英子",
+          "income": 13211.0,
+          "expense": 13588.0,
+          "net": -377.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 12465.0,
+              "expense": 6090.0,
+              "net": 6375.0,
+              "count": 15
+            },
+            "2025": {
+              "income": 600.0,
+              "expense": 3720.0,
+              "net": -3120.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 146.0,
+              "expense": 3778.0,
+              "net": -3632.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "刘小华",
+          "income": 0.0,
+          "expense": 350.0,
+          "net": -350.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 100.0,
+              "net": -100.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "圆圆🍑🍓🍇🍈🍉🍎🍐",
+          "income": 342.0,
+          "expense": 0.0,
+          "net": 342.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 342.0,
+              "expense": 0.0,
+              "net": 342.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "傅",
+          "income": 0.0,
+          "expense": 340.0,
+          "net": -340.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 340.0,
+              "net": -340.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "诚信白铁加工店",
+          "income": 378.0,
+          "expense": 64.0,
+          "net": 314.0,
+          "count": 9,
+          "years": {
+            "2025": {
+              "income": 378.0,
+              "expense": 64.0,
+              "net": 314.0,
+              "count": 9
+            }
+          }
+        },
+        {
+          "label": "小钟",
+          "income": 300.0,
+          "expense": 0.0,
+          "net": 300.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "小型微型计算机系统(**宁)",
+          "income": 0.0,
+          "expense": 300.0,
+          "net": -300.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小敏（咨询10-24点可约）",
+          "income": 0.0,
+          "expense": 299.0,
+          "net": -299.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 299.0,
+              "net": -299.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "万云",
+          "income": 0.0,
+          "expense": 274.0,
+          "net": -274.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 274.0,
+              "net": -274.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵雪琴",
+          "income": 272.0,
+          "expense": 0.0,
+          "net": 272.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 272.0,
+              "expense": 0.0,
+              "net": 272.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "悠悠岁月",
+          "income": 268.0,
+          "expense": 0.0,
+          "net": 268.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 268.0,
+              "expense": 0.0,
+              "net": 268.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "随遇而安",
+          "income": 224.0,
+          "expense": 0.0,
+          "net": 224.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 224.0,
+              "expense": 0.0,
+              "net": 224.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "肋骨刘慧 (肋骨)",
+          "income": 0.0,
+          "expense": 222.0,
+          "net": -222.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 104.0,
+              "net": -104.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵杰睿，闵晨睿MM",
+          "income": 216.0,
+          "expense": 0.0,
+          "net": 216.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 0.0,
+              "net": 216.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "李龙桂",
+          "income": 204.0,
+          "expense": 0.0,
+          "net": 204.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 204.0,
+              "expense": 0.0,
+              "net": 204.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "皇室战争令牌 (梁财神)",
+          "income": 0.0,
+          "expense": 203.0,
+          "net": -203.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 203.0,
+              "net": -203.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "刚哥",
+          "income": 300.0,
+          "expense": 500.0,
+          "net": -200.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 500.0,
+              "net": -500.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "ゞ伱De未来、我来ゞ℡",
+          "income": 200.0,
+          "expense": 0.0,
+          "net": 200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 200.0,
+              "expense": 0.0,
+              "net": 200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A烘焙（熊熊）&幸福时刻蛋糕",
+          "income": 0.0,
+          "expense": 198.0,
+          "net": -198.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 198.0,
+              "net": -198.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "1",
+          "income": 0.0,
+          "expense": 180.0,
+          "net": -180.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 180.0,
+              "net": -180.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "赵群",
+          "income": 168.0,
+          "expense": 0.0,
+          "net": 168.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 168.0,
+              "expense": 0.0,
+              "net": 168.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "A道路救援 维修电动车13739658860",
+          "income": 0.0,
+          "expense": 160.0,
+          "net": -160.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 160.0,
+              "net": -160.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胜花奶奶 (美佳乐)",
+          "income": 240.0,
+          "expense": 84.0,
+          "net": 156.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 240.0,
+              "expense": 84.0,
+              "net": 156.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "章依婷",
+          "income": 150.0,
+          "expense": 0.0,
+          "net": 150.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 150.0,
+              "expense": 0.0,
+              "net": 150.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "＄人一定＃要靠自己罗松 (＄人一定＃要靠自己)",
+          "income": 0.0,
+          "expense": 150.0,
+          "net": -150.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 150.0,
+              "net": -150.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芷",
+          "income": 122.0,
+          "expense": 0.0,
+          "net": 122.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 122.0,
+              "expense": 0.0,
+              "net": 122.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "এ᭄ꦿ꯭世界🚬一劉℘᭄ᩚ꯭",
+          "income": 118.0,
+          "expense": 0.0,
+          "net": 118.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 118.0,
+              "expense": 0.0,
+              "net": 118.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "Kiki",
+          "income": 0.0,
+          "expense": 118.0,
+          "net": -118.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "虾仁不眨眼",
+          "income": 0.0,
+          "expense": 110.0,
+          "net": -110.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 110.0,
+              "net": -110.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "Dw.,",
+          "income": 104.0,
+          "expense": 0.0,
+          "net": 104.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 104.0,
+              "expense": 0.0,
+              "net": 104.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张炀 (Sirius.)",
+          "income": 0.0,
+          "expense": 103.0,
+          "net": -103.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 103.0,
+              "net": -103.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邢文宇 (Xxing)",
+          "income": 99.9,
+          "expense": 0.0,
+          "net": 99.9,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 99.9,
+              "expense": 0.0,
+              "net": 99.9,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "🎋 幸运曹🐰",
+          "income": 172.0,
+          "expense": 74.0,
+          "net": 98.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 172.0,
+              "expense": 74.0,
+              "net": 98.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "V v",
+          "income": 98.0,
+          "expense": 0.0,
+          "net": 98.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 98.0,
+              "expense": 0.0,
+              "net": 98.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A香江一声喊照明灯具批发  彭杏亮",
+          "income": 0.0,
+          "expense": 92.5,
+          "net": -92.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 92.5,
+              "net": -92.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "泽微珠宝13879185190",
+          "income": 126.0,
+          "expense": 214.0,
+          "net": -88.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 126.0,
+              "expense": 214.0,
+              "net": -88.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "【$】",
+          "income": 86.0,
+          "expense": 0.0,
+          "net": 86.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 86.0,
+              "expense": 0.0,
+              "net": 86.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "🌸戴戴",
+          "income": 84.0,
+          "expense": 0.0,
+          "net": 84.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 84.0,
+              "expense": 0.0,
+              "net": 84.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "在意",
+          "income": 72.0,
+          "expense": 0.0,
+          "net": 72.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 0.0,
+              "net": 72.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "绑定",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "十月初心。",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "2026QQ糖",
+          "income": 88.0,
+          "expense": 154.0,
+          "net": -66.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 88.0,
+              "expense": 154.0,
+              "net": -66.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "梦熹",
+          "income": 0.0,
+          "expense": 64.0,
+          "net": -64.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 64.0,
+              "net": -64.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "H",
+          "income": 62.0,
+          "expense": 0.0,
+          "net": 62.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 62.0,
+              "expense": 0.0,
+              "net": 62.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "王强",
+          "income": 58.0,
+          "expense": 0.0,
+          "net": 58.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 58.0,
+              "expense": 0.0,
+              "net": 58.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "汪骞 (往前)",
+          "income": 55.0,
+          "expense": 0.0,
+          "net": 55.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 55.0,
+              "expense": 0.0,
+              "net": 55.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "繁花似锦ぅ",
+          "income": 52.0,
+          "expense": 0.0,
+          "net": 52.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 52.0,
+              "expense": 0.0,
+              "net": 52.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "X",
+          "income": 170.0,
+          "expense": 222.0,
+          "net": -52.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 170.0,
+              "expense": 222.0,
+              "net": -52.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "秋秋",
+          "income": 130.0,
+          "expense": 80.0,
+          "net": 50.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 130.0,
+              "expense": 30.0,
+              "net": 100.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "罗紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 50.0,
+          "net": -50.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "冷暖自知",
+          "income": 50.0,
+          "expense": 0.0,
+          "net": 50.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 50.0,
+              "expense": 0.0,
+              "net": 50.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "蔡建红",
+          "income": 0.0,
+          "expense": 49.0,
+          "net": -49.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 49.0,
+              "net": -49.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老爷子",
+          "income": 44.0,
+          "expense": 0.0,
+          "net": 44.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 44.0,
+              "expense": 0.0,
+              "net": 44.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张伟宇 (不忘初心)",
+          "income": 0.0,
+          "expense": 40.0,
+          "net": -40.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "彭睿 (lambda)",
+          "income": 34.5,
+          "expense": 0.0,
+          "net": 34.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.5,
+              "expense": 0.0,
+              "net": 34.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "💞静若幽兰℘࿐℘࿐ᩚ",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "落",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小萍",
+          "income": 120.0,
+          "expense": 90.0,
+          "net": 30.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 120.0,
+              "expense": 90.0,
+              "net": 30.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "清心",
+          "income": 30.0,
+          "expense": 0.0,
+          "net": 30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 30.0,
+              "expense": 0.0,
+              "net": 30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "宏瑞汽车一站式Mr.羅念情",
+          "income": 0.0,
+          "expense": 30.0,
+          "net": -30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 30.0,
+              "net": -30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小夏麻将 (小夏)",
+          "income": 216.0,
+          "expense": 244.0,
+          "net": -28.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 244.0,
+              "net": -28.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "中药调肤瘦身",
+          "income": 28.0,
+          "expense": 0.0,
+          "net": 28.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 28.0,
+              "expense": 0.0,
+              "net": 28.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邮政快递 (铁血老二哥)",
+          "income": 0.0,
+          "expense": 16.0,
+          "net": -16.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 16.0,
+              "net": -16.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "陈哥，不是当年的哥",
+          "income": 14.0,
+          "expense": 0.0,
+          "net": 14.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 14.0,
+              "expense": 0.0,
+              "net": 14.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "杨威 (Bavaria)",
+          "income": 38.0,
+          "expense": 29.6,
+          "net": 8.4,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 38.0,
+              "expense": 29.6,
+              "net": 8.4,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": ",,,,,,,,难，，，，，",
+          "income": 8.0,
+          "expense": 0.0,
+          "net": 8.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 8.0,
+              "expense": 0.0,
+              "net": 8.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "AAA炫鸽文化传媒18279186808",
+          "income": 0.0,
+          "expense": 7.0,
+          "net": -7.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 7.0,
+              "net": -7.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "以诚待人",
+          "income": 6.0,
+          "expense": 0.0,
+          "net": 6.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 6.0,
+              "expense": 0.0,
+              "net": 6.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗文培",
+          "income": 0.0,
+          "expense": 0.0,
+          "net": 0.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 0.0,
+              "net": 0.0,
+              "count": 1
+            }
+          }
+        }
+      ],
       "insights": [
         {
           "title": "消费峰值",
@@ -745,7 +3237,7 @@
     },
     "account-1": {
       "id": "account-1",
-      "label": "账户 A",
+      "label": "罗文培",
       "source_label": "微信支付 + 支付宝（按账户）",
       "file_count": 6,
       "date_start": "2024-01-01",
@@ -1360,6 +3852,449 @@
           "share": 0.169327
         }
       ],
+      "counterparties": [
+        {
+          "label": "百度袁星 (袁星)",
+          "income": 40680.0,
+          "expense": 0.0,
+          "net": 40680.0,
+          "count": 5,
+          "years": {
+            "2026": {
+              "income": 40680.0,
+              "expense": 0.0,
+              "net": 40680.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "王书舒 (Sue)",
+          "income": 14664.0,
+          "expense": 39128.01,
+          "net": -24464.01,
+          "count": 34,
+          "years": {
+            "2024": {
+              "income": 12127.0,
+              "expense": 13255.0,
+              "net": -1128.0,
+              "count": 19
+            },
+            "2025": {
+              "income": 2537.0,
+              "expense": 25873.01,
+              "net": -23336.01,
+              "count": 15
+            }
+          }
+        },
+        {
+          "label": "凤凤",
+          "income": 39066.0,
+          "expense": 14710.0,
+          "net": 24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5800.0,
+              "expense": 5000.0,
+              "net": 800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 30000.0,
+              "expense": 4210.0,
+              "net": 25790.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 3266.0,
+              "expense": 5500.0,
+              "net": -2234.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "Suki",
+          "income": 5500.0,
+          "expense": 0.0,
+          "net": 5500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 5500.0,
+              "expense": 0.0,
+              "net": 5500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "Sue(王书舒)",
+          "income": 3000.0,
+          "expense": 0.0,
+          "net": 3000.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 3000.0,
+              "expense": 0.0,
+              "net": 3000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "众安在线财产保险股份有限公司",
+          "income": 2371.26,
+          "expense": 0.0,
+          "net": 2371.26,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 2371.26,
+              "expense": 0.0,
+              "net": 2371.26,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "Blade_blood",
+          "income": 2030.0,
+          "expense": 0.0,
+          "net": 2030.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 2030.0,
+              "expense": 0.0,
+              "net": 2030.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "支付宝小荷包(wafase业务资金)",
+          "income": 0.0,
+          "expense": 1650.0,
+          "net": -1650.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1650.0,
+              "net": -1650.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胡金莹 (世界和平)",
+          "income": 0.0,
+          "expense": 1560.0,
+          "net": -1560.0,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1560.0,
+              "net": -1560.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "罗勇",
+          "income": 4500.0,
+          "expense": 3000.0,
+          "net": 1500.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2500.0,
+              "expense": 1000.0,
+              "net": 1500.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 2000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "张睿卿 (Rachel Zhang)",
+          "income": 1500.0,
+          "expense": 0.0,
+          "net": 1500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 1500.0,
+              "expense": 0.0,
+              "net": 1500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "雅迪学院路旗舰店13521407895",
+          "income": 0.0,
+          "expense": 1400.0,
+          "net": -1400.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 1400.0,
+              "net": -1400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗寰",
+          "income": 666.0,
+          "expense": 0.0,
+          "net": 666.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 666.0,
+              "expense": 0.0,
+              "net": 666.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "王栋 (东方宇痕)",
+          "income": 500.0,
+          "expense": 0.0,
+          "net": 500.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 100.0,
+              "expense": 0.0,
+              "net": 100.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小型微型计算机系统(**宁)",
+          "income": 0.0,
+          "expense": 300.0,
+          "net": -300.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小敏（咨询10-24点可约）",
+          "income": 0.0,
+          "expense": 299.0,
+          "net": -299.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 299.0,
+              "net": -299.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "皇室战争令牌 (梁财神)",
+          "income": 0.0,
+          "expense": 203.0,
+          "net": -203.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 203.0,
+              "net": -203.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "A道路救援 维修电动车13739658860",
+          "income": 0.0,
+          "expense": 160.0,
+          "net": -160.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 160.0,
+              "net": -160.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张炀 (Sirius.)",
+          "income": 0.0,
+          "expense": 103.0,
+          "net": -103.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 103.0,
+              "net": -103.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邢文宇 (Xxing)",
+          "income": 99.9,
+          "expense": 0.0,
+          "net": 99.9,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 99.9,
+              "expense": 0.0,
+              "net": 99.9,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "汪骞 (往前)",
+          "income": 55.0,
+          "expense": 0.0,
+          "net": 55.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 55.0,
+              "expense": 0.0,
+              "net": 55.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 50.0,
+          "net": -50.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "张伟宇 (不忘初心)",
+          "income": 0.0,
+          "expense": 40.0,
+          "net": -40.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "彭睿 (lambda)",
+          "income": 34.5,
+          "expense": 0.0,
+          "net": 34.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.5,
+              "expense": 0.0,
+              "net": 34.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邮政快递 (铁血老二哥)",
+          "income": 0.0,
+          "expense": 16.0,
+          "net": -16.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 16.0,
+              "net": -16.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "杨威 (Bavaria)",
+          "income": 38.0,
+          "expense": 29.6,
+          "net": 8.4,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 38.0,
+              "expense": 29.6,
+              "net": 8.4,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "罗文培",
+          "income": 0.0,
+          "expense": 0.0,
+          "net": 0.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 0.0,
+              "net": 0.0,
+              "count": 1
+            }
+          }
+        }
+      ],
       "insights": [
         {
           "title": "消费峰值",
@@ -1390,7 +4325,7 @@
     },
     "account-2": {
       "id": "account-2",
-      "label": "账户 B",
+      "label": "胡国凤",
       "source_label": "微信支付 + 支付宝（按账户）",
       "file_count": 3,
       "date_start": "2024-01-01",
@@ -1973,6 +4908,2066 @@
           "amount": 73465.11,
           "count": 316,
           "share": 0.190871
+        }
+      ],
+      "counterparties": [
+        {
+          "label": "爸比 (罗勇)",
+          "income": 794141.0,
+          "expense": 343644.0,
+          "net": 450497.0,
+          "count": 527,
+          "years": {
+            "2024": {
+              "income": 278616.0,
+              "expense": 173350.0,
+              "net": 105266.0,
+              "count": 285
+            },
+            "2025": {
+              "income": 347575.0,
+              "expense": 156294.0,
+              "net": 191281.0,
+              "count": 198
+            },
+            "2026": {
+              "income": 167950.0,
+              "expense": 14000.0,
+              "net": 153950.0,
+              "count": 44
+            }
+          }
+        },
+        {
+          "label": "杨云18000719886一楼租客 (杨云18000719886)",
+          "income": 46000.0,
+          "expense": 220.0,
+          "net": 45780.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 16000.0,
+              "expense": 0.0,
+              "net": 16000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 17000.0,
+              "expense": 220.0,
+              "net": 16780.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 13000.0,
+              "expense": 0.0,
+              "net": 13000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "熊国荣",
+          "income": 0.0,
+          "expense": 45000.0,
+          "net": -45000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 45000.0,
+              "net": -45000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "门窗专家",
+          "income": 1000.0,
+          "expense": 39000.0,
+          "net": -38000.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 39000.0,
+              "net": -39000.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗寰",
+          "income": 0.0,
+          "expense": 30000.0,
+          "net": -30000.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 30000.0,
+              "net": -30000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "富富",
+          "income": 31400.0,
+          "expense": 2960.0,
+          "net": 28440.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 2160.0,
+              "net": -2160.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 31400.0,
+              "expense": 800.0,
+              "net": 30600.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "培 (Tao)",
+          "income": 14710.0,
+          "expense": 39066.0,
+          "net": -24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 5800.0,
+              "net": -800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 4210.0,
+              "expense": 30000.0,
+              "net": -25790.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 5500.0,
+              "expense": 3266.0,
+              "net": 2234.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "顺其牛L",
+          "income": 6016.0,
+          "expense": 27444.0,
+          "net": -21428.0,
+          "count": 10,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 3550.0,
+              "net": 1450.0,
+              "count": 4
+            },
+            "2025": {
+              "income": 250.0,
+              "expense": 1600.0,
+              "net": -1350.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 766.0,
+              "expense": 22294.0,
+              "net": -21528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "龙妹 (锦红烟酒)",
+          "income": 2875.0,
+          "expense": 22805.0,
+          "net": -19930.0,
+          "count": 32,
+          "years": {
+            "2024": {
+              "income": 400.0,
+              "expense": 1980.0,
+              "net": -1580.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 2475.0,
+              "expense": 15125.0,
+              "net": -12650.0,
+              "count": 27
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 5700.0,
+              "net": -5700.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "赵凌",
+          "income": 33000.0,
+          "expense": 51000.0,
+          "net": -18000.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 13000.0,
+              "expense": 23000.0,
+              "net": -10000.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 8000.0,
+              "net": -8000.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 20000.0,
+              "expense": 20000.0,
+              "net": 0.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "寰宇板材专卖店江亚珍13870965452",
+          "income": 236.0,
+          "expense": 16713.0,
+          "net": -16477.0,
+          "count": 7,
+          "years": {
+            "2025": {
+              "income": 236.0,
+              "expense": 16713.0,
+              "net": -16477.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "抡啵💛文博 (l)",
+          "income": 20333.0,
+          "expense": 6015.0,
+          "net": 14318.0,
+          "count": 53,
+          "years": {
+            "2024": {
+              "income": 4240.0,
+              "expense": 5000.0,
+              "net": -760.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 7418.5,
+              "expense": 800.0,
+              "net": 6618.5,
+              "count": 9
+            },
+            "2026": {
+              "income": 8674.5,
+              "expense": 215.0,
+              "net": 8459.5,
+              "count": 37
+            }
+          }
+        },
+        {
+          "label": "国爱 (胡国爱)",
+          "income": 7758.5,
+          "expense": 21849.5,
+          "net": -14091.0,
+          "count": 36,
+          "years": {
+            "2024": {
+              "income": 3220.0,
+              "expense": 20000.0,
+              "net": -16780.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 2480.5,
+              "expense": 1319.5,
+              "net": 1161.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 2058.0,
+              "expense": 530.0,
+              "net": 1528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "木工老周13870653103",
+          "income": 0.0,
+          "expense": 13000.0,
+          "net": -13000.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 13000.0,
+              "net": -13000.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "斯帝罗兰🇮🇹中歌门窗 谭兢",
+          "income": 0.0,
+          "expense": 11890.0,
+          "net": -11890.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 11890.0,
+              "net": -11890.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "异样年华🤷‍♀️熊乐 (ག异样一ᩚᜧ年华💰࿐)",
+          "income": 177.32,
+          "expense": 11287.0,
+          "net": -11109.68,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 177.32,
+              "expense": 11287.0,
+              "net": -11109.68,
+              "count": 8
+            }
+          }
+        },
+        {
+          "label": "林一",
+          "income": 0.0,
+          "expense": 10000.0,
+          "net": -10000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 10000.0,
+              "net": -10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗文婷",
+          "income": 10250.0,
+          "expense": 350.0,
+          "net": 9900.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 250.0,
+              "expense": 350.0,
+              "net": -100.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 10000.0,
+              "expense": 0.0,
+              "net": 10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "兔子，熊加平",
+          "income": 0.0,
+          "expense": 9200.0,
+          "net": -9200.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 8500.0,
+              "net": -8500.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 700.0,
+              "net": -700.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "纪辉庆",
+          "income": 0.0,
+          "expense": 7800.0,
+          "net": -7800.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7800.0,
+              "net": -7800.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "华艺卫浴老罗",
+          "income": 0.0,
+          "expense": 7000.0,
+          "net": -7000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7000.0,
+              "net": -7000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胡菊根",
+          "income": 7300.0,
+          "expense": 600.0,
+          "net": 6700.0,
+          "count": 5,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 7300.0,
+              "expense": 0.0,
+              "net": 7300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "白兔鹰牌威尔斯黄湾湾15179514755",
+          "income": 0.0,
+          "expense": 6056.0,
+          "net": -6056.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6056.0,
+              "net": -6056.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A肖国斌15070070389🇨🇳",
+          "income": 0.0,
+          "expense": 6000.0,
+          "net": -6000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6000.0,
+              "net": -6000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "光泽妈 (CC)",
+          "income": 0.0,
+          "expense": 4980.0,
+          "net": -4980.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 4980.0,
+              "net": -4980.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "国珍 (国贞)",
+          "income": 3130.0,
+          "expense": 8050.0,
+          "net": -4920.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 2240.0,
+              "expense": 6540.0,
+              "net": -4300.0,
+              "count": 17
+            },
+            "2025": {
+              "income": 500.0,
+              "expense": 1390.0,
+              "net": -890.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 390.0,
+              "expense": 120.0,
+              "net": 270.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "老妈 (熊玉梅)",
+          "income": 10.0,
+          "expense": 4500.0,
+          "net": -4490.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 10.0,
+              "expense": 0.0,
+              "net": 10.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 2700.0,
+              "net": -2700.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 1800.0,
+              "net": -1800.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "熊桂兰13870871152做窗帘的",
+          "income": 0.0,
+          "expense": 3518.0,
+          "net": -3518.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3518.0,
+              "net": -3518.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "无法言喻根妹 (千百味餐饮收银熊根妹13576131082)",
+          "income": 8145.0,
+          "expense": 4997.0,
+          "net": 3148.0,
+          "count": 63,
+          "years": {
+            "2024": {
+              "income": 3910.0,
+              "expense": 3152.0,
+              "net": 758.0,
+              "count": 27
+            },
+            "2025": {
+              "income": 3280.0,
+              "expense": 1450.0,
+              "net": 1830.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 955.0,
+              "expense": 395.0,
+              "net": 560.0,
+              "count": 10
+            }
+          }
+        },
+        {
+          "label": "AAA南昌集成吊顶18179131819",
+          "income": 0.0,
+          "expense": 3000.0,
+          "net": -3000.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3000.0,
+              "net": -3000.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "AA维度宠物18702503515",
+          "income": 0.0,
+          "expense": 2710.0,
+          "net": -2710.0,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2170.0,
+              "net": -2170.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 540.0,
+              "net": -540.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "天德装饰（天洪门业）",
+          "income": 0.0,
+          "expense": 2620.0,
+          "net": -2620.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2620.0,
+              "net": -2620.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "渤海车险 露露",
+          "income": 2501.0,
+          "expense": 0.0,
+          "net": 2501.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 899.0,
+              "expense": 0.0,
+              "net": 899.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 1497.0,
+              "expense": 0.0,
+              "net": 1497.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 105.0,
+              "expense": 0.0,
+              "net": 105.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小弟 (胡zhu强)",
+          "income": 2401.0,
+          "expense": 0.0,
+          "net": 2401.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 2401.0,
+              "expense": 0.0,
+              "net": 2401.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "橙小橙美业～连连 (橙小橙～连连)",
+          "income": 0.0,
+          "expense": 2100.0,
+          "net": -2100.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2100.0,
+              "net": -2100.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "新多门业  18907083562",
+          "income": 2080.0,
+          "expense": 0.0,
+          "net": 2080.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 2080.0,
+              "expense": 0.0,
+              "net": 2080.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "零玲 (琳N)",
+          "income": 35083.0,
+          "expense": 36675.0,
+          "net": -1592.0,
+          "count": 135,
+          "years": {
+            "2024": {
+              "income": 16800.0,
+              "expense": 26290.0,
+              "net": -9490.0,
+              "count": 50
+            },
+            "2025": {
+              "income": 10587.0,
+              "expense": 6974.0,
+              "net": 3613.0,
+              "count": 64
+            },
+            "2026": {
+              "income": 7696.0,
+              "expense": 3411.0,
+              "net": 4285.0,
+              "count": 21
+            }
+          }
+        },
+        {
+          "label": "A雨虹防水修缮回填陶粒自流平胡涛",
+          "income": 4350.0,
+          "expense": 2798.0,
+          "net": 1552.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 4350.0,
+              "expense": 2798.0,
+              "net": 1552.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "莲",
+          "income": 2000.0,
+          "expense": 460.0,
+          "net": 1540.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 460.0,
+              "net": -460.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2000.0,
+              "expense": 0.0,
+              "net": 2000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张光泽13808835574",
+          "income": 1635.5,
+          "expense": 262.0,
+          "net": 1373.5,
+          "count": 17,
+          "years": {
+            "2025": {
+              "income": 1200.0,
+              "expense": 0.0,
+              "net": 1200.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 435.5,
+              "expense": 262.0,
+              "net": 173.5,
+              "count": 16
+            }
+          }
+        },
+        {
+          "label": "爱家晶钢门橱门18170085593",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "钟师傅开荒保洁15387906801",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老陈",
+          "income": 0.0,
+          "expense": 1290.0,
+          "net": -1290.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1290.0,
+              "net": -1290.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "尚城石材贺明艳",
+          "income": 0.0,
+          "expense": 1200.0,
+          "net": -1200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1200.0,
+              "net": -1200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "华盛石材",
+          "income": 0.0,
+          "expense": 1160.0,
+          "net": -1160.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1160.0,
+              "net": -1160.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "许文 (许雯)",
+          "income": 230.0,
+          "expense": 1388.0,
+          "net": -1158.0,
+          "count": 11,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 252.0,
+              "net": -252.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 230.0,
+              "expense": 1136.0,
+              "net": -906.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "南昌通达五金  五金批发",
+          "income": 0.0,
+          "expense": 1090.0,
+          "net": -1090.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 790.0,
+              "net": -790.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芳 (财运🌸小喵)",
+          "income": 201.0,
+          "expense": 1208.0,
+          "net": -1007.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 20.0,
+              "net": -20.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 146.0,
+              "expense": 440.0,
+              "net": -294.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 55.0,
+              "expense": 748.0,
+              "net": -693.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "随风洒脱煤气 (随风洒脱)",
+          "income": 0.0,
+          "expense": 1000.0,
+          "net": -1000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "有乐坤沙 (胡)",
+          "income": 0.0,
+          "expense": 960.0,
+          "net": -960.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 960.0,
+              "net": -960.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "女神经秧子 (💼 财神爷的小宝贝)",
+          "income": 920.0,
+          "expense": 0.0,
+          "net": 920.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 920.0,
+              "expense": 0.0,
+              "net": 920.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "韩国TACK窗膜-安柏莱家居膜南昌店",
+          "income": 0.0,
+          "expense": 850.0,
+          "net": -850.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 850.0,
+              "net": -850.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A 燕子",
+          "income": 0.0,
+          "expense": 709.9,
+          "net": -709.9,
+          "count": 14,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 214.3,
+              "net": -214.3,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 285.6,
+              "net": -285.6,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "胡花",
+          "income": 0.0,
+          "expense": 600.0,
+          "net": -600.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "守望者国水 (粲驯)",
+          "income": 600.0,
+          "expense": 0.0,
+          "net": 600.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 600.0,
+              "expense": 0.0,
+              "net": 600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "南昌立军百货18070391199",
+          "income": 0.0,
+          "expense": 558.0,
+          "net": -558.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 558.0,
+              "net": -558.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "北京再兴鸿南昌八达好运五金工具有",
+          "income": 72.0,
+          "expense": 580.0,
+          "net": -508.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 580.0,
+              "net": -508.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "刘勇刚",
+          "income": 466.0,
+          "expense": 0.0,
+          "net": 466.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 466.0,
+              "expense": 0.0,
+              "net": 466.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "阿鹏",
+          "income": 860.0,
+          "expense": 450.0,
+          "net": 410.0,
+          "count": 4,
+          "years": {
+            "2026": {
+              "income": 860.0,
+              "expense": 450.0,
+              "net": 410.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "罗艳红",
+          "income": 500.0,
+          "expense": 90.0,
+          "net": 410.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 90.0,
+              "net": -90.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 500.0,
+              "expense": 0.0,
+              "net": 500.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "AAA收购门窗，包拆，多多关照小弟",
+          "income": 400.0,
+          "expense": 0.0,
+          "net": 400.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "英子",
+          "income": 13211.0,
+          "expense": 13588.0,
+          "net": -377.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 12465.0,
+              "expense": 6090.0,
+              "net": 6375.0,
+              "count": 15
+            },
+            "2025": {
+              "income": 600.0,
+              "expense": 3720.0,
+              "net": -3120.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 146.0,
+              "expense": 3778.0,
+              "net": -3632.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "刘小华",
+          "income": 0.0,
+          "expense": 350.0,
+          "net": -350.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 100.0,
+              "net": -100.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "圆圆🍑🍓🍇🍈🍉🍎🍐",
+          "income": 342.0,
+          "expense": 0.0,
+          "net": 342.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 342.0,
+              "expense": 0.0,
+              "net": 342.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "傅",
+          "income": 0.0,
+          "expense": 340.0,
+          "net": -340.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 340.0,
+              "net": -340.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "诚信白铁加工店",
+          "income": 378.0,
+          "expense": 64.0,
+          "net": 314.0,
+          "count": 9,
+          "years": {
+            "2025": {
+              "income": 378.0,
+              "expense": 64.0,
+              "net": 314.0,
+              "count": 9
+            }
+          }
+        },
+        {
+          "label": "小钟",
+          "income": 300.0,
+          "expense": 0.0,
+          "net": 300.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "万云",
+          "income": 0.0,
+          "expense": 274.0,
+          "net": -274.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 274.0,
+              "net": -274.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵雪琴",
+          "income": 272.0,
+          "expense": 0.0,
+          "net": 272.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 272.0,
+              "expense": 0.0,
+              "net": 272.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "悠悠岁月",
+          "income": 268.0,
+          "expense": 0.0,
+          "net": 268.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 268.0,
+              "expense": 0.0,
+              "net": 268.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "随遇而安",
+          "income": 224.0,
+          "expense": 0.0,
+          "net": 224.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 224.0,
+              "expense": 0.0,
+              "net": 224.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "肋骨刘慧 (肋骨)",
+          "income": 0.0,
+          "expense": 222.0,
+          "net": -222.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 104.0,
+              "net": -104.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵杰睿，闵晨睿MM",
+          "income": 216.0,
+          "expense": 0.0,
+          "net": 216.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 0.0,
+              "net": 216.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "李龙桂",
+          "income": 204.0,
+          "expense": 0.0,
+          "net": 204.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 204.0,
+              "expense": 0.0,
+              "net": 204.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "刚哥",
+          "income": 300.0,
+          "expense": 500.0,
+          "net": -200.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 500.0,
+              "net": -500.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "ゞ伱De未来、我来ゞ℡",
+          "income": 200.0,
+          "expense": 0.0,
+          "net": 200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 200.0,
+              "expense": 0.0,
+              "net": 200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A烘焙（熊熊）&幸福时刻蛋糕",
+          "income": 0.0,
+          "expense": 198.0,
+          "net": -198.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 198.0,
+              "net": -198.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "1",
+          "income": 0.0,
+          "expense": 180.0,
+          "net": -180.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 180.0,
+              "net": -180.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "赵群",
+          "income": 168.0,
+          "expense": 0.0,
+          "net": 168.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 168.0,
+              "expense": 0.0,
+              "net": 168.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "胜花奶奶 (美佳乐)",
+          "income": 240.0,
+          "expense": 84.0,
+          "net": 156.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 240.0,
+              "expense": 84.0,
+              "net": 156.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "章依婷",
+          "income": 150.0,
+          "expense": 0.0,
+          "net": 150.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 150.0,
+              "expense": 0.0,
+              "net": 150.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "＄人一定＃要靠自己罗松 (＄人一定＃要靠自己)",
+          "income": 0.0,
+          "expense": 150.0,
+          "net": -150.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 150.0,
+              "net": -150.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芷",
+          "income": 122.0,
+          "expense": 0.0,
+          "net": 122.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 122.0,
+              "expense": 0.0,
+              "net": 122.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "এ᭄ꦿ꯭世界🚬一劉℘᭄ᩚ꯭",
+          "income": 118.0,
+          "expense": 0.0,
+          "net": 118.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 118.0,
+              "expense": 0.0,
+              "net": 118.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "Kiki",
+          "income": 0.0,
+          "expense": 118.0,
+          "net": -118.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "虾仁不眨眼",
+          "income": 0.0,
+          "expense": 110.0,
+          "net": -110.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 110.0,
+              "net": -110.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "Dw.,",
+          "income": 104.0,
+          "expense": 0.0,
+          "net": 104.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 104.0,
+              "expense": 0.0,
+              "net": 104.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "🎋 幸运曹🐰",
+          "income": 172.0,
+          "expense": 74.0,
+          "net": 98.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 172.0,
+              "expense": 74.0,
+              "net": 98.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "V v",
+          "income": 98.0,
+          "expense": 0.0,
+          "net": 98.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 98.0,
+              "expense": 0.0,
+              "net": 98.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A香江一声喊照明灯具批发  彭杏亮",
+          "income": 0.0,
+          "expense": 92.5,
+          "net": -92.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 92.5,
+              "net": -92.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "泽微珠宝13879185190",
+          "income": 126.0,
+          "expense": 214.0,
+          "net": -88.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 126.0,
+              "expense": 214.0,
+              "net": -88.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "【$】",
+          "income": 86.0,
+          "expense": 0.0,
+          "net": 86.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 86.0,
+              "expense": 0.0,
+              "net": 86.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "🌸戴戴",
+          "income": 84.0,
+          "expense": 0.0,
+          "net": 84.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 84.0,
+              "expense": 0.0,
+              "net": 84.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "在意",
+          "income": 72.0,
+          "expense": 0.0,
+          "net": 72.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 0.0,
+              "net": 72.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "绑定",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "十月初心。",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "2026QQ糖",
+          "income": 88.0,
+          "expense": 154.0,
+          "net": -66.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 88.0,
+              "expense": 154.0,
+              "net": -66.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "梦熹",
+          "income": 0.0,
+          "expense": 64.0,
+          "net": -64.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 64.0,
+              "net": -64.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "H",
+          "income": 62.0,
+          "expense": 0.0,
+          "net": 62.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 62.0,
+              "expense": 0.0,
+              "net": 62.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "王强",
+          "income": 58.0,
+          "expense": 0.0,
+          "net": 58.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 58.0,
+              "expense": 0.0,
+              "net": 58.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "繁花似锦ぅ",
+          "income": 52.0,
+          "expense": 0.0,
+          "net": 52.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 52.0,
+              "expense": 0.0,
+              "net": 52.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "X",
+          "income": 170.0,
+          "expense": 222.0,
+          "net": -52.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 170.0,
+              "expense": 222.0,
+              "net": -52.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "秋秋",
+          "income": 130.0,
+          "expense": 80.0,
+          "net": 50.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 130.0,
+              "expense": 30.0,
+              "net": 100.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "冷暖自知",
+          "income": 50.0,
+          "expense": 0.0,
+          "net": 50.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 50.0,
+              "expense": 0.0,
+              "net": 50.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "蔡建红",
+          "income": 0.0,
+          "expense": 49.0,
+          "net": -49.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 49.0,
+              "net": -49.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老爷子",
+          "income": 44.0,
+          "expense": 0.0,
+          "net": 44.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 44.0,
+              "expense": 0.0,
+              "net": 44.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "💞静若幽兰℘࿐℘࿐ᩚ",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "落",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小萍",
+          "income": 120.0,
+          "expense": 90.0,
+          "net": 30.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 120.0,
+              "expense": 90.0,
+              "net": 30.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "清心",
+          "income": 30.0,
+          "expense": 0.0,
+          "net": 30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 30.0,
+              "expense": 0.0,
+              "net": 30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "宏瑞汽车一站式Mr.羅念情",
+          "income": 0.0,
+          "expense": 30.0,
+          "net": -30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 30.0,
+              "net": -30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小夏麻将 (小夏)",
+          "income": 216.0,
+          "expense": 244.0,
+          "net": -28.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 244.0,
+              "net": -28.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "中药调肤瘦身",
+          "income": 28.0,
+          "expense": 0.0,
+          "net": 28.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 28.0,
+              "expense": 0.0,
+              "net": 28.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "陈哥，不是当年的哥",
+          "income": 14.0,
+          "expense": 0.0,
+          "net": 14.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 14.0,
+              "expense": 0.0,
+              "net": 14.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": ",,,,,,,,难，，，，，",
+          "income": 8.0,
+          "expense": 0.0,
+          "net": 8.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 8.0,
+              "expense": 0.0,
+              "net": 8.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "AAA炫鸽文化传媒18279186808",
+          "income": 0.0,
+          "expense": 7.0,
+          "net": -7.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 7.0,
+              "net": -7.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "以诚待人",
+          "income": 6.0,
+          "expense": 0.0,
+          "net": 6.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 6.0,
+              "expense": 0.0,
+              "net": 6.0,
+              "count": 1
+            }
+          }
         }
       ],
       "insights": [
@@ -2596,6 +7591,2408 @@
           "share": 0.197742
         }
       ],
+      "counterparties": [
+        {
+          "label": "爸比 (罗勇)",
+          "income": 794141.0,
+          "expense": 343644.0,
+          "net": 450497.0,
+          "count": 527,
+          "years": {
+            "2024": {
+              "income": 278616.0,
+              "expense": 173350.0,
+              "net": 105266.0,
+              "count": 285
+            },
+            "2025": {
+              "income": 347575.0,
+              "expense": 156294.0,
+              "net": 191281.0,
+              "count": 198
+            },
+            "2026": {
+              "income": 167950.0,
+              "expense": 14000.0,
+              "net": 153950.0,
+              "count": 44
+            }
+          }
+        },
+        {
+          "label": "杨云18000719886一楼租客 (杨云18000719886)",
+          "income": 46000.0,
+          "expense": 220.0,
+          "net": 45780.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 16000.0,
+              "expense": 0.0,
+              "net": 16000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 17000.0,
+              "expense": 220.0,
+              "net": 16780.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 13000.0,
+              "expense": 0.0,
+              "net": 13000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "熊国荣",
+          "income": 0.0,
+          "expense": 45000.0,
+          "net": -45000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 45000.0,
+              "net": -45000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "百度袁星 (袁星)",
+          "income": 40680.0,
+          "expense": 0.0,
+          "net": 40680.0,
+          "count": 5,
+          "years": {
+            "2026": {
+              "income": 40680.0,
+              "expense": 0.0,
+              "net": 40680.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "门窗专家",
+          "income": 1000.0,
+          "expense": 39000.0,
+          "net": -38000.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 39000.0,
+              "net": -39000.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗寰",
+          "income": 666.0,
+          "expense": 30000.0,
+          "net": -29334.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 666.0,
+              "expense": 0.0,
+              "net": 666.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 30000.0,
+              "net": -30000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "富富",
+          "income": 31400.0,
+          "expense": 2960.0,
+          "net": 28440.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 2160.0,
+              "net": -2160.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 31400.0,
+              "expense": 800.0,
+              "net": 30600.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "王书舒 (Sue)",
+          "income": 14664.0,
+          "expense": 39128.01,
+          "net": -24464.01,
+          "count": 34,
+          "years": {
+            "2024": {
+              "income": 12127.0,
+              "expense": 13255.0,
+              "net": -1128.0,
+              "count": 19
+            },
+            "2025": {
+              "income": 2537.0,
+              "expense": 25873.01,
+              "net": -23336.01,
+              "count": 15
+            }
+          }
+        },
+        {
+          "label": "凤凤",
+          "income": 39066.0,
+          "expense": 14710.0,
+          "net": 24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5800.0,
+              "expense": 5000.0,
+              "net": 800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 30000.0,
+              "expense": 4210.0,
+              "net": 25790.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 3266.0,
+              "expense": 5500.0,
+              "net": -2234.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "培 (Tao)",
+          "income": 14710.0,
+          "expense": 39066.0,
+          "net": -24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 5800.0,
+              "net": -800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 4210.0,
+              "expense": 30000.0,
+              "net": -25790.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 5500.0,
+              "expense": 3266.0,
+              "net": 2234.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "顺其牛L",
+          "income": 6016.0,
+          "expense": 27444.0,
+          "net": -21428.0,
+          "count": 10,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 3550.0,
+              "net": 1450.0,
+              "count": 4
+            },
+            "2025": {
+              "income": 250.0,
+              "expense": 1600.0,
+              "net": -1350.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 766.0,
+              "expense": 22294.0,
+              "net": -21528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "龙妹 (锦红烟酒)",
+          "income": 2875.0,
+          "expense": 22805.0,
+          "net": -19930.0,
+          "count": 32,
+          "years": {
+            "2024": {
+              "income": 400.0,
+              "expense": 1980.0,
+              "net": -1580.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 2475.0,
+              "expense": 15125.0,
+              "net": -12650.0,
+              "count": 27
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 5700.0,
+              "net": -5700.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "赵凌",
+          "income": 33000.0,
+          "expense": 51000.0,
+          "net": -18000.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 13000.0,
+              "expense": 23000.0,
+              "net": -10000.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 8000.0,
+              "net": -8000.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 20000.0,
+              "expense": 20000.0,
+              "net": 0.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "寰宇板材专卖店江亚珍13870965452",
+          "income": 236.0,
+          "expense": 16713.0,
+          "net": -16477.0,
+          "count": 7,
+          "years": {
+            "2025": {
+              "income": 236.0,
+              "expense": 16713.0,
+              "net": -16477.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "抡啵💛文博 (l)",
+          "income": 20333.0,
+          "expense": 6015.0,
+          "net": 14318.0,
+          "count": 53,
+          "years": {
+            "2024": {
+              "income": 4240.0,
+              "expense": 5000.0,
+              "net": -760.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 7418.5,
+              "expense": 800.0,
+              "net": 6618.5,
+              "count": 9
+            },
+            "2026": {
+              "income": 8674.5,
+              "expense": 215.0,
+              "net": 8459.5,
+              "count": 37
+            }
+          }
+        },
+        {
+          "label": "国爱 (胡国爱)",
+          "income": 7758.5,
+          "expense": 21849.5,
+          "net": -14091.0,
+          "count": 36,
+          "years": {
+            "2024": {
+              "income": 3220.0,
+              "expense": 20000.0,
+              "net": -16780.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 2480.5,
+              "expense": 1319.5,
+              "net": 1161.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 2058.0,
+              "expense": 530.0,
+              "net": 1528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "木工老周13870653103",
+          "income": 0.0,
+          "expense": 13000.0,
+          "net": -13000.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 13000.0,
+              "net": -13000.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "斯帝罗兰🇮🇹中歌门窗 谭兢",
+          "income": 0.0,
+          "expense": 11890.0,
+          "net": -11890.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 11890.0,
+              "net": -11890.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "异样年华🤷‍♀️熊乐 (ག异样一ᩚᜧ年华💰࿐)",
+          "income": 177.32,
+          "expense": 11287.0,
+          "net": -11109.68,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 177.32,
+              "expense": 11287.0,
+              "net": -11109.68,
+              "count": 8
+            }
+          }
+        },
+        {
+          "label": "林一",
+          "income": 0.0,
+          "expense": 10000.0,
+          "net": -10000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 10000.0,
+              "net": -10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗文婷",
+          "income": 10250.0,
+          "expense": 350.0,
+          "net": 9900.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 250.0,
+              "expense": 350.0,
+              "net": -100.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 10000.0,
+              "expense": 0.0,
+              "net": 10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "兔子，熊加平",
+          "income": 0.0,
+          "expense": 9200.0,
+          "net": -9200.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 8500.0,
+              "net": -8500.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 700.0,
+              "net": -700.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "纪辉庆",
+          "income": 0.0,
+          "expense": 7800.0,
+          "net": -7800.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7800.0,
+              "net": -7800.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "华艺卫浴老罗",
+          "income": 0.0,
+          "expense": 7000.0,
+          "net": -7000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7000.0,
+              "net": -7000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胡菊根",
+          "income": 7300.0,
+          "expense": 600.0,
+          "net": 6700.0,
+          "count": 5,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 7300.0,
+              "expense": 0.0,
+              "net": 7300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "白兔鹰牌威尔斯黄湾湾15179514755",
+          "income": 0.0,
+          "expense": 6056.0,
+          "net": -6056.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6056.0,
+              "net": -6056.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A肖国斌15070070389🇨🇳",
+          "income": 0.0,
+          "expense": 6000.0,
+          "net": -6000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6000.0,
+              "net": -6000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "Suki",
+          "income": 5500.0,
+          "expense": 0.0,
+          "net": 5500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 5500.0,
+              "expense": 0.0,
+              "net": 5500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "光泽妈 (CC)",
+          "income": 0.0,
+          "expense": 4980.0,
+          "net": -4980.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 4980.0,
+              "net": -4980.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "国珍 (国贞)",
+          "income": 3130.0,
+          "expense": 8050.0,
+          "net": -4920.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 2240.0,
+              "expense": 6540.0,
+              "net": -4300.0,
+              "count": 17
+            },
+            "2025": {
+              "income": 500.0,
+              "expense": 1390.0,
+              "net": -890.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 390.0,
+              "expense": 120.0,
+              "net": 270.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "老妈 (熊玉梅)",
+          "income": 10.0,
+          "expense": 4500.0,
+          "net": -4490.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 10.0,
+              "expense": 0.0,
+              "net": 10.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 2700.0,
+              "net": -2700.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 1800.0,
+              "net": -1800.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "熊桂兰13870871152做窗帘的",
+          "income": 0.0,
+          "expense": 3518.0,
+          "net": -3518.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3518.0,
+              "net": -3518.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "无法言喻根妹 (千百味餐饮收银熊根妹13576131082)",
+          "income": 8145.0,
+          "expense": 4997.0,
+          "net": 3148.0,
+          "count": 63,
+          "years": {
+            "2024": {
+              "income": 3910.0,
+              "expense": 3152.0,
+              "net": 758.0,
+              "count": 27
+            },
+            "2025": {
+              "income": 3280.0,
+              "expense": 1450.0,
+              "net": 1830.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 955.0,
+              "expense": 395.0,
+              "net": 560.0,
+              "count": 10
+            }
+          }
+        },
+        {
+          "label": "AAA南昌集成吊顶18179131819",
+          "income": 0.0,
+          "expense": 3000.0,
+          "net": -3000.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3000.0,
+              "net": -3000.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "AA维度宠物18702503515",
+          "income": 0.0,
+          "expense": 2710.0,
+          "net": -2710.0,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2170.0,
+              "net": -2170.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 540.0,
+              "net": -540.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "天德装饰（天洪门业）",
+          "income": 0.0,
+          "expense": 2620.0,
+          "net": -2620.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2620.0,
+              "net": -2620.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "渤海车险 露露",
+          "income": 2501.0,
+          "expense": 0.0,
+          "net": 2501.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 899.0,
+              "expense": 0.0,
+              "net": 899.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 1497.0,
+              "expense": 0.0,
+              "net": 1497.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 105.0,
+              "expense": 0.0,
+              "net": 105.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小弟 (胡zhu强)",
+          "income": 2401.0,
+          "expense": 0.0,
+          "net": 2401.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 2401.0,
+              "expense": 0.0,
+              "net": 2401.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "橙小橙美业～连连 (橙小橙～连连)",
+          "income": 0.0,
+          "expense": 2100.0,
+          "net": -2100.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2100.0,
+              "net": -2100.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "新多门业  18907083562",
+          "income": 2080.0,
+          "expense": 0.0,
+          "net": 2080.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 2080.0,
+              "expense": 0.0,
+              "net": 2080.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "零玲 (琳N)",
+          "income": 35083.0,
+          "expense": 36675.0,
+          "net": -1592.0,
+          "count": 135,
+          "years": {
+            "2024": {
+              "income": 16800.0,
+              "expense": 26290.0,
+              "net": -9490.0,
+              "count": 50
+            },
+            "2025": {
+              "income": 10587.0,
+              "expense": 6974.0,
+              "net": 3613.0,
+              "count": 64
+            },
+            "2026": {
+              "income": 7696.0,
+              "expense": 3411.0,
+              "net": 4285.0,
+              "count": 21
+            }
+          }
+        },
+        {
+          "label": "胡金莹 (世界和平)",
+          "income": 0.0,
+          "expense": 1560.0,
+          "net": -1560.0,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1560.0,
+              "net": -1560.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "A雨虹防水修缮回填陶粒自流平胡涛",
+          "income": 4350.0,
+          "expense": 2798.0,
+          "net": 1552.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 4350.0,
+              "expense": 2798.0,
+              "net": 1552.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "莲",
+          "income": 2000.0,
+          "expense": 460.0,
+          "net": 1540.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 460.0,
+              "net": -460.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2000.0,
+              "expense": 0.0,
+              "net": 2000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗勇",
+          "income": 4500.0,
+          "expense": 3000.0,
+          "net": 1500.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2500.0,
+              "expense": 1000.0,
+              "net": 1500.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 2000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "张睿卿 (Rachel Zhang)",
+          "income": 1500.0,
+          "expense": 0.0,
+          "net": 1500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 1500.0,
+              "expense": 0.0,
+              "net": 1500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "雅迪学院路旗舰店13521407895",
+          "income": 0.0,
+          "expense": 1400.0,
+          "net": -1400.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 1400.0,
+              "net": -1400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张光泽13808835574",
+          "income": 1635.5,
+          "expense": 262.0,
+          "net": 1373.5,
+          "count": 17,
+          "years": {
+            "2025": {
+              "income": 1200.0,
+              "expense": 0.0,
+              "net": 1200.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 435.5,
+              "expense": 262.0,
+              "net": 173.5,
+              "count": 16
+            }
+          }
+        },
+        {
+          "label": "爱家晶钢门橱门18170085593",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "钟师傅开荒保洁15387906801",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老陈",
+          "income": 0.0,
+          "expense": 1290.0,
+          "net": -1290.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1290.0,
+              "net": -1290.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "尚城石材贺明艳",
+          "income": 0.0,
+          "expense": 1200.0,
+          "net": -1200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1200.0,
+              "net": -1200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "华盛石材",
+          "income": 0.0,
+          "expense": 1160.0,
+          "net": -1160.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1160.0,
+              "net": -1160.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "许文 (许雯)",
+          "income": 230.0,
+          "expense": 1388.0,
+          "net": -1158.0,
+          "count": 11,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 252.0,
+              "net": -252.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 230.0,
+              "expense": 1136.0,
+              "net": -906.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "南昌通达五金  五金批发",
+          "income": 0.0,
+          "expense": 1090.0,
+          "net": -1090.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 790.0,
+              "net": -790.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芳 (财运🌸小喵)",
+          "income": 201.0,
+          "expense": 1208.0,
+          "net": -1007.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 20.0,
+              "net": -20.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 146.0,
+              "expense": 440.0,
+              "net": -294.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 55.0,
+              "expense": 748.0,
+              "net": -693.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "随风洒脱煤气 (随风洒脱)",
+          "income": 0.0,
+          "expense": 1000.0,
+          "net": -1000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "有乐坤沙 (胡)",
+          "income": 0.0,
+          "expense": 960.0,
+          "net": -960.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 960.0,
+              "net": -960.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "女神经秧子 (💼 财神爷的小宝贝)",
+          "income": 920.0,
+          "expense": 0.0,
+          "net": 920.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 920.0,
+              "expense": 0.0,
+              "net": 920.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "韩国TACK窗膜-安柏莱家居膜南昌店",
+          "income": 0.0,
+          "expense": 850.0,
+          "net": -850.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 850.0,
+              "net": -850.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A 燕子",
+          "income": 0.0,
+          "expense": 709.9,
+          "net": -709.9,
+          "count": 14,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 214.3,
+              "net": -214.3,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 285.6,
+              "net": -285.6,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "胡花",
+          "income": 0.0,
+          "expense": 600.0,
+          "net": -600.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "守望者国水 (粲驯)",
+          "income": 600.0,
+          "expense": 0.0,
+          "net": 600.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 600.0,
+              "expense": 0.0,
+              "net": 600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "南昌立军百货18070391199",
+          "income": 0.0,
+          "expense": 558.0,
+          "net": -558.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 558.0,
+              "net": -558.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "北京再兴鸿南昌八达好运五金工具有",
+          "income": 72.0,
+          "expense": 580.0,
+          "net": -508.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 580.0,
+              "net": -508.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "王栋 (东方宇痕)",
+          "income": 500.0,
+          "expense": 0.0,
+          "net": 500.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 100.0,
+              "expense": 0.0,
+              "net": 100.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "刘勇刚",
+          "income": 466.0,
+          "expense": 0.0,
+          "net": 466.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 466.0,
+              "expense": 0.0,
+              "net": 466.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "阿鹏",
+          "income": 860.0,
+          "expense": 450.0,
+          "net": 410.0,
+          "count": 4,
+          "years": {
+            "2026": {
+              "income": 860.0,
+              "expense": 450.0,
+              "net": 410.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "罗艳红",
+          "income": 500.0,
+          "expense": 90.0,
+          "net": 410.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 90.0,
+              "net": -90.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 500.0,
+              "expense": 0.0,
+              "net": 500.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "AAA收购门窗，包拆，多多关照小弟",
+          "income": 400.0,
+          "expense": 0.0,
+          "net": 400.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "英子",
+          "income": 13211.0,
+          "expense": 13588.0,
+          "net": -377.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 12465.0,
+              "expense": 6090.0,
+              "net": 6375.0,
+              "count": 15
+            },
+            "2025": {
+              "income": 600.0,
+              "expense": 3720.0,
+              "net": -3120.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 146.0,
+              "expense": 3778.0,
+              "net": -3632.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "刘小华",
+          "income": 0.0,
+          "expense": 350.0,
+          "net": -350.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 100.0,
+              "net": -100.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "圆圆🍑🍓🍇🍈🍉🍎🍐",
+          "income": 342.0,
+          "expense": 0.0,
+          "net": 342.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 342.0,
+              "expense": 0.0,
+              "net": 342.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "傅",
+          "income": 0.0,
+          "expense": 340.0,
+          "net": -340.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 340.0,
+              "net": -340.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "诚信白铁加工店",
+          "income": 378.0,
+          "expense": 64.0,
+          "net": 314.0,
+          "count": 9,
+          "years": {
+            "2025": {
+              "income": 378.0,
+              "expense": 64.0,
+              "net": 314.0,
+              "count": 9
+            }
+          }
+        },
+        {
+          "label": "小钟",
+          "income": 300.0,
+          "expense": 0.0,
+          "net": 300.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "小敏（咨询10-24点可约）",
+          "income": 0.0,
+          "expense": 299.0,
+          "net": -299.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 299.0,
+              "net": -299.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "万云",
+          "income": 0.0,
+          "expense": 274.0,
+          "net": -274.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 274.0,
+              "net": -274.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵雪琴",
+          "income": 272.0,
+          "expense": 0.0,
+          "net": 272.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 272.0,
+              "expense": 0.0,
+              "net": 272.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "悠悠岁月",
+          "income": 268.0,
+          "expense": 0.0,
+          "net": 268.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 268.0,
+              "expense": 0.0,
+              "net": 268.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "随遇而安",
+          "income": 224.0,
+          "expense": 0.0,
+          "net": 224.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 224.0,
+              "expense": 0.0,
+              "net": 224.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "肋骨刘慧 (肋骨)",
+          "income": 0.0,
+          "expense": 222.0,
+          "net": -222.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 104.0,
+              "net": -104.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵杰睿，闵晨睿MM",
+          "income": 216.0,
+          "expense": 0.0,
+          "net": 216.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 0.0,
+              "net": 216.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "李龙桂",
+          "income": 204.0,
+          "expense": 0.0,
+          "net": 204.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 204.0,
+              "expense": 0.0,
+              "net": 204.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "皇室战争令牌 (梁财神)",
+          "income": 0.0,
+          "expense": 203.0,
+          "net": -203.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 203.0,
+              "net": -203.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "刚哥",
+          "income": 300.0,
+          "expense": 500.0,
+          "net": -200.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 500.0,
+              "net": -500.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "ゞ伱De未来、我来ゞ℡",
+          "income": 200.0,
+          "expense": 0.0,
+          "net": 200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 200.0,
+              "expense": 0.0,
+              "net": 200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A烘焙（熊熊）&幸福时刻蛋糕",
+          "income": 0.0,
+          "expense": 198.0,
+          "net": -198.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 198.0,
+              "net": -198.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "1",
+          "income": 0.0,
+          "expense": 180.0,
+          "net": -180.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 180.0,
+              "net": -180.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "赵群",
+          "income": 168.0,
+          "expense": 0.0,
+          "net": 168.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 168.0,
+              "expense": 0.0,
+              "net": 168.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "A道路救援 维修电动车13739658860",
+          "income": 0.0,
+          "expense": 160.0,
+          "net": -160.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 160.0,
+              "net": -160.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胜花奶奶 (美佳乐)",
+          "income": 240.0,
+          "expense": 84.0,
+          "net": 156.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 240.0,
+              "expense": 84.0,
+              "net": 156.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "章依婷",
+          "income": 150.0,
+          "expense": 0.0,
+          "net": 150.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 150.0,
+              "expense": 0.0,
+              "net": 150.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "＄人一定＃要靠自己罗松 (＄人一定＃要靠自己)",
+          "income": 0.0,
+          "expense": 150.0,
+          "net": -150.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 150.0,
+              "net": -150.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芷",
+          "income": 122.0,
+          "expense": 0.0,
+          "net": 122.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 122.0,
+              "expense": 0.0,
+              "net": 122.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "এ᭄ꦿ꯭世界🚬一劉℘᭄ᩚ꯭",
+          "income": 118.0,
+          "expense": 0.0,
+          "net": 118.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 118.0,
+              "expense": 0.0,
+              "net": 118.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "Kiki",
+          "income": 0.0,
+          "expense": 118.0,
+          "net": -118.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "虾仁不眨眼",
+          "income": 0.0,
+          "expense": 110.0,
+          "net": -110.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 110.0,
+              "net": -110.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "Dw.,",
+          "income": 104.0,
+          "expense": 0.0,
+          "net": 104.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 104.0,
+              "expense": 0.0,
+              "net": 104.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张炀 (Sirius.)",
+          "income": 0.0,
+          "expense": 103.0,
+          "net": -103.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 103.0,
+              "net": -103.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邢文宇 (Xxing)",
+          "income": 99.9,
+          "expense": 0.0,
+          "net": 99.9,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 99.9,
+              "expense": 0.0,
+              "net": 99.9,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "🎋 幸运曹🐰",
+          "income": 172.0,
+          "expense": 74.0,
+          "net": 98.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 172.0,
+              "expense": 74.0,
+              "net": 98.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "V v",
+          "income": 98.0,
+          "expense": 0.0,
+          "net": 98.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 98.0,
+              "expense": 0.0,
+              "net": 98.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A香江一声喊照明灯具批发  彭杏亮",
+          "income": 0.0,
+          "expense": 92.5,
+          "net": -92.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 92.5,
+              "net": -92.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "泽微珠宝13879185190",
+          "income": 126.0,
+          "expense": 214.0,
+          "net": -88.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 126.0,
+              "expense": 214.0,
+              "net": -88.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "【$】",
+          "income": 86.0,
+          "expense": 0.0,
+          "net": 86.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 86.0,
+              "expense": 0.0,
+              "net": 86.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "🌸戴戴",
+          "income": 84.0,
+          "expense": 0.0,
+          "net": 84.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 84.0,
+              "expense": 0.0,
+              "net": 84.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "在意",
+          "income": 72.0,
+          "expense": 0.0,
+          "net": 72.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 0.0,
+              "net": 72.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "绑定",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "十月初心。",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "2026QQ糖",
+          "income": 88.0,
+          "expense": 154.0,
+          "net": -66.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 88.0,
+              "expense": 154.0,
+              "net": -66.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "梦熹",
+          "income": 0.0,
+          "expense": 64.0,
+          "net": -64.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 64.0,
+              "net": -64.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "H",
+          "income": 62.0,
+          "expense": 0.0,
+          "net": 62.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 62.0,
+              "expense": 0.0,
+              "net": 62.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "王强",
+          "income": 58.0,
+          "expense": 0.0,
+          "net": 58.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 58.0,
+              "expense": 0.0,
+              "net": 58.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "汪骞 (往前)",
+          "income": 55.0,
+          "expense": 0.0,
+          "net": 55.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 55.0,
+              "expense": 0.0,
+              "net": 55.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "繁花似锦ぅ",
+          "income": 52.0,
+          "expense": 0.0,
+          "net": 52.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 52.0,
+              "expense": 0.0,
+              "net": 52.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "X",
+          "income": 170.0,
+          "expense": 222.0,
+          "net": -52.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 170.0,
+              "expense": 222.0,
+              "net": -52.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "秋秋",
+          "income": 130.0,
+          "expense": 80.0,
+          "net": 50.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 130.0,
+              "expense": 30.0,
+              "net": 100.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "罗紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 50.0,
+          "net": -50.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "冷暖自知",
+          "income": 50.0,
+          "expense": 0.0,
+          "net": 50.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 50.0,
+              "expense": 0.0,
+              "net": 50.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "蔡建红",
+          "income": 0.0,
+          "expense": 49.0,
+          "net": -49.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 49.0,
+              "net": -49.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老爷子",
+          "income": 44.0,
+          "expense": 0.0,
+          "net": 44.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 44.0,
+              "expense": 0.0,
+              "net": 44.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张伟宇 (不忘初心)",
+          "income": 0.0,
+          "expense": 40.0,
+          "net": -40.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "彭睿 (lambda)",
+          "income": 34.5,
+          "expense": 0.0,
+          "net": 34.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.5,
+              "expense": 0.0,
+              "net": 34.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "💞静若幽兰℘࿐℘࿐ᩚ",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "落",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小萍",
+          "income": 120.0,
+          "expense": 90.0,
+          "net": 30.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 120.0,
+              "expense": 90.0,
+              "net": 30.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "清心",
+          "income": 30.0,
+          "expense": 0.0,
+          "net": 30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 30.0,
+              "expense": 0.0,
+              "net": 30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "宏瑞汽车一站式Mr.羅念情",
+          "income": 0.0,
+          "expense": 30.0,
+          "net": -30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 30.0,
+              "net": -30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小夏麻将 (小夏)",
+          "income": 216.0,
+          "expense": 244.0,
+          "net": -28.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 244.0,
+              "net": -28.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "中药调肤瘦身",
+          "income": 28.0,
+          "expense": 0.0,
+          "net": 28.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 28.0,
+              "expense": 0.0,
+              "net": 28.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邮政快递 (铁血老二哥)",
+          "income": 0.0,
+          "expense": 16.0,
+          "net": -16.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 16.0,
+              "net": -16.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "陈哥，不是当年的哥",
+          "income": 14.0,
+          "expense": 0.0,
+          "net": 14.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 14.0,
+              "expense": 0.0,
+              "net": 14.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "杨威 (Bavaria)",
+          "income": 38.0,
+          "expense": 29.6,
+          "net": 8.4,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 38.0,
+              "expense": 29.6,
+              "net": 8.4,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": ",,,,,,,,难，，，，，",
+          "income": 8.0,
+          "expense": 0.0,
+          "net": 8.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 8.0,
+              "expense": 0.0,
+              "net": 8.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "AAA炫鸽文化传媒18279186808",
+          "income": 0.0,
+          "expense": 7.0,
+          "net": -7.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 7.0,
+              "net": -7.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "以诚待人",
+          "income": 6.0,
+          "expense": 0.0,
+          "net": 6.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 6.0,
+              "expense": 0.0,
+              "net": 6.0,
+              "count": 1
+            }
+          }
+        }
+      ],
       "insights": [
         {
           "title": "消费峰值",
@@ -3215,6 +10612,98 @@
           "amount": 43180.41,
           "count": 153,
           "share": 0.143465
+        }
+      ],
+      "counterparties": [
+        {
+          "label": "Sue(王书舒)",
+          "income": 3000.0,
+          "expense": 0.0,
+          "net": 3000.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 3000.0,
+              "expense": 0.0,
+              "net": 3000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "众安在线财产保险股份有限公司",
+          "income": 2371.26,
+          "expense": 0.0,
+          "net": 2371.26,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 2371.26,
+              "expense": 0.0,
+              "net": 2371.26,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "Blade_blood",
+          "income": 2030.0,
+          "expense": 0.0,
+          "net": 2030.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 2030.0,
+              "expense": 0.0,
+              "net": 2030.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "支付宝小荷包(wafase业务资金)",
+          "income": 0.0,
+          "expense": 1650.0,
+          "net": -1650.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1650.0,
+              "net": -1650.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小型微型计算机系统(**宁)",
+          "income": 0.0,
+          "expense": 300.0,
+          "net": -300.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗文培",
+          "income": 0.0,
+          "expense": 0.0,
+          "net": 0.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 0.0,
+              "net": 0.0,
+              "count": 1
+            }
+          }
         }
       ],
       "insights": [
@@ -3994,6 +11483,41 @@
           "amount": 99378.45,
           "count": 284,
           "share": 0.187604
+        }
+      ],
+      "counterparties": [
+        {
+          "label": "银行流水",
+          "income": 51140.51,
+          "expense": 200200.0,
+          "net": -149059.49,
+          "count": 23,
+          "years": {
+            "2023": {
+              "income": 6168.51,
+              "expense": 0.0,
+              "net": 6168.51,
+              "count": 2
+            },
+            "2024": {
+              "income": 31772.0,
+              "expense": 15200.0,
+              "net": 16572.0,
+              "count": 12
+            },
+            "2025": {
+              "income": 13200.0,
+              "expense": 101000.0,
+              "net": -87800.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 84000.0,
+              "net": -84000.0,
+              "count": 3
+            }
+          }
         }
       ],
       "insights": [

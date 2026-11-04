@@ -21,7 +21,7 @@
         </div>
         <div class="hero-note">
           <div class="hero-note-label">公开页面</div>
-          <p>只展示聚合数据。交易对方、商品、订单号和银行卡尾号均未发布；银行流水与支付平台分开展示。</p>
+          <p>只展示聚合数据。账户名和转账对象用于分组展示，商品、订单号和银行卡尾号均未发布；银行流水与支付平台分开展示。</p>
           <div class="hero-note-line"><span>覆盖区间</span><strong id="coverage">读取中…</strong></div>
           <div class="hero-note-line"><span>数据状态</span><strong id="freshness">读取中…</strong></div>
         </div>
@@ -86,6 +86,25 @@
         </article>
       </section>
 
+      <section class="panel people-panel">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">PEOPLE & FLOWS</div>
+            <h2>和谁之间的资金往来最明显</h2>
+            <p class="section-copy">切换账户后，这里只看当前账户的转账对象；选择年度可以对比每个人的收入、支出和净流入。</p>
+          </div>
+          <label class="select-wrap compact-select">
+            <span class="sr-only">往来年度</span>
+            <select id="counterpartyYear" aria-label="选择往来年度">
+              <option value="all">全部年度</option>
+            </select>
+            <span class="select-chevron" aria-hidden="true">⌄</span>
+          </label>
+        </div>
+        <div id="counterpartyChart" class="counterparty-list" aria-label="转账对象净流入排名"></div>
+        <div id="counterpartyFootnote" class="chart-footnote"></div>
+      </section>
+
       <section class="two-column lower-grid">
         <article class="panel">
           <div class="section-head compact">
@@ -125,7 +144,7 @@
           </div>
           <div>
             <h3>怎么保护隐私</h3>
-            <p>网页只发布按来源、月份、年度、类别和渠道聚合后的数字；原始 Excel、CSV、PDF、交易对方、商品、订单号、微信昵称和银行卡尾号没有进入公开仓库。</p>
+            <p>网页只发布按账户、来源、转账对象、月份、年度、类别和渠道聚合后的数字；原始 Excel、CSV、PDF、商品、订单号、微信昵称和银行卡尾号没有进入公开仓库。</p>
           </div>
           <div>
             <h3>如何更新</h3>

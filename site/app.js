@@ -1,5 +1,5 @@
 (() => {
-  const state = { data: null, viewId: "combined" };
+  const state = { data: null, viewId: "combined", counterpartyYear: "all" };
   const CURRENCY = new Intl.NumberFormat("zh-CN", { style: "currency", currency: "CNY", minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const NUMBER = new Intl.NumberFormat("zh-CN");
 
@@ -18,7 +18,7 @@
 
   function renderError(error) {
     const message = `数据加载失败：${escapeHtml(error?.message || "无法读取 summary.json")}`;
-    ["metrics", "trendChart", "trendTable", "categoryChart", "incomeChart", "yearlyTable", "insights"].forEach((id) => {
+    ["metrics", "trendChart", "trendTable", "categoryChart", "incomeChart", "counterpartyChart", "yearlyTable", "insights"].forEach((id) => {
       const node = document.getElementById(id);
       if (node) node.innerHTML = `<div class="error-box">${message}</div>`;
     });
@@ -35,8 +35,20 @@
     select.value = state.viewId;
     select.addEventListener("change", () => {
       state.viewId = select.value;
+      state.counterpartyYear = "all";
       render();
     });
+  }
+
+  function renderCounterpartyYearOptions(view) {
+    const select = $("#counterpartyYear");
+    if (!select) return;
+    const years = new Set();
+    (view.counterparties || []).forEach((item) => Object.keys(item.years || {}).forEach((year) => years.add(year)));
+    const options = ["<option value=\"all\">全部年度</option>", ...Array.from(years).sort().map((year) => `<option value=\"${escapeHtml(year)}\">${escapeHtml(year)} 年</option>`)];
+    select.innerHTML = options.join("");
+    if (!years.has(state.counterpartyYear)) state.counterpartyYear = "all";
+    select.value = state.counterpartyYear;
   }
 
   function renderMeta(view) {
@@ -128,6 +140,36 @@
     $("#incomeFootnote").textContent = `总收入 ${money(incomeTotal)}，已识别退款 ${money(view.metrics.refunds)}；中性退款会从有效消费总额中扣除。`;
   }
 
+  function renderCounterparties(view) {
+    const container = $("#counterpartyChart");
+    const footnote = $("#counterpartyFootnote");
+    renderCounterpartyYearOptions(view);
+    const items = view.counterparties || [];
+    if (!items.length) {
+      container.innerHTML = `<div class="empty">当前来源没有可拆分的转账对象</div>`;
+      footnote.textContent = "银行快捷支付与支付平台分开展示；切换账户或支付平台来源查看对应的转账对象。";
+      return;
+    }
+    const year = state.counterpartyYear;
+    const rows = items.map((item) => {
+      const detail = year === "all" ? item : (item.years?.[year] || { income: 0, expense: 0, net: 0, count: 0 });
+      return { label: item.label, income: Number(detail.income || 0), expense: Number(detail.expense || 0), net: Number(detail.net || 0), count: Number(detail.count || 0) };
+    }).filter((item) => item.count > 0).sort((a, b) => Math.abs(b.net) - Math.abs(a.net));
+    const visible = rows.slice(0, 12);
+    const maxAbs = Math.max(1, ...visible.map((item) => Math.abs(item.net)));
+    container.innerHTML = visible.map((item) => {
+      const tone = item.net >= 0 ? "positive" : "negative";
+      const width = Math.max(1.5, Math.abs(item.net) / maxAbs * 100);
+      return `<div class="counterparty-row">
+        <div class="counterparty-name" title="${escapeHtml(item.label)}">${escapeHtml(item.label)}</div>
+        <div class="counterparty-track"><div class="counterparty-bar"><span class="${tone}" style="width:${width}%"></span></div><div class="counterparty-meta"><span>收入 ${escapeHtml(money(item.income))}</span><span>支出 ${escapeHtml(money(item.expense))}</span></div></div>
+        <div class="counterparty-net ${tone}">${escapeHtml(money(item.net))}<small> · ${count(item.count)} 笔</small></div>
+      </div>`;
+    }).join("");
+    const scope = year === "all" ? "全部年度" : `${year} 年`;
+    footnote.textContent = `当前视图：${view.label} · ${scope} · 按净流入绝对值排序，展示前 ${visible.length} 个对象；正数表示流入更多，负数表示流出更多。`;
+  }
+
   function renderYearly(view) {
     const rows = view.yearly || [];
     $("#yearlyTable").innerHTML = rows.length ? `<table class="data-table"><thead><tr><th>年度</th><th>收入</th><th>支出</th><th>消费</th><th>净额</th></tr></thead><tbody>${rows.map((row) => `<tr><td class="emphasis">${escapeHtml(row.label)}</td><td>${escapeHtml(money(row.income))}</td><td>${escapeHtml(money(row.expense))}</td><td>${escapeHtml(money(row.consumption))}</td><td class="${Number(row.net_cashflow) >= 0 ? "up" : "down"}">${escapeHtml(money(row.net_cashflow))}</td></tr>`).join("")}</tbody></table>` : `<div class="empty">暂无年度数据</div>`;
@@ -144,6 +186,7 @@
     renderMetrics(view);
     renderTrend(view);
     renderBreakdowns(view);
+    renderCounterparties(view);
     renderYearly(view);
     renderInsights(view);
   }
@@ -154,6 +197,8 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       state.data = await response.json();
       fillAccountSelect();
+      const counterpartyYear = $("#counterpartyYear");
+      if (counterpartyYear) counterpartyYear.addEventListener("change", () => { state.counterpartyYear = counterpartyYear.value; render(); });
       render();
     } catch (error) {
       renderError(error);

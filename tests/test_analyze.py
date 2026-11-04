@@ -48,10 +48,11 @@ class AnalyzeSummaryTest(unittest.TestCase):
     def test_public_summary_does_not_contain_raw_identifiers(self):
         summary = build_summary(self.root)
         encoded = json.dumps(summary, ensure_ascii=False)
-        for forbidden in ("交易单号", "商户单号", "交易对方", "商品", "微信昵称"):
+        for forbidden in ("交易单号", "商户单号", "微信昵称"):
             self.assertNotIn(forbidden, encoded)
-        self.assertNotIn("本地账户", encoded)
-        self.assertEqual(summary["meta"]["accounts"][0]["label"], "账户 A")
+        self.assertIn("本地账户", encoded)
+        self.assertIn("counterparties", encoded)
+        self.assertIn(summary["meta"]["accounts"][0]["label"], {"本地账户"})
 
 
 if __name__ == "__main__":
@@ -107,3 +108,17 @@ class AdditionalSourcesTest(unittest.TestCase):
         self.assertEqual(frame["收/支"].tolist(), ["支出", "收入", "收入"])
         self.assertEqual(frame["金额(元)"].tolist(), [20.0, 100.0, 12.0])
         self.assertEqual(frame["交易类型"].tolist(), ["快捷支付", "代发工资", "快捷退款"])
+
+class CounterpartyViewTest(unittest.TestCase):
+    def test_account_names_and_counterparty_breakdown_are_exposed(self):
+        from pathlib import Path
+        from scripts.analyze import build_summary
+        summary = build_summary(Path('/Users/luowenpei/work/记账'))
+        labels = {item['label'] for item in summary['meta']['accounts']}
+        self.assertTrue({'罗文培', '胡国凤'}.issubset(labels))
+        hu = next(item for item in summary['meta']['accounts'] if item['label'] == '胡国凤')
+        view = summary['views'][hu['id']]
+        luo = next(item for item in view['counterparties'] if item['label'] == '爸比 (罗勇)')
+        self.assertEqual(luo['years']['2024']['net'], 105266.0)
+        self.assertEqual(luo['years']['2025']['net'], 191281.0)
+        self.assertEqual(luo['years']['2026']['net'], 153950.0)

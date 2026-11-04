@@ -406,6 +406,46 @@ def _insights(frame: pd.DataFrame, monthly: list[dict[str, Any]], categories: li
     return insights
 
 
+def _counterparty_breakdown(frame: pd.DataFrame) -> list[dict[str, Any]]:
+    """按转账交易对方拆分收入、支出、净流入和年度变化。"""
+    if frame.empty:
+        return []
+    transfer = frame.loc[
+        frame["__transaction_type"].str.contains("转账", na=False)
+        & ~frame["交易对方"].map(_clean_text).isin({"", "/", "nan", "None"})
+    ].copy()
+    if transfer.empty:
+        return []
+    transfer["__effective_transfer"] = (transfer["__amount"] - transfer["__refund_amount"]).clip(lower=0)
+    transfer["__signed_transfer"] = transfer["__effective_transfer"].where(
+        transfer["__direction"] == "income", -transfer["__effective_transfer"]
+    )
+    result: list[dict[str, Any]] = []
+    for label, group in transfer.groupby("交易对方", sort=False):
+        label = _clean_text(label)
+        years: dict[str, dict[str, Any]] = {}
+        for year, year_group in group.groupby("__year"):
+            income = year_group.loc[year_group["__direction"] == "income", "__effective_transfer"].sum()
+            expense = year_group.loc[year_group["__direction"] == "expense", "__effective_transfer"].sum()
+            years[str(int(year))] = {
+                "income": _round2(income),
+                "expense": _round2(expense),
+                "net": _round2(income - expense),
+                "count": int(len(year_group)),
+            }
+        income = group.loc[group["__direction"] == "income", "__effective_transfer"].sum()
+        expense = group.loc[group["__direction"] == "expense", "__effective_transfer"].sum()
+        result.append({
+            "label": label,
+            "income": _round2(income),
+            "expense": _round2(expense),
+            "net": _round2(income - expense),
+            "count": int(len(group)),
+            "years": years,
+        })
+    return sorted(result, key=lambda row: (abs(row["net"]), row["count"]), reverse=True)
+
+
 def _build_view(frame: pd.DataFrame, view_id: str, label: str, file_count: int, source_label: str = "") -> dict[str, Any]:
     income = frame.loc[frame["__direction"] == "income", "__amount"]
     expense = frame.loc[frame["__direction"] == "expense", "__amount"]
@@ -445,6 +485,7 @@ def _build_view(frame: pd.DataFrame, view_id: str, label: str, file_count: int, 
         "income_sources": income_sources,
         "payment_channels": payment_channels,
         "weekdays": weekdays,
+        "counterparties": _counterparty_breakdown(frame),
         "insights": _insights(frame, monthly, categories),
     }
 
@@ -461,7 +502,7 @@ def build_summary(input_dir: Path) -> dict[str, Any]:
     platform = pd.concat(platform_frames, ignore_index=True) if platform_frames else pd.DataFrame()
     account_keys = sorted(platform["__account_key"].dropna().unique().tolist()) if not platform.empty else []
     account_ids = {key: f"account-{index + 1}" for index, key in enumerate(account_keys)}
-    account_labels = {key: f"账户 {chr(ord('A') + index)}" for index, key in enumerate(account_keys)}
+    account_labels = {key: key for key in account_keys}
     file_records = wechat_quality["file_records"] + alipay_quality["file_records"]
     account_file_counts = pd.DataFrame(file_records).groupby("account_key").size().to_dict() if file_records else {}
     views: dict[str, dict[str, Any]] = {}
