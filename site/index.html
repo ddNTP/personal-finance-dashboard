@@ -1,173 +1,22 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="基于微信支付账单聚合数据的个人收支分析仪表盘">
-  <meta name="theme-color" content="#07111f">
-  <title>个人收支分析仪表盘</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102c3b"><meta name="description" content="按人核对收入、消费、往来和资金调拨的财务分析工作台"><title>资金透视 · 个人财务分析</title><link rel="icon" href="data:,"><link rel="stylesheet" href="styles.css"></head>
 <body>
-  <div class="page-shell">
-    <header class="hero">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-      <div class="eyebrow">PERSONAL FINANCE / WECHAT BILLING</div>
-      <div class="hero-grid">
-        <div>
-          <h1>把每一笔流动，<br><span>看成一条长期轨迹。</span></h1>
-          <p class="hero-copy">一份面向复盘的收支视图：把收入、支出、退款与日常消费拆开，看见真正影响现金流的月份和类别。</p>
-        </div>
-        <div class="hero-note">
-          <div class="hero-note-label">公开页面</div>
-          <p>只展示聚合数据。账户名和转账对象用于分组展示，商品、订单号和银行卡尾号均未发布；银行流水与支付平台分开展示。</p>
-          <div class="hero-note-line"><span>覆盖区间</span><strong id="coverage">读取中…</strong></div>
-          <div class="hero-note-line"><span>数据状态</span><strong id="freshness">读取中…</strong></div>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="toolbar" aria-label="视图筛选">
-        <div>
-          <div class="eyebrow">VIEW</div>
-          <h2>选择你要看的账户范围</h2>
-        </div>
-        <div class="toolbar-filters">
-          <label class="select-wrap">
-            <span class="filter-caption">按人</span>
-            <select id="accountSelect" aria-label="按人选择账户"></select>
-            <span class="select-chevron" aria-hidden="true">⌄</span>
-          </label>
-          <label class="select-wrap">
-            <span class="filter-caption">数据来源</span>
-            <select id="sourceSelect" aria-label="选择数据来源"></select>
-            <span class="select-chevron" aria-hidden="true">⌄</span>
-          </label>
-        </div>
-      </section>
-
-      <section id="metrics" class="kpi-grid" aria-live="polite"></section>
-
-      <section class="panel trend-panel">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">MONTHLY RHYTHM</div>
-            <h2>收入和支出，在哪些月份拉开差距</h2>
-            <p class="section-copy">有效消费扣除了账单中识别出的全额和部分退款；支付宝中性退款会做负向调整，转账与红包保留在收支总览中。</p>
-          </div>
-          <div class="legend" aria-label="图例">
-            <span><i class="legend-dot income"></i>收入</span>
-            <span><i class="legend-dot expense"></i>支出</span>
-            <span><i class="legend-dot consumption"></i>有效消费</span>
-          </div>
-        </div>
-        <div id="trendChart" class="chart-shell" aria-label="月度收入支出趋势图"></div>
-        <div id="trendTable" class="table-wrap"></div>
-      </section>
-
-      <section class="two-column">
-        <article class="panel">
-          <div class="section-head compact">
-            <div>
-              <div class="eyebrow">SPENDING MIX</div>
-              <h2>钱主要流向哪里</h2>
-            </div>
-            <span class="section-tag">有效消费</span>
-          </div>
-          <div id="categoryChart" class="bars" aria-label="消费类别排名"></div>
-          <div id="categoryFootnote" class="chart-footnote"></div>
-        </article>
-
-        <article class="panel">
-          <div class="section-head compact">
-            <div>
-              <div class="eyebrow">INCOME SOURCES</div>
-              <h2>收入来自哪些方向</h2>
-            </div>
-            <span class="section-tag warm">账单收入</span>
-          </div>
-          <div id="incomeChart" class="bars" aria-label="收入来源排名"></div>
-          <div id="incomeFootnote" class="chart-footnote"></div>
-        </article>
-      </section>
-
-      <section class="panel people-panel">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">PEOPLE & FLOWS</div>
-            <h2>和谁之间的资金往来最明显</h2>
-            <p class="section-copy">切换账户后，这里只看当前账户的转账对象；选择年度可以对比每个人的收入、支出和净流入。</p>
-          </div>
-          <label class="select-wrap compact-select">
-            <span class="sr-only">往来年度</span>
-            <select id="counterpartyYear" aria-label="选择往来年度">
-              <option value="all">全部年度</option>
-            </select>
-            <span class="select-chevron" aria-hidden="true">⌄</span>
-          </label>
-        </div>
-        <div id="counterpartyChart" class="counterparty-list" aria-label="转账对象净流入排名"></div>
-        <div id="counterpartyFootnote" class="chart-footnote"></div>
-      </section>
-
-      <section class="two-column lower-grid">
-        <article class="panel">
-          <div class="section-head compact">
-            <div>
-              <div class="eyebrow">YEARLY LENS</div>
-              <h2>年度节奏</h2>
-            </div>
-            <span class="section-tag">2026 为不完整年度</span>
-          </div>
-          <div id="yearlyTable" class="table-wrap"></div>
-        </article>
-
-        <article class="panel insight-panel">
-          <div class="section-head compact">
-            <div>
-              <div class="eyebrow">SIGNALS</div>
-              <h2>这份账单给出的信号</h2>
-            </div>
-            <span class="section-tag cool">规则化洞察</span>
-          </div>
-          <div id="insights" class="insights"></div>
-        </article>
-      </section>
-
-      <section class="panel methodology">
-        <div class="section-head compact">
-          <div>
-            <div class="eyebrow">METHOD</div>
-            <h2>口径和边界</h2>
-          </div>
-          <span class="section-tag">可重复生成</span>
-        </div>
-        <div class="method-grid">
-          <div>
-            <h3>怎么计算</h3>
-            <p>总收入、总支出和净现金流沿用各来源账单方向。有效消费排除转账、红包、投资理财和账户调拨，并从退款状态中扣掉退款金额。</p>
-          </div>
-          <div>
-            <h3>怎么保护隐私</h3>
-            <p>网页只发布按账户、来源、转账对象、月份、年度、类别和渠道聚合后的数字；原始 Excel、CSV、PDF、商品、订单号、微信昵称和银行卡尾号没有进入公开仓库。</p>
-          </div>
-          <div>
-            <h3>如何更新</h3>
-            <p>把新的账单放回本地输入目录，运行 <code>python3 scripts/analyze.py</code>，检查来源质量和去重结果后再提交 <code>site/data/summary.json</code>。</p>
-          </div>
-        </div>
-        <div class="method-meta" id="methodMeta"></div>
-      </section>
-    </main>
-
-    <footer>
-      <span>Personal Finance Dashboard</span>
-      <span>静态页面 · 仅发布聚合数据</span>
-    </footer>
-  </div>
-  <noscript>此页面需要启用 JavaScript 才能加载聚合数据和图表。</noscript>
-  <script src="app.js"></script>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="#"><span class="brand-icon">≋</span>资金透视<span class="edition">深度分析</span></a><nav aria-label="主导航"><a href="#overview">总览</a><a href="#income">收入追踪</a><a href="#spending">消费复盘</a><a href="#people">往来</a><a href="#quality">数据核对</a></nav><button class="ghost" id="printReport">打印报告</button></header>
+<main>
+<section class="intro"><div><p class="eyebrow">看清资金的来处与去处</p><h1>先看人，再看钱。</h1><p>收入、消费和资金周转分别解释，每个结论都可以下钻核对。</p></div><div class="intro-meta"><span class="live-dot"></span><span id="dataStatus" role="status">正在读取账单聚合结果…</span></div></section>
+<section class="filter-panel" aria-label="全局筛选"><div class="filter-top"><div id="personTabs" class="tabs" role="group" aria-label="选择人员"></div><label>分析账本<select id="sourceSelect" aria-label="分析账本"></select></label></div><div class="filter-bottom"><label>开始日期<input type="date" id="startDate"></label><span class="date-dash">—</span><label>结束日期<input type="date" id="endDate"></label><button id="applyDates">应用日期</button><div id="presets" class="presets" role="group" aria-label="日期快捷选择"></div><button class="ghost" id="shareFilter">复制当前视图链接</button></div><p id="scopeNote" class="scope-note"></p><p id="filterError" class="error" role="alert" hidden></p></section>
+<div id="appError" class="error panel" role="alert" hidden></div>
+<section id="overview"><div class="section-label"><h2>这段时间，发生了什么</h2><span id="periodLabel"></span></div><div id="kpis" class="kpis" aria-live="polite"></div><div id="insights" class="insight-grid"></div></section>
+<section class="panel" id="channelOverview"><div class="panel-heading"><div><p class="eyebrow">一个人的多个账本</p><h2>各渠道收入，一起看清楚</h2></div><span class="badge">各列独立核对</span></div><p class="muted">以下卡片属于当前人员和日期范围。银行快捷支付可能同时出现在支付平台，渠道金额不可直接相加。</p><div id="channelCards" class="channel-cards"></div></section>
+<section class="panel trend-panel"><div class="panel-heading"><div><p class="eyebrow">时间与变化</p><h2>收入、消费与往来的节奏</h2></div><label>时间粒度<select id="granularity"><option value="month">按月</option><option value="quarter">按季度</option><option value="year">按年</option></select></label></div><div id="trendLegend" class="chart-legend"><button data-series="earned" class="legend active"><i class="income-dot"></i>可识别收入</button><button data-series="spending" class="legend active"><i class="expense-dot"></i>消费净支出</button><button data-series="received" class="legend active"><i class="transfer-dot"></i>往来流入</button></div><div id="trendChart" class="chart-scroll"></div><p class="muted small">悬停查看金额；点击月份或季度，所有分析同步切换到该期间。仅显示已有账单范围。</p></section>
+<section id="income" class="analysis-grid"><article class="panel"><div class="panel-heading"><div><p class="eyebrow">入账不等于新增收入</p><h2>这笔钱是什么性质</h2></div><span class="badge" id="incomeBasis"></span></div><div id="incomeBridge"></div><p class="muted small" id="incomeNote"></p></article><article class="panel"><div class="panel-heading"><div><p class="eyebrow">追到来源</p><h2>谁转来的，为什么入账</h2></div></div><div id="incomeSources"></div><p class="muted small">展开类型可见付款方、金额与笔数；点击付款方查看对应聚合记录。未明确用途的转账不推定为工资。</p></article></section>
+<section id="spending" class="analysis-grid"><article class="panel"><div class="panel-heading"><div><p class="eyebrow">消费结构</p><h2>钱花在哪些地方</h2></div></div><div id="categoryBars"></div><div id="spendingStats" class="mini-stats"></div><p class="muted small">点击类别查看依据。分类来自平台标签和本地规则，用途不明的扫码支付保留待确认。</p></article><article class="panel"><div class="panel-heading"><div><p class="eyebrow">变化的原因</p><h2>哪些类别拉高了支出</h2></div><label>比较基准<select id="comparison"><option value="year">去年同期</option><option value="previous">前一等长期间</option></select></label></div><div id="comparisonSummary"></div><div id="changes"></div><p class="muted small">比较相同截止月日或相同天数；没有覆盖到的基期会提示不可比。</p></article></section>
+<section class="analysis-grid"><article class="panel"><div class="panel-heading"><div><p class="eyebrow">重复出现的支出</p><h2>周期性消费候选</h2></div><span class="badge">需要人工确认</span></div><div id="recurring"></div><p class="muted small">同一商户至少出现于 3 个月，每月不超过 2 笔，月金额变异系数 ≤20%。这是重复模式，不代表已订阅或每月固定扣费。</p></article><article class="panel"><div class="panel-heading"><div><p class="eyebrow">值得回看的支出</p><h2>大额消费与集中度</h2></div></div><div id="largeSpend"></div><p id="largeNote" class="muted small"></p></article></section>
+<section id="people" class="panel"><div class="panel-heading"><div><p class="eyebrow">和每个人单独算清</p><h2>往来对象与收付排行榜</h2></div><button class="ghost" id="exportPeople">导出当前对象汇总</button></div><div class="table-controls"><label class="search-label">搜索对象<input id="partySearch" type="search" placeholder="例如：罗勇、罗峰、凤凤"></label><label>统计范围<select id="partyMode"><option value="transfer">仅往来收付</option><option value="all">全部收付款</option></select></label><label>排序<select id="partySort"><option value="net">净流入绝对值</option><option value="income">流入最多</option><option value="expense">流出最多</option><option value="count">交易最多</option></select></label></div><div class="table-scroll" id="partyTable"></div><div class="pager"><button class="ghost" id="prevParty">上一页</button><span id="partyPage" aria-live="polite"></span><button class="ghost" id="nextParty">下一页</button></div><p class="muted small">按人员、来源、原始对象分组；不按相似昵称合并身份。退款已明确的微信转账冲减原支出，因此往来净额可能不同于毛收付。</p></section>
+<section id="quality" class="panel"><div class="panel-heading"><div><p class="eyebrow">证据与边界</p><h2>这份分析能确认什么</h2></div><button class="ghost" id="exportReport">导出筛选范围报告</button></div><div id="qualityGrid" class="quality-grid"></div><details class="method"><summary>查看统计规则与来源</summary><ul><li>所有指标使用人民币分计算。账单流入/流出按收支方向；本金调拨、理财赎回、还款、退款和用途不明收款分别显示。</li><li>“可识别收入”只包含证据足够的工资、利息、明确收益和返现；代发款项、公积金转入以及理财本金不计工资。它不是纳税收入或完整家庭收入。</li><li>微信消费按原支出状态扣除已知退款；支付宝仅对唯一关联且原先计入消费的退款做负向调整。未关联退款、银行退款单列，避免猜测抵扣。</li><li>银行和支付平台保留独立账本；尚未跨渠道逐笔去重，不计算全渠道“储蓄率”或资产净值。</li><li>公开数据是按日、对象、类别的聚合记录，无原始订单号、账号、详细商品与备注。名称内联系方式已隐藏。</li></ul><div id="references"></div></details></section>
+<footer><span>资金透视 · 根据已导入账单复盘</span><span id="generatedAt"></span><a href="https://github.com/ddNTP/personal-finance-dashboard" target="_blank" rel="noopener">代码与计算口径 ↗</a></footer>
+</main>
+<dialog id="drillDialog"><div class="dialog-head"><div><p class="eyebrow">与图表同源的计算依据</p><h2 id="drillTitle"></h2></div><button id="closeDrill" class="ghost" aria-label="关闭">关闭</button></div><p id="drillSummary" class="muted"></p><div class="table-scroll" id="drillTable"></div><div class="pager"><button class="ghost" id="prevDrill">上一页</button><span id="drillPage"></span><button class="ghost" id="nextDrill">下一页</button></div><button id="exportDrill">导出这些聚合记录</button></dialog>
+<div class="toast" id="toast" role="status" hidden></div><noscript><p>需要启用 JavaScript 才能查看分析。</p></noscript><script src="engine.js"></script><script src="app.js"></script>
+</body></html>

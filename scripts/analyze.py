@@ -12,6 +12,11 @@ from typing import Any
 import pandas as pd
 
 try:
+    from scripts.cmb import parse_words, check_balances
+except ModuleNotFoundError:
+    from cmb import parse_words, check_balances
+
+try:
     import pdfplumber
 except ImportError:  # pragma: no cover - only used when bank PDF is present
     pdfplumber = None
@@ -150,8 +155,10 @@ def _income_source(transaction_type: str, is_refund: bool) -> str:
     if is_refund:
         return "退款"
     text = _clean_text(transaction_type)
-    if "工资" in text or "代发工资" in text or "代发款项" in text:
+    if "工资" in text:
         return "工资"
+    if "代发款项" in text:
+        return "单位代发（用途待确认）"
     if "住房公积金" in text:
         return "住房公积金"
     if "一网通支付鼓励金" in text or "鼓励金" in text:
@@ -191,15 +198,22 @@ def _prepare_transactions(data: pd.DataFrame, source: str) -> tuple[pd.DataFrame
         "unparseable_amounts": int(data["__amount"].isna().sum()),
         "unknown_directions": int(data["__direction"].isna().sum()),
     }
-    valid_id = data["交易单号"].map(_clean_text).isin({"", "/", "nan", "None"})
-    duplicate_mask = (~valid_id) & data.duplicated(["__source", "__account_key", "交易单号"], keep="last")
+    data["交易单号"] = data["交易单号"].map(_clean_text)
+    valid_id = data["交易单号"].isin({"", "/", "nan", "None"})
+    # 同一付款的状态快照更新；退款是独立事件，同订单的多次部分退款按发生时间/金额区分。
+    refund_event = data["交易类型"].map(_clean_text).str.contains("退款", na=False) & (data["__direction"] != "expense")
+    data["__event_key"] = [
+        "refund:" + str(date) + ":" + str(amount) if is_refund else "payment"
+        for is_refund, date, amount in zip(refund_event, data["__date"], data["__amount"])
+    ]
+    duplicate_mask = (~valid_id) & data.duplicated(["__source", "__account_key", "交易单号", "__event_key"], keep="last")
     quality["duplicate_records_removed"] = int(duplicate_mask.sum())
     data = data.loc[~duplicate_mask].copy()
     data = data.loc[data["__date"].notna() & data["__amount"].notna() & data["__direction"].notna()].copy()
     data["__transaction_type"] = data["交易类型"].map(_clean_text)
     data["__status"] = data["当前状态"].map(_clean_text)
     data["__text"] = (
-        data["交易类型"].map(_clean_text) + " " + data["交易对方"].map(_clean_text) + " " + data["商品"].map(_clean_text)
+        data["交易对方"].map(_clean_text) + " " + data["商品"].map(_clean_text)
     ).str.lower()
     data["__is_refund"] = data["__transaction_type"].str.contains("退款", na=False) | data["__status"].str.contains("退款|退还", regex=True, na=False)
     data["__refund_amount"] = [_parse_refund_amount(status, float(amount), direction, bool(is_refund)) for status, amount, direction, is_refund in zip(data["__status"], data["__amount"], data["__direction"], data["__is_refund"])]
@@ -337,17 +351,18 @@ def _load_cmb_transactions(input_dir: Path) -> tuple[pd.DataFrame, dict[str, Any
     frames: list[pd.DataFrame] = []
     file_info: list[dict[str, Any]] = []
     total_pages = 0
+    bank_checks = []
     for path in files:
         page_frames: list[pd.DataFrame] = []
         with pdfplumber.open(path) as pdf:
             total_pages += len(pdf.pages)
             for page_number, page in enumerate(pdf.pages, start=1):
-                text = page.extract_text(layout=True) or page.extract_text() or ""
-                parsed = parse_cmb_text(text, path.name, page_number)
+                parsed = pd.DataFrame(parse_words(page.extract_words(), page_number, path.name))
                 if not parsed.empty:
                     page_frames.append(parsed)
         if page_frames:
             frame = pd.concat(page_frames, ignore_index=True)
+            bank_checks.append(check_balances(frame.to_dict("records")))
         else:
             frame = pd.DataFrame(columns=["交易时间", "交易类型", "交易对方", "商品", "收/支", "金额(元)", "支付方式", "当前状态", "交易单号", "商户单号", "备注"])
         frame["__account_key"] = path.relative_to(input_dir).parts[0] if len(path.relative_to(input_dir).parts) > 1 else "未分组"
@@ -356,7 +371,7 @@ def _load_cmb_transactions(input_dir: Path) -> tuple[pd.DataFrame, dict[str, Any
         file_info.append({"source": "cmb", "account_key": frame["__account_key"].iloc[0] if len(frame) else "未分组", "path": path.relative_to(input_dir).as_posix(), "records": int(len(frame))})
     raw = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
     data, quality = _prepare_transactions(raw, "cmb")
-    return data, {"source_files": len(files), "file_records": file_info, "pages": total_pages, **quality}
+    return data, {"source_files": len(files), "file_records": file_info, "pages": total_pages, "balance_checks": bank_checks, **quality}
 
 
 def _load_transactions(input_dir: Path) -> tuple[pd.DataFrame, dict[str, Any]]:
@@ -598,14 +613,11 @@ def build_summary(input_dir: Path) -> dict[str, Any]:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input-dir", type=Path, default=Path(__file__).resolve().parents[1], help="包含账单目录的输入目录，默认是仓库根目录")
-    parser.add_argument("--output", type=Path, default=Path(__file__).resolve().parents[1] / "site" / "data" / "summary.json", help="聚合 JSON 输出路径")
-    args = parser.parse_args()
-    summary = build_summary(args.input_dir.expanduser().resolve())
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"已生成 {args.output}：{summary['meta']['record_count']} 条支付平台记录，{summary['meta']['bank_record_count']} 条银行流水，覆盖 {summary['meta']['date_start']} 至 {summary['meta']['date_end']}")
+    # 原命令仍可使用，新的网页统一采用深度分析数据。
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from scripts.build_insights import main as build_insights_main
+    build_insights_main()
 
 
 if __name__ == "__main__":

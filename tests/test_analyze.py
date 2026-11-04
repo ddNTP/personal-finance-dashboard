@@ -1,6 +1,8 @@
 import json
 import tempfile
 import unittest
+import os
+from functools import lru_cache
 from pathlib import Path
 
 import pandas as pd
@@ -109,11 +111,12 @@ class AdditionalSourcesTest(unittest.TestCase):
         self.assertEqual(frame["金额(元)"].tolist(), [20.0, 100.0, 12.0])
         self.assertEqual(frame["交易类型"].tolist(), ["快捷支付", "代发工资", "快捷退款"])
 
+@unittest.skipUnless(os.environ.get("FINANCE_REAL_DATA") == "1", "真实账单验证需 FINANCE_REAL_DATA=1")
 class CounterpartyViewTest(unittest.TestCase):
     def test_account_names_and_counterparty_breakdown_are_exposed(self):
         from pathlib import Path
         from scripts.analyze import build_summary
-        summary = build_summary(Path('/Users/luowenpei/work/记账'))
+        summary = real_summary()
         labels = {item['label'] for item in summary['meta']['accounts']}
         self.assertTrue({'罗文培', '胡国凤'}.issubset(labels))
         hu = next(item for item in summary['meta']['accounts'] if item['label'] == '胡国凤')
@@ -123,11 +126,12 @@ class CounterpartyViewTest(unittest.TestCase):
         self.assertEqual(luo['years']['2025']['net'], 191281.0)
         self.assertEqual(luo['years']['2026']['net'], 153950.0)
 
+@unittest.skipUnless(os.environ.get("FINANCE_REAL_DATA") == "1", "真实账单验证需 FINANCE_REAL_DATA=1")
 class AccountFirstViewTest(unittest.TestCase):
     def test_primary_view_options_are_people_and_sources_are_secondary(self):
         from pathlib import Path
         from scripts.analyze import build_summary
-        summary = build_summary(Path('/Users/luowenpei/work/记账'))
+        summary = real_summary()
         primary_ids = [item['id'] for item in summary['meta']['view_options']]
         self.assertEqual(primary_ids, ['combined', 'account-1', 'account-2'])
         self.assertEqual([item['id'] for item in summary['meta']['source_options']], ['platform', 'wechat', 'alipay', 'bank'])
@@ -144,7 +148,7 @@ class IncomeSourceLabelTest(unittest.TestCase):
 class BankSourceDetailTest(unittest.TestCase):
     def test_bank_specific_transaction_types_are_labeled(self):
         from scripts.analyze import _income_source
-        self.assertEqual(_income_source('代发款项', False), '工资')
+        self.assertEqual(_income_source('代发款项', False), '单位代发（用途待确认）')
         self.assertEqual(_income_source('朝朝宝转出', False), '理财赎回')
         self.assertEqual(_income_source('银联快捷支付', False), '支付回补')
 
@@ -162,3 +166,8 @@ class BankInvestmentIncomeTest(unittest.TestCase):
         self.assertEqual(_income_source('赎回', False), '理财赎回')
         self.assertEqual(_income_source('体验金收益发放', False), '理财收益')
         self.assertEqual(_income_source('汇入汇款', False), '转账收入')
+
+
+@lru_cache(maxsize=1)
+def real_summary():
+    return build_summary(Path(__file__).resolve().parents[1])

@@ -1,0 +1,14 @@
+const test=require('node:test'); const assert=require('node:assert/strict');
+const E=require('../site/engine.js');
+const row=(p={})=>({owner:'甲',source:'wechat',date:'2026-01-05',party:'乙',party_id:'p1',nature:'consume',category:'餐饮',count:1,spending_cents:10000,in_cents:0,out_cents:10000,earned_cents:0,neutral_cents:0,transfer_in_cents:0,transfer_out_cents:0,refund_cents:0,max_spending_cents:10000,...p});
+test('按人和渠道隔离，不能把同额银行扣款再次相加',()=>assert.equal(E.select([row(),row({owner:'丙'}),row({source:'cmb'})],{owner:'甲',source:'platform',start:'2026-01-01',end:'2026-01-31'}).length,1));
+test('日期范围包含首尾，非法范围不可静默接受',()=>{assert.equal(E.select([row()],{owner:'甲',source:'platform',start:'2026-01-05',end:'2026-01-05'}).length,1);assert.throws(()=>E.select([],{start:'2026-02-01',end:'2026-01-01'}));});
+test('收入与本金、往来分开',()=>{const m=E.totals([row({nature:'earned',earned_cents:20000,in_cents:20000,out_cents:0,spending_cents:0}),row({nature:'asset',in_cents:50000,out_cents:0,spending_cents:0})]);assert.equal(m.earned,20000);assert.equal(m.inflow,70000);});
+test('关闭记录不算消费交易笔数',()=>assert.equal(E.totals([row(),row({nature:'void',spending_cents:0,out_cents:0})]).expenseCount,1));
+test('同期限对比而非全年对半年度',()=>{const p=E.comparisonRange('2026-01-01','2026-10-31','year');assert.deepEqual(p,{start:'2025-01-01',end:'2025-10-31'});});
+test('无基数不产生无限百分比',()=>assert.equal(E.change(100,0),null));
+test('图表分组与总数守恒',()=>{const r=[row(),row({category:'交通',spending_cents:2000})];assert.equal(E.group(r,'category','spending_cents').reduce((s,x)=>s+x.amount,0),E.totals(r).spending);});
+test('周期候选至少三个月，不能把单笔大额说成订阅',()=>{assert.equal(E.recurring([row()]).length,0);assert.equal(E.recurring([row(),row({date:'2026-02-05'}),row({date:'2026-03-05'})]).length,1);});
+test('CSV 名称前导公式需转义',()=>{assert.match(E.csv([{name:'=SUM(1)',amount:10}]),/"'=SUM\(1\)"/);});
+test('当期与基期均需覆盖，不能拿不完整年对全年',()=>{assert.equal(E.comparable({start:'2026-01-01',end:'2026-12-31'},{start:'2025-01-01',end:'2025-12-31'},{start:'2024-01-01',end:'2026-11-03'}),false);});
+test('CSV 保留负金额为可计算数字',()=>assert.match(E.csv([{name:'退款',amount:-20}]),/,"-20"/));

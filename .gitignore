@@ -17,3 +17,6 @@ venv/
 tmp/
 *.pdf
 *.zip
+
+# 旧汇总已由脱敏深度分析替代
+site/data/summary.json
