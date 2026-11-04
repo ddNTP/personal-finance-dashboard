@@ -161,7 +161,7 @@
 
   function renderBreakdowns(view) {
     renderBars("#categoryChart", view.categories, false, 8);
-    renderBars("#incomeChart", view.income_sources, true, 6);
+    renderBars("#incomeChart", view.income_sources, true, 20);
     const categoryTotal = view.metrics.consumption;
     const incomeTotal = view.metrics.gross_income;
     const sourceHint = view.id === "bank" ? "招商银行流水与微信/支付宝保持分开，避免快捷支付重复记账。" : "转账和红包单列，不挤入日常消费类别。";
