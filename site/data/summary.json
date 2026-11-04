@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-04T12:35:30.738084+08:00",
+  "generated_at": "2026-11-04T13:49:47.966058+08:00",
   "meta": {
     "title": "个人收支分析仪表盘",
     "source": "微信支付、支付宝和招商银行流水（分层展示，仅发布聚合结果）",
@@ -605,9 +605,9 @@
       "income_sources": [
         {
           "label": "转账收入",
-          "amount": 1174236.88,
-          "count": 742,
-          "share": 0.894849
+          "amount": 1166819.72,
+          "count": 732,
+          "share": 0.889197
         },
         {
           "label": "二维码收款",
@@ -623,9 +623,9 @@
         },
         {
           "label": "红包收入",
-          "amount": 7255.9,
-          "count": 251,
-          "share": 0.005529
+          "amount": 14673.06,
+          "count": 261,
+          "share": 0.011182
         },
         {
           "label": "其他收入",
@@ -3748,15 +3748,21 @@
       "income_sources": [
         {
           "label": "转账收入",
-          "amount": 114720.56,
-          "count": 42,
-          "share": 0.761435
+          "amount": 107303.4,
+          "count": 32,
+          "share": 0.712205
         },
         {
           "label": "退款",
           "amount": 30100.17,
           "count": 46,
           "share": 0.199784
+        },
+        {
+          "label": "红包收入",
+          "amount": 8641.5,
+          "count": 109,
+          "share": 0.057356
         },
         {
           "label": "其他收入",
@@ -3769,12 +3775,6 @@
           "amount": 1819.55,
           "count": 37,
           "share": 0.012077
-        },
-        {
-          "label": "红包收入",
-          "amount": 1224.34,
-          "count": 99,
-          "share": 0.008126
         }
       ],
       "payment_channels": [
@@ -5803,7 +5803,7 @@
       ],
       "income_sources": [
         {
-          "label": "转账收入",
+          "label": "红包收入",
           "amount": 7417.16,
           "count": 10,
           "share": 0.840599
@@ -6686,16 +6686,22 @@
       ],
       "income_sources": [
         {
-          "label": "转账收入",
-          "amount": 1247006.17,
-          "count": 69,
-          "share": 0.676576
+          "label": "工资",
+          "amount": 1182798.68,
+          "count": 48,
+          "share": 0.64174
         },
         {
           "label": "其他收入",
-          "amount": 559917.47,
-          "count": 559,
-          "share": 0.303789
+          "amount": 559801.21,
+          "count": 543,
+          "share": 0.303726
+        },
+        {
+          "label": "转账收入",
+          "amount": 64207.49,
+          "count": 21,
+          "share": 0.034836
         },
         {
           "label": "退款",
@@ -6708,6 +6714,12 @@
           "amount": 4972.85,
           "count": 11,
           "share": 0.002698
+        },
+        {
+          "label": "利息",
+          "amount": 116.26,
+          "count": 16,
+          "share": 6.3e-05
         }
       ],
       "payment_channels": [
@@ -15703,7 +15715,7 @@
       ],
       "income_sources": [
         {
-          "label": "转账收入",
+          "label": "红包收入",
           "amount": 7417.16,
           "count": 10,
           "share": 0.840599
@@ -16586,16 +16598,22 @@
       ],
       "income_sources": [
         {
-          "label": "转账收入",
-          "amount": 1247006.17,
-          "count": 69,
-          "share": 0.676576
+          "label": "工资",
+          "amount": 1182798.68,
+          "count": 48,
+          "share": 0.64174
         },
         {
           "label": "其他收入",
-          "amount": 559917.47,
-          "count": 559,
-          "share": 0.303789
+          "amount": 559801.21,
+          "count": 543,
+          "share": 0.303726
+        },
+        {
+          "label": "转账收入",
+          "amount": 64207.49,
+          "count": 21,
+          "share": 0.034836
         },
         {
           "label": "退款",
@@ -16608,6 +16626,12 @@
           "amount": 4972.85,
           "count": 11,
           "share": 0.002698
+        },
+        {
+          "label": "利息",
+          "amount": 116.26,
+          "count": 16,
+          "share": 6.3e-05
         }
       ],
       "payment_channels": [

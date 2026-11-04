@@ -166,7 +166,7 @@
     const incomeTotal = view.metrics.gross_income;
     const sourceHint = view.id === "bank" ? "招商银行流水与微信/支付宝保持分开，避免快捷支付重复记账。" : "转账和红包单列，不挤入日常消费类别。";
     $("#categoryFootnote").textContent = `共 ${count(view.metrics.consumption_count)} 笔消费，调整后合计 ${money(categoryTotal)}。${sourceHint}`;
-    $("#incomeFootnote").textContent = `总收入 ${money(incomeTotal)}，已识别退款 ${money(view.metrics.refunds)}；中性退款会从有效消费总额中扣除。`;
+    $("#incomeFootnote").textContent = `当前视图：${view.label}。总收入 ${money(incomeTotal)}，来源已按类型拆分；已识别退款 ${money(view.metrics.refunds)}，中性退款会从有效消费总额中扣除。`;
   }
 
   function renderCounterparties(view) {

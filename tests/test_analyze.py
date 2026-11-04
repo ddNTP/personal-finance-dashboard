@@ -133,3 +133,10 @@ class AccountFirstViewTest(unittest.TestCase):
         self.assertEqual([item['id'] for item in summary['meta']['source_options']], ['platform', 'wechat', 'alipay', 'bank'])
         self.assertIn('account-2:wechat', summary['views'])
         self.assertIn('account-1:cmb', summary['views'])
+
+class IncomeSourceLabelTest(unittest.TestCase):
+    def test_bank_income_source_labels_distinguish_salary_and_interest(self):
+        from scripts.analyze import _income_source
+        self.assertEqual(_income_source('代发工资', False), '工资')
+        self.assertEqual(_income_source('账户结息', False), '利息')
+        self.assertEqual(_income_source('银联代付', False), '转账收入')

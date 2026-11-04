@@ -138,14 +138,16 @@ def _income_source(transaction_type: str, is_refund: bool) -> str:
     if is_refund:
         return "退款"
     text = _clean_text(transaction_type)
-    if "转账" in text or "代发" in text or "代付" in text:
-        return "转账收入"
+    if "工资" in text or "代发工资" in text:
+        return "工资"
+    if "结息" in text or "利息" in text:
+        return "利息"
     if "二维码" in text or "收款" in text or "网联收款" in text:
         return "二维码收款"
     if "红包" in text:
         return "红包收入"
-    if "工资" in text:
-        return "工资"
+    if "转账" in text or "代付" in text:
+        return "转账收入"
     return "其他收入"
 
 
