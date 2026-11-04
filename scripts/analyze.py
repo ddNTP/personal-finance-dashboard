@@ -500,15 +500,32 @@ def build_summary(input_dir: Path) -> dict[str, Any]:
     bank, bank_quality = _load_cmb_transactions(input_dir)
     platform_frames = [frame for frame in [wechat, alipay] if not frame.empty]
     platform = pd.concat(platform_frames, ignore_index=True) if platform_frames else pd.DataFrame()
-    account_keys = sorted(platform["__account_key"].dropna().unique().tolist()) if not platform.empty else []
+    account_key_values: set[str] = set()
+    for frame in [platform, bank]:
+        if not frame.empty and "__account_key" in frame:
+            account_key_values.update(frame["__account_key"].dropna().tolist())
+    account_keys = sorted(account_key_values)
     account_ids = {key: f"account-{index + 1}" for index, key in enumerate(account_keys)}
     account_labels = {key: key for key in account_keys}
-    file_records = wechat_quality["file_records"] + alipay_quality["file_records"]
+    file_records = wechat_quality["file_records"] + alipay_quality["file_records"] + bank_quality["file_records"]
     account_file_counts = pd.DataFrame(file_records).groupby("account_key").size().to_dict() if file_records else {}
     views: dict[str, dict[str, Any]] = {}
     views["combined"] = _build_view(platform, "combined", "支付平台合计", len(file_records), "微信支付 + 支付宝")
+    source_frames = {"wechat": wechat, "alipay": alipay, "cmb": bank}
+    source_labels = {"wechat": "微信支付", "alipay": "支付宝", "cmb": "招商银行"}
+    source_file_counts = {"wechat": wechat_quality["source_files"], "alipay": alipay_quality["source_files"], "cmb": bank_quality["source_files"]}
     for key in account_keys:
-        views[account_ids[key]] = _build_view(platform.loc[platform["__account_key"] == key], account_ids[key], account_labels[key], int(account_file_counts.get(key, 0)), "微信支付 + 支付宝（按账户）")
+        account_id = account_ids[key]
+        account_part = platform.loc[platform["__account_key"] == key] if not platform.empty else platform
+        views[account_id] = _build_view(account_part, account_id, account_labels[key], int(account_file_counts.get(key, 0)), "支付平台合计（按账户）")
+        for source_id, source_frame in source_frames.items():
+            if source_frame.empty:
+                continue
+            source_part = source_frame.loc[source_frame["__account_key"] == key]
+            if source_part.empty:
+                continue
+            combo_id = f"{account_id}:{source_id}"
+            views[combo_id] = _build_view(source_part, combo_id, f"{account_labels[key]} · {source_labels[source_id]}", source_file_counts[source_id], source_labels[source_id])
     if not wechat.empty:
         views["wechat"] = _build_view(wechat, "wechat", "微信支付", wechat_quality["source_files"], "微信支付")
     if not alipay.empty:
@@ -517,9 +534,14 @@ def build_summary(input_dir: Path) -> dict[str, Any]:
         views["bank"] = _build_view(bank, "bank", "招商银行", bank_quality["source_files"], "招商银行流水（与支付平台分开）")
     max_date = platform["__date"].max() if not platform.empty else bank["__date"].max()
     min_date = platform["__date"].min() if not platform.empty else bank["__date"].min()
-    view_options = [{"id": "combined", "label": "支付平台合计", "description": "微信支付 + 支付宝"}]
-    view_options.extend({"id": account_ids[key], "label": account_labels[key], "description": "按账户合并支付平台"} for key in account_keys)
-    view_options.extend(option for option in [{"id": "wechat", "label": "微信支付", "description": "仅微信账单"}, {"id": "alipay", "label": "支付宝", "description": "仅支付宝账单"}, {"id": "bank", "label": "招商银行", "description": "银行流水，独立展示"}] if option["id"] in views)
+    view_options = [{"id": "combined", "label": "全部账户", "description": "支付平台合计"}]
+    view_options.extend({"id": account_ids[key], "label": account_labels[key], "description": "按人统计支付平台"} for key in account_keys)
+    source_options = [
+        {"id": "platform", "label": "支付平台合计", "description": "微信支付 + 支付宝"},
+        {"id": "wechat", "label": "微信支付", "description": "仅微信账单"},
+        {"id": "alipay", "label": "支付宝", "description": "仅支付宝账单"},
+        {"id": "bank", "label": "招商银行", "description": "银行流水，独立展示"},
+    ]
     return {
         "schema_version": 2,
         "generated_at": pd.Timestamp.now(tz="Asia/Shanghai").isoformat(),
@@ -540,6 +562,7 @@ def build_summary(input_dir: Path) -> dict[str, Any]:
             "anti_double_counting": "招商银行流水与微信/支付宝支付平台分开展示，不纳入支付平台合计，避免快捷支付重复记账。",
             "accounts": [{"id": account_ids[key], "label": account_labels[key], "file_count": int(account_file_counts.get(key, 0))} for key in account_keys],
             "view_options": view_options,
+            "source_options": source_options,
         },
         "quality": {"wechat": _source_quality(wechat_quality), "alipay": _source_quality(alipay_quality), "cmb": _source_quality(bank_quality)},
         "views": views,

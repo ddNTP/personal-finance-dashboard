@@ -34,11 +34,18 @@
           <div class="eyebrow">VIEW</div>
           <h2>选择你要看的账户范围</h2>
         </div>
-        <label class="select-wrap">
-          <span class="sr-only">账户范围</span>
-          <select id="accountSelect" aria-label="选择账户范围"></select>
-          <span class="select-chevron" aria-hidden="true">⌄</span>
-        </label>
+        <div class="toolbar-filters">
+          <label class="select-wrap">
+            <span class="filter-caption">按人</span>
+            <select id="accountSelect" aria-label="按人选择账户"></select>
+            <span class="select-chevron" aria-hidden="true">⌄</span>
+          </label>
+          <label class="select-wrap">
+            <span class="filter-caption">数据来源</span>
+            <select id="sourceSelect" aria-label="选择数据来源"></select>
+            <span class="select-chevron" aria-hidden="true">⌄</span>
+          </label>
+        </div>
       </section>
 
       <section id="metrics" class="kpi-grid" aria-live="polite"></section>

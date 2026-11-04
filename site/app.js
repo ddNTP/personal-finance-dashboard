@@ -1,5 +1,5 @@
 (() => {
-  const state = { data: null, viewId: "combined", counterpartyYear: "all" };
+  const state = { data: null, viewId: "combined", sourceId: "platform", counterpartyYear: "all" };
   const CURRENCY = new Intl.NumberFormat("zh-CN", { style: "currency", currency: "CNY", minimumFractionDigits: 2, maximumFractionDigits: 2 });
   const NUMBER = new Intl.NumberFormat("zh-CN");
 
@@ -35,9 +35,38 @@
     select.value = state.viewId;
     select.addEventListener("change", () => {
       state.viewId = select.value;
+      state.sourceId = "platform";
       state.counterpartyYear = "all";
+      fillSourceSelect();
       render();
     });
+  }
+
+  function fillSourceSelect() {
+    const select = $("#sourceSelect");
+    if (!select || !state.data) return;
+    const options = state.data.meta.source_options || [];
+    const available = options.filter((option) => {
+      const viewId = option.id === "platform"
+        ? state.viewId
+        : state.viewId === "combined"
+          ? option.id
+          : `${state.viewId}:${option.id === "bank" ? "cmb" : option.id}`;
+      return Boolean(state.data.views[viewId]);
+    });
+    if (!available.some((option) => option.id === state.sourceId)) state.sourceId = "platform";
+    select.innerHTML = available.map((option) => `<option value="${escapeHtml(option.id)}">${escapeHtml(option.label)}</option>`).join("");
+    select.value = state.sourceId;
+  }
+
+  function resolveView() {
+    const sourceId = state.sourceId;
+    const viewId = sourceId === "platform"
+      ? state.viewId
+      : state.viewId === "combined"
+        ? sourceId
+        : `${state.viewId}:${sourceId === "bank" ? "cmb" : sourceId}`;
+    return state.data.views[viewId] || state.data.views[state.viewId] || state.data.views.combined;
   }
 
   function renderCounterpartyYearOptions(view) {
@@ -181,7 +210,7 @@
   }
 
   function render() {
-    const view = state.data.views[state.viewId] || state.data.views.combined;
+    const view = resolveView();
     renderMeta(view);
     renderMetrics(view);
     renderTrend(view);
@@ -197,6 +226,9 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       state.data = await response.json();
       fillAccountSelect();
+      fillSourceSelect();
+      const sourceSelect = $("#sourceSelect");
+      if (sourceSelect) sourceSelect.addEventListener("change", () => { state.sourceId = sourceSelect.value; state.counterpartyYear = "all"; render(); });
       const counterpartyYear = $("#counterpartyYear");
       if (counterpartyYear) counterpartyYear.addEventListener("change", () => { state.counterpartyYear = counterpartyYear.value; render(); });
       render();

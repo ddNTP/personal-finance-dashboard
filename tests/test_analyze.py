@@ -122,3 +122,14 @@ class CounterpartyViewTest(unittest.TestCase):
         self.assertEqual(luo['years']['2024']['net'], 105266.0)
         self.assertEqual(luo['years']['2025']['net'], 191281.0)
         self.assertEqual(luo['years']['2026']['net'], 153950.0)
+
+class AccountFirstViewTest(unittest.TestCase):
+    def test_primary_view_options_are_people_and_sources_are_secondary(self):
+        from pathlib import Path
+        from scripts.analyze import build_summary
+        summary = build_summary(Path('/Users/luowenpei/work/记账'))
+        primary_ids = [item['id'] for item in summary['meta']['view_options']]
+        self.assertEqual(primary_ids, ['combined', 'account-1', 'account-2'])
+        self.assertEqual([item['id'] for item in summary['meta']['source_options']], ['platform', 'wechat', 'alipay', 'bank'])
+        self.assertIn('account-2:wechat', summary['views'])
+        self.assertIn('account-1:cmb', summary['views'])

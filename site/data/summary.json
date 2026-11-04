@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-04T11:56:19.453575+08:00",
+  "generated_at": "2026-11-04T12:35:30.738084+08:00",
   "meta": {
     "title": "个人收支分析仪表盘",
     "source": "微信支付、支付宝和招商银行流水（分层展示，仅发布聚合结果）",
@@ -20,7 +20,7 @@
       {
         "id": "account-1",
         "label": "罗文培",
-        "file_count": 6
+        "file_count": 7
       },
       {
         "id": "account-2",
@@ -31,18 +31,25 @@
     "view_options": [
       {
         "id": "combined",
-        "label": "支付平台合计",
-        "description": "微信支付 + 支付宝"
+        "label": "全部账户",
+        "description": "支付平台合计"
       },
       {
         "id": "account-1",
         "label": "罗文培",
-        "description": "按账户合并支付平台"
+        "description": "按人统计支付平台"
       },
       {
         "id": "account-2",
         "label": "胡国凤",
-        "description": "按账户合并支付平台"
+        "description": "按人统计支付平台"
+      }
+    ],
+    "source_options": [
+      {
+        "id": "platform",
+        "label": "支付平台合计",
+        "description": "微信支付 + 支付宝"
       },
       {
         "id": "wechat",
@@ -96,7 +103,7 @@
       "id": "combined",
       "label": "支付平台合计",
       "source_label": "微信支付 + 支付宝",
-      "file_count": 9,
+      "file_count": 10,
       "date_start": "2024-01-01",
       "date_end": "2026-11-03",
       "metrics": {
@@ -3238,8 +3245,8 @@
     "account-1": {
       "id": "account-1",
       "label": "罗文培",
-      "source_label": "微信支付 + 支付宝（按账户）",
-      "file_count": 6,
+      "source_label": "支付平台合计（按账户）",
+      "file_count": 7,
       "date_start": "2024-01-01",
       "date_end": "2026-11-03",
       "metrics": {
@@ -4323,11 +4330,5181 @@
         }
       ]
     },
+    "account-1:wechat": {
+      "id": "account-1:wechat",
+      "label": "罗文培 · 微信支付",
+      "source_label": "微信支付",
+      "file_count": 6,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 2739,
+        "gross_income": 141840.06,
+        "gross_expense": 272620.85,
+        "gross_neutral": 3100.0,
+        "net_cashflow": -130780.79,
+        "consumption": 180877.07,
+        "consumption_count": 2460,
+        "refunds": 30100.17,
+        "income_ex_refunds": 111739.89,
+        "transfer_like_expense": 75717.61
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 264.69,
+          "income_ex_refunds": 264.69,
+          "expense": 7008.7,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1288.7,
+          "consumption_count": 36,
+          "net_cashflow": -6744.01
+        },
+        {
+          "month": "2024-02",
+          "income": 5535.65,
+          "income_ex_refunds": 5461.55,
+          "expense": 2841.74,
+          "neutral": 0.0,
+          "refunds": 74.1,
+          "consumption": 2767.64,
+          "consumption_count": 51,
+          "net_cashflow": 2693.91
+        },
+        {
+          "month": "2024-03",
+          "income": 754.5,
+          "income_ex_refunds": 0.0,
+          "expense": 6200.81,
+          "neutral": 1000.0,
+          "refunds": 754.5,
+          "consumption": 4306.31,
+          "consumption_count": 47,
+          "net_cashflow": -5446.31
+        },
+        {
+          "month": "2024-04",
+          "income": 2147.0,
+          "income_ex_refunds": 2100.0,
+          "expense": 4148.98,
+          "neutral": 0.0,
+          "refunds": 47.0,
+          "consumption": 2072.38,
+          "consumption_count": 64,
+          "net_cashflow": -2001.98
+        },
+        {
+          "month": "2024-05",
+          "income": 2109.9,
+          "income_ex_refunds": 2000.0,
+          "expense": 5813.66,
+          "neutral": 0.0,
+          "refunds": 109.9,
+          "consumption": 5455.76,
+          "consumption_count": 112,
+          "net_cashflow": -3703.76
+        },
+        {
+          "month": "2024-06",
+          "income": 936.0,
+          "income_ex_refunds": 866.0,
+          "expense": 4205.97,
+          "neutral": 0.0,
+          "refunds": 70.0,
+          "consumption": 4059.97,
+          "consumption_count": 76,
+          "net_cashflow": -3269.97
+        },
+        {
+          "month": "2024-07",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 3733.55,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2268.55,
+          "consumption_count": 79,
+          "net_cashflow": -3733.55
+        },
+        {
+          "month": "2024-08",
+          "income": 1800.0,
+          "income_ex_refunds": 1800.0,
+          "expense": 6231.52,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 6161.52,
+          "consumption_count": 96,
+          "net_cashflow": -4431.52
+        },
+        {
+          "month": "2024-09",
+          "income": 2743.16,
+          "income_ex_refunds": 2743.16,
+          "expense": 5332.1,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2090.1,
+          "consumption_count": 79,
+          "net_cashflow": -2588.94
+        },
+        {
+          "month": "2024-10",
+          "income": 1000.0,
+          "income_ex_refunds": 1000.0,
+          "expense": 16151.82,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 15951.82,
+          "consumption_count": 78,
+          "net_cashflow": -15151.82
+        },
+        {
+          "month": "2024-11",
+          "income": 174.54,
+          "income_ex_refunds": 174.54,
+          "expense": 9189.84,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 3029.84,
+          "consumption_count": 90,
+          "net_cashflow": -9015.3
+        },
+        {
+          "month": "2024-12",
+          "income": 5000.0,
+          "income_ex_refunds": 5000.0,
+          "expense": 1715.01,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1715.01,
+          "consumption_count": 67,
+          "net_cashflow": 3284.99
+        },
+        {
+          "month": "2025-01",
+          "income": 379.59,
+          "income_ex_refunds": 379.59,
+          "expense": 3843.41,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 3443.41,
+          "consumption_count": 61,
+          "net_cashflow": -3463.82
+        },
+        {
+          "month": "2025-02",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 2278.85,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2278.85,
+          "consumption_count": 72,
+          "net_cashflow": -2278.85
+        },
+        {
+          "month": "2025-03",
+          "income": 1900.0,
+          "income_ex_refunds": 1900.0,
+          "expense": 1871.56,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1871.56,
+          "consumption_count": 56,
+          "net_cashflow": 28.44
+        },
+        {
+          "month": "2025-04",
+          "income": 65.0,
+          "income_ex_refunds": 0.0,
+          "expense": 1509.47,
+          "neutral": 0.0,
+          "refunds": 65.0,
+          "consumption": 1444.47,
+          "consumption_count": 52,
+          "net_cashflow": -1444.47
+        },
+        {
+          "month": "2025-05",
+          "income": 5.59,
+          "income_ex_refunds": 5.59,
+          "expense": 2463.89,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2463.89,
+          "consumption_count": 61,
+          "net_cashflow": -2458.3
+        },
+        {
+          "month": "2025-06",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 2389.66,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1389.66,
+          "consumption_count": 57,
+          "net_cashflow": -2389.66
+        },
+        {
+          "month": "2025-07",
+          "income": 6195.45,
+          "income_ex_refunds": 177.45,
+          "expense": 28329.06,
+          "neutral": 0.0,
+          "refunds": 6018.0,
+          "consumption": 19230.06,
+          "consumption_count": 79,
+          "net_cashflow": -22133.61
+        },
+        {
+          "month": "2025-08",
+          "income": 4508.4,
+          "income_ex_refunds": 3387.0,
+          "expense": 9153.46,
+          "neutral": 0.0,
+          "refunds": 1121.4,
+          "consumption": 4376.06,
+          "consumption_count": 71,
+          "net_cashflow": -4645.06
+        },
+        {
+          "month": "2025-09",
+          "income": 34523.14,
+          "income_ex_refunds": 30151.86,
+          "expense": 45073.09,
+          "neutral": 2100.0,
+          "refunds": 4371.28,
+          "consumption": 17162.85,
+          "consumption_count": 131,
+          "net_cashflow": -10549.95
+        },
+        {
+          "month": "2025-10",
+          "income": 1567.3,
+          "income_ex_refunds": 1500.34,
+          "expense": 5115.15,
+          "neutral": 0.0,
+          "refunds": 66.96,
+          "consumption": 5101.14,
+          "consumption_count": 94,
+          "net_cashflow": -3547.85
+        },
+        {
+          "month": "2025-11",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 1796.81,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1770.81,
+          "consumption_count": 65,
+          "net_cashflow": -1796.81
+        },
+        {
+          "month": "2025-12",
+          "income": 5581.0,
+          "income_ex_refunds": 5555.0,
+          "expense": 2469.58,
+          "neutral": 0.0,
+          "refunds": 26.0,
+          "consumption": 2469.58,
+          "consumption_count": 67,
+          "net_cashflow": 3111.42
+        },
+        {
+          "month": "2026-01",
+          "income": 32.16,
+          "income_ex_refunds": 32.16,
+          "expense": 1440.36,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1424.36,
+          "consumption_count": 55,
+          "net_cashflow": -1408.2
+        },
+        {
+          "month": "2026-02",
+          "income": 3277.46,
+          "income_ex_refunds": 3205.46,
+          "expense": 8967.43,
+          "neutral": 0.0,
+          "refunds": 72.0,
+          "consumption": 7145.43,
+          "consumption_count": 70,
+          "net_cashflow": -5689.97
+        },
+        {
+          "month": "2026-03",
+          "income": 3.0,
+          "income_ex_refunds": 3.0,
+          "expense": 2282.04,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2282.04,
+          "consumption_count": 86,
+          "net_cashflow": -2279.04
+        },
+        {
+          "month": "2026-04",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 5948.86,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1948.86,
+          "consumption_count": 66,
+          "net_cashflow": -5948.86
+        },
+        {
+          "month": "2026-05",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 4053.46,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 4053.46,
+          "consumption_count": 90,
+          "net_cashflow": -4053.46
+        },
+        {
+          "month": "2026-06",
+          "income": 1579.5,
+          "income_ex_refunds": 223.5,
+          "expense": 8567.42,
+          "neutral": 0.0,
+          "refunds": 1356.0,
+          "consumption": 5166.42,
+          "consumption_count": 86,
+          "net_cashflow": -6987.92
+        },
+        {
+          "month": "2026-07",
+          "income": 3066.98,
+          "income_ex_refunds": 1955.0,
+          "expense": 4091.98,
+          "neutral": 0.0,
+          "refunds": 1111.98,
+          "consumption": 2980.0,
+          "consumption_count": 43,
+          "net_cashflow": -1025.0
+        },
+        {
+          "month": "2026-08",
+          "income": 2252.4,
+          "income_ex_refunds": 1732.4,
+          "expense": 5377.33,
+          "neutral": 0.0,
+          "refunds": 520.0,
+          "consumption": 3817.33,
+          "consumption_count": 61,
+          "net_cashflow": -3124.93
+        },
+        {
+          "month": "2026-09",
+          "income": 18341.05,
+          "income_ex_refunds": 9925.0,
+          "expense": 25634.83,
+          "neutral": 0.0,
+          "refunds": 8416.05,
+          "consumption": 16698.78,
+          "consumption_count": 73,
+          "net_cashflow": -7293.78
+        },
+        {
+          "month": "2026-10",
+          "income": 36096.6,
+          "income_ex_refunds": 30196.6,
+          "expense": 27133.75,
+          "neutral": 0.0,
+          "refunds": 5900.0,
+          "consumption": 20934.75,
+          "consumption_count": 82,
+          "net_cashflow": 8962.85
+        },
+        {
+          "month": "2026-11",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 255.7,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 255.7,
+          "consumption_count": 7,
+          "net_cashflow": -255.7
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 22465.44,
+          "expense": 72573.7,
+          "consumption": 51167.6,
+          "refunds": 1055.5,
+          "net_cashflow": -50108.26,
+          "consumption_count": 875
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 54725.47,
+          "expense": 106293.99,
+          "consumption": 63002.34,
+          "refunds": 11668.64,
+          "net_cashflow": -51568.52,
+          "consumption_count": 866
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 64649.15,
+          "expense": 93753.16,
+          "consumption": 66707.13,
+          "refunds": 17376.03,
+          "net_cashflow": -29104.01,
+          "consumption_count": 719
+        }
+      ],
+      "categories": [
+        {
+          "label": "购物",
+          "amount": 56103.92,
+          "count": 437,
+          "share": 0.310177
+        },
+        {
+          "label": "餐饮",
+          "amount": 46119.92,
+          "count": 1281,
+          "share": 0.254979
+        },
+        {
+          "label": "住房生活",
+          "amount": 19247.25,
+          "count": 13,
+          "share": 0.106411
+        },
+        {
+          "label": "通讯数码",
+          "amount": 18652.52,
+          "count": 39,
+          "share": 0.103123
+        },
+        {
+          "label": "交通",
+          "amount": 16079.64,
+          "count": 499,
+          "share": 0.088898
+        },
+        {
+          "label": "其他消费",
+          "amount": 13900.43,
+          "count": 140,
+          "share": 0.07685
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 5046.66,
+          "count": 13,
+          "share": 0.027901
+        },
+        {
+          "label": "医疗健康",
+          "amount": 4594.01,
+          "count": 15,
+          "share": 0.025399
+        },
+        {
+          "label": "教育服务",
+          "amount": 1132.72,
+          "count": 23,
+          "share": 0.006262
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 107303.4,
+          "count": 32,
+          "share": 0.75651
+        },
+        {
+          "label": "退款",
+          "amount": 30100.17,
+          "count": 46,
+          "share": 0.212212
+        },
+        {
+          "label": "二维码收款",
+          "amount": 1819.55,
+          "count": 37,
+          "share": 0.012828
+        },
+        {
+          "label": "其他收入",
+          "amount": 1392.6,
+          "count": 2,
+          "share": 0.009818
+        },
+        {
+          "label": "红包收入",
+          "amount": 1224.34,
+          "count": 99,
+          "share": 0.008632
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "银行卡",
+          "amount": 122914.56,
+          "count": 1618,
+          "share": 0.679547
+        },
+        {
+          "label": "零钱",
+          "amount": 57962.51,
+          "count": 842,
+          "share": 0.320453
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 18737.81,
+          "count": 386,
+          "share": 0.103594
+        },
+        {
+          "label": "周二",
+          "amount": 28593.92,
+          "count": 375,
+          "share": 0.158085
+        },
+        {
+          "label": "周三",
+          "amount": 14683.42,
+          "count": 361,
+          "share": 0.081179
+        },
+        {
+          "label": "周四",
+          "amount": 18866.35,
+          "count": 369,
+          "share": 0.104305
+        },
+        {
+          "label": "周五",
+          "amount": 19954.21,
+          "count": 343,
+          "share": 0.110319
+        },
+        {
+          "label": "周六",
+          "amount": 41629.97,
+          "count": 325,
+          "share": 0.230156
+        },
+        {
+          "label": "周日",
+          "amount": 38411.39,
+          "count": 301,
+          "share": 0.212362
+        }
+      ],
+      "counterparties": [
+        {
+          "label": "百度袁星 (袁星)",
+          "income": 40680.0,
+          "expense": 0.0,
+          "net": 40680.0,
+          "count": 5,
+          "years": {
+            "2026": {
+              "income": 40680.0,
+              "expense": 0.0,
+              "net": 40680.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "王书舒 (Sue)",
+          "income": 14664.0,
+          "expense": 39128.01,
+          "net": -24464.01,
+          "count": 34,
+          "years": {
+            "2024": {
+              "income": 12127.0,
+              "expense": 13255.0,
+              "net": -1128.0,
+              "count": 19
+            },
+            "2025": {
+              "income": 2537.0,
+              "expense": 25873.01,
+              "net": -23336.01,
+              "count": 15
+            }
+          }
+        },
+        {
+          "label": "凤凤",
+          "income": 39066.0,
+          "expense": 14710.0,
+          "net": 24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5800.0,
+              "expense": 5000.0,
+              "net": 800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 30000.0,
+              "expense": 4210.0,
+              "net": 25790.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 3266.0,
+              "expense": 5500.0,
+              "net": -2234.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "Suki",
+          "income": 5500.0,
+          "expense": 0.0,
+          "net": 5500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 5500.0,
+              "expense": 0.0,
+              "net": 5500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胡金莹 (世界和平)",
+          "income": 0.0,
+          "expense": 1560.0,
+          "net": -1560.0,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1560.0,
+              "net": -1560.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "罗勇",
+          "income": 4500.0,
+          "expense": 3000.0,
+          "net": 1500.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2500.0,
+              "expense": 1000.0,
+              "net": 1500.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 2000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "张睿卿 (Rachel Zhang)",
+          "income": 1500.0,
+          "expense": 0.0,
+          "net": 1500.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 1500.0,
+              "expense": 0.0,
+              "net": 1500.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "雅迪学院路旗舰店13521407895",
+          "income": 0.0,
+          "expense": 1400.0,
+          "net": -1400.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 1400.0,
+              "net": -1400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗寰",
+          "income": 666.0,
+          "expense": 0.0,
+          "net": 666.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 666.0,
+              "expense": 0.0,
+              "net": 666.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "王栋 (东方宇痕)",
+          "income": 500.0,
+          "expense": 0.0,
+          "net": 500.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 100.0,
+              "expense": 0.0,
+              "net": 100.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小敏（咨询10-24点可约）",
+          "income": 0.0,
+          "expense": 299.0,
+          "net": -299.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 299.0,
+              "net": -299.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "皇室战争令牌 (梁财神)",
+          "income": 0.0,
+          "expense": 203.0,
+          "net": -203.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 203.0,
+              "net": -203.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "A道路救援 维修电动车13739658860",
+          "income": 0.0,
+          "expense": 160.0,
+          "net": -160.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 160.0,
+              "net": -160.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张炀 (Sirius.)",
+          "income": 0.0,
+          "expense": 103.0,
+          "net": -103.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 103.0,
+              "net": -103.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邢文宇 (Xxing)",
+          "income": 99.9,
+          "expense": 0.0,
+          "net": 99.9,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 99.9,
+              "expense": 0.0,
+              "net": 99.9,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "汪骞 (往前)",
+          "income": 55.0,
+          "expense": 0.0,
+          "net": 55.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 55.0,
+              "expense": 0.0,
+              "net": 55.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 50.0,
+          "net": -50.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "张伟宇 (不忘初心)",
+          "income": 0.0,
+          "expense": 40.0,
+          "net": -40.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "彭睿 (lambda)",
+          "income": 34.5,
+          "expense": 0.0,
+          "net": 34.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.5,
+              "expense": 0.0,
+              "net": 34.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "邮政快递 (铁血老二哥)",
+          "income": 0.0,
+          "expense": 16.0,
+          "net": -16.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 16.0,
+              "net": -16.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "杨威 (Bavaria)",
+          "income": 38.0,
+          "expense": 29.6,
+          "net": 8.4,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 38.0,
+              "expense": 29.6,
+              "net": 8.4,
+              "count": 3
+            }
+          }
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2026-10",
+          "detail": "该月有效消费 ¥20,934.75，占当前统计期有效消费的 11.6%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "购物",
+          "detail": "累计 ¥56,103.92，占有效消费 31.0%，共 437 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周六",
+          "detail": "按星期汇总的有效消费最高，金额 ¥41,629.97。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥30,100.17",
+          "detail": "退款收入约占账单总支出的 11.0%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-130,780.79",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "account-1:alipay": {
+      "id": "account-1:alipay",
+      "label": "罗文培 · 支付宝",
+      "source_label": "支付宝",
+      "file_count": 3,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 5527,
+        "gross_income": 8823.66,
+        "gross_expense": 302958.27,
+        "gross_neutral": 763597.95,
+        "net_cashflow": -294134.61,
+        "consumption": 275005.73,
+        "consumption_count": 1604,
+        "refunds": 25976.5,
+        "income_ex_refunds": 8823.66,
+        "transfer_like_expense": 1950.0
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 3000.0,
+          "income_ex_refunds": -2495.0,
+          "expense": 8286.47,
+          "neutral": 10314.91,
+          "refunds": 5495.0,
+          "consumption": 2791.47,
+          "consumption_count": 39,
+          "net_cashflow": -5286.47
+        },
+        {
+          "month": "2024-02",
+          "income": 0.0,
+          "income_ex_refunds": -30.5,
+          "expense": 1847.16,
+          "neutral": 120.05,
+          "refunds": 30.5,
+          "consumption": 1816.66,
+          "consumption_count": 30,
+          "net_cashflow": -1847.16
+        },
+        {
+          "month": "2024-03",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 2678.74,
+          "neutral": 314.48,
+          "refunds": 0.0,
+          "consumption": 2678.74,
+          "consumption_count": 28,
+          "net_cashflow": -2678.74
+        },
+        {
+          "month": "2024-04",
+          "income": 0.0,
+          "income_ex_refunds": -2.99,
+          "expense": 14426.68,
+          "neutral": 13280.34,
+          "refunds": 2.99,
+          "consumption": 14118.69,
+          "consumption_count": 41,
+          "net_cashflow": -14426.68
+        },
+        {
+          "month": "2024-05",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 1800.4,
+          "neutral": 538.98,
+          "refunds": 0.0,
+          "consumption": 1800.4,
+          "consumption_count": 46,
+          "net_cashflow": -1800.4
+        },
+        {
+          "month": "2024-06",
+          "income": 15.9,
+          "income_ex_refunds": 15.9,
+          "expense": 645.02,
+          "neutral": 719.1,
+          "refunds": 0.0,
+          "consumption": 645.02,
+          "consumption_count": 15,
+          "net_cashflow": -629.12
+        },
+        {
+          "month": "2024-07",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 13610.49,
+          "neutral": 13274.57,
+          "refunds": 0.0,
+          "consumption": 13610.49,
+          "consumption_count": 51,
+          "net_cashflow": -13610.49
+        },
+        {
+          "month": "2024-08",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 980.13,
+          "neutral": 312.29,
+          "refunds": 0.0,
+          "consumption": 980.13,
+          "consumption_count": 52,
+          "net_cashflow": -980.13
+        },
+        {
+          "month": "2024-09",
+          "income": 0.0,
+          "income_ex_refunds": -1470.0,
+          "expense": 2417.08,
+          "neutral": 1624.2,
+          "refunds": 1470.0,
+          "consumption": 947.08,
+          "consumption_count": 42,
+          "net_cashflow": -2417.08
+        },
+        {
+          "month": "2024-10",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 336.68,
+          "neutral": 141.4,
+          "refunds": 0.0,
+          "consumption": 336.68,
+          "consumption_count": 45,
+          "net_cashflow": -336.68
+        },
+        {
+          "month": "2024-11",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 870.04,
+          "neutral": 232.08,
+          "refunds": 0.0,
+          "consumption": 849.0,
+          "consumption_count": 42,
+          "net_cashflow": -870.04
+        },
+        {
+          "month": "2024-12",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 156.4,
+          "neutral": 144.0,
+          "refunds": 0.0,
+          "consumption": 156.4,
+          "consumption_count": 44,
+          "net_cashflow": -156.4
+        },
+        {
+          "month": "2025-01",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 15550.42,
+          "neutral": 256.1,
+          "refunds": 0.0,
+          "consumption": 15550.42,
+          "consumption_count": 39,
+          "net_cashflow": -15550.42
+        },
+        {
+          "month": "2025-02",
+          "income": 0.0,
+          "income_ex_refunds": -100.0,
+          "expense": 344.62,
+          "neutral": 16594.49,
+          "refunds": 100.0,
+          "consumption": 244.62,
+          "consumption_count": 43,
+          "net_cashflow": -344.62
+        },
+        {
+          "month": "2025-03",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 5766.81,
+          "neutral": 22243.42,
+          "refunds": 0.0,
+          "consumption": 5766.81,
+          "consumption_count": 69,
+          "net_cashflow": -5766.81
+        },
+        {
+          "month": "2025-04",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 23240.56,
+          "neutral": 19759.13,
+          "refunds": 0.0,
+          "consumption": 23240.56,
+          "consumption_count": 51,
+          "net_cashflow": -23240.56
+        },
+        {
+          "month": "2025-05",
+          "income": 0.0,
+          "income_ex_refunds": -576.0,
+          "expense": 770.21,
+          "neutral": 19433.2,
+          "refunds": 576.0,
+          "consumption": 194.21,
+          "consumption_count": 62,
+          "net_cashflow": -770.21
+        },
+        {
+          "month": "2025-06",
+          "income": 0.0,
+          "income_ex_refunds": -13.9,
+          "expense": 384.39,
+          "neutral": 17000.93,
+          "refunds": 13.9,
+          "consumption": 370.49,
+          "consumption_count": 51,
+          "net_cashflow": -384.39
+        },
+        {
+          "month": "2025-07",
+          "income": 0.0,
+          "income_ex_refunds": -0.3,
+          "expense": 786.5,
+          "neutral": 23685.6,
+          "refunds": 0.3,
+          "consumption": 786.2,
+          "consumption_count": 71,
+          "net_cashflow": -786.5
+        },
+        {
+          "month": "2025-08",
+          "income": 0.0,
+          "income_ex_refunds": -1388.8,
+          "expense": 3937.81,
+          "neutral": 23786.38,
+          "refunds": 1388.8,
+          "consumption": 2549.01,
+          "consumption_count": 84,
+          "net_cashflow": -3937.81
+        },
+        {
+          "month": "2025-09",
+          "income": 6.5,
+          "income_ex_refunds": -1017.68,
+          "expense": 24953.61,
+          "neutral": 24248.71,
+          "refunds": 1024.18,
+          "consumption": 23929.43,
+          "consumption_count": 67,
+          "net_cashflow": -24947.11
+        },
+        {
+          "month": "2025-10",
+          "income": 0.0,
+          "income_ex_refunds": -800.0,
+          "expense": 7299.62,
+          "neutral": 94057.19,
+          "refunds": 800.0,
+          "consumption": 6499.62,
+          "consumption_count": 51,
+          "net_cashflow": -7299.62
+        },
+        {
+          "month": "2025-11",
+          "income": 0.0,
+          "income_ex_refunds": -4675.51,
+          "expense": 349.29,
+          "neutral": 19516.76,
+          "refunds": 4675.51,
+          "consumption": -4326.22,
+          "consumption_count": 28,
+          "net_cashflow": -349.29
+        },
+        {
+          "month": "2025-12",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 20003.68,
+          "neutral": 14248.1,
+          "refunds": 0.0,
+          "consumption": 20003.68,
+          "consumption_count": 43,
+          "net_cashflow": -20003.68
+        },
+        {
+          "month": "2026-01",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 1074.27,
+          "neutral": 12149.38,
+          "refunds": 0.0,
+          "consumption": 1074.27,
+          "consumption_count": 24,
+          "net_cashflow": -1074.27
+        },
+        {
+          "month": "2026-02",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 268.69,
+          "neutral": 9458.19,
+          "refunds": 0.0,
+          "consumption": 268.69,
+          "consumption_count": 20,
+          "net_cashflow": -268.69
+        },
+        {
+          "month": "2026-03",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 19210.25,
+          "neutral": 14531.09,
+          "refunds": 0.0,
+          "consumption": 19210.25,
+          "consumption_count": 9,
+          "net_cashflow": -19210.25
+        },
+        {
+          "month": "2026-04",
+          "income": 0.0,
+          "income_ex_refunds": -18.42,
+          "expense": 4667.86,
+          "neutral": 27063.71,
+          "refunds": 18.42,
+          "consumption": 4649.44,
+          "consumption_count": 25,
+          "net_cashflow": -4667.86
+        },
+        {
+          "month": "2026-05",
+          "income": 2030.0,
+          "income_ex_refunds": 2030.0,
+          "expense": 2347.41,
+          "neutral": 75054.51,
+          "refunds": 0.0,
+          "consumption": 2347.41,
+          "consumption_count": 19,
+          "net_cashflow": -317.41
+        },
+        {
+          "month": "2026-06",
+          "income": 1255.37,
+          "income_ex_refunds": -2902.21,
+          "expense": 52456.64,
+          "neutral": 69557.56,
+          "refunds": 4157.58,
+          "consumption": 48299.06,
+          "consumption_count": 54,
+          "net_cashflow": -51201.27
+        },
+        {
+          "month": "2026-07",
+          "income": 0.0,
+          "income_ex_refunds": -85.84,
+          "expense": 23212.92,
+          "neutral": 94432.15,
+          "refunds": 85.84,
+          "consumption": 23127.08,
+          "consumption_count": 77,
+          "net_cashflow": -23212.92
+        },
+        {
+          "month": "2026-08",
+          "income": 488.46,
+          "income_ex_refunds": 363.86,
+          "expense": 4346.29,
+          "neutral": 65856.5,
+          "refunds": 124.6,
+          "consumption": 4221.69,
+          "consumption_count": 70,
+          "net_cashflow": -3857.83
+        },
+        {
+          "month": "2026-09",
+          "income": 244.23,
+          "income_ex_refunds": -5765.85,
+          "expense": 27298.34,
+          "neutral": 33809.72,
+          "refunds": 6010.08,
+          "consumption": 19638.26,
+          "consumption_count": 100,
+          "net_cashflow": -27054.11
+        },
+        {
+          "month": "2026-10",
+          "income": 1783.2,
+          "income_ex_refunds": 1780.4,
+          "expense": 16540.48,
+          "neutral": 25838.58,
+          "refunds": 2.8,
+          "consumption": 16537.68,
+          "consumption_count": 66,
+          "net_cashflow": -14757.28
+        },
+        {
+          "month": "2026-11",
+          "income": 0.0,
+          "income_ex_refunds": 0.0,
+          "expense": 92.31,
+          "neutral": 0.15,
+          "refunds": 0.0,
+          "consumption": 92.31,
+          "consumption_count": 6,
+          "net_cashflow": -92.31
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 3015.9,
+          "expense": 48055.29,
+          "consumption": 40730.76,
+          "refunds": 6998.49,
+          "net_cashflow": -45039.39,
+          "consumption_count": 475
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 6.5,
+          "expense": 103387.52,
+          "consumption": 94808.83,
+          "refunds": 8578.69,
+          "net_cashflow": -103381.02,
+          "consumption_count": 659
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 5801.26,
+          "expense": 151515.46,
+          "consumption": 139466.14,
+          "refunds": 10399.32,
+          "net_cashflow": -145714.2,
+          "consumption_count": 470
+        }
+      ],
+      "categories": [
+        {
+          "label": "住房生活",
+          "amount": 185048.83,
+          "count": 55,
+          "share": 0.614816
+        },
+        {
+          "label": "其他消费",
+          "amount": 40912.08,
+          "count": 57,
+          "share": 0.135929
+        },
+        {
+          "label": "购物",
+          "amount": 18395.53,
+          "count": 71,
+          "share": 0.061118
+        },
+        {
+          "label": "餐饮",
+          "amount": 17157.16,
+          "count": 278,
+          "share": 0.057004
+        },
+        {
+          "label": "医疗健康",
+          "amount": 13587.18,
+          "count": 77,
+          "share": 0.045143
+        },
+        {
+          "label": "通讯数码",
+          "amount": 11875.17,
+          "count": 64,
+          "share": 0.039455
+        },
+        {
+          "label": "交通",
+          "amount": 9667.24,
+          "count": 974,
+          "share": 0.032119
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 3732.86,
+          "count": 23,
+          "share": 0.012402
+        },
+        {
+          "label": "生活服务",
+          "amount": 556.38,
+          "count": 3,
+          "share": 0.001849
+        },
+        {
+          "label": "教育服务",
+          "amount": 49.8,
+          "count": 2,
+          "share": 0.000165
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 7417.16,
+          "count": 10,
+          "share": 0.840599
+        },
+        {
+          "label": "其他收入",
+          "amount": 1406.5,
+          "count": 2,
+          "share": 0.159401
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "银行卡",
+          "amount": 112956.81,
+          "count": 167,
+          "share": 0.375294
+        },
+        {
+          "label": "余额宝",
+          "amount": 67135.17,
+          "count": 77,
+          "share": 0.223054
+        },
+        {
+          "label": "花呗",
+          "amount": 61124.64,
+          "count": 1255,
+          "share": 0.203084
+        },
+        {
+          "label": "其他",
+          "amount": 59447.21,
+          "count": 35,
+          "share": 0.197511
+        },
+        {
+          "label": "未标注",
+          "amount": 318.4,
+          "count": 70,
+          "share": 0.001058
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 43656.67,
+          "count": 282,
+          "share": 0.145047
+        },
+        {
+          "label": "周二",
+          "amount": 28087.24,
+          "count": 270,
+          "share": 0.093319
+        },
+        {
+          "label": "周三",
+          "amount": 33237.74,
+          "count": 251,
+          "share": 0.110431
+        },
+        {
+          "label": "周四",
+          "amount": 49622.8,
+          "count": 258,
+          "share": 0.16487
+        },
+        {
+          "label": "周五",
+          "amount": 23540.85,
+          "count": 228,
+          "share": 0.078213
+        },
+        {
+          "label": "周六",
+          "amount": 79656.52,
+          "count": 162,
+          "share": 0.264655
+        },
+        {
+          "label": "周日",
+          "amount": 43180.41,
+          "count": 153,
+          "share": 0.143465
+        }
+      ],
+      "counterparties": [
+        {
+          "label": "Sue(王书舒)",
+          "income": 3000.0,
+          "expense": 0.0,
+          "net": 3000.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 3000.0,
+              "expense": 0.0,
+              "net": 3000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "众安在线财产保险股份有限公司",
+          "income": 2371.26,
+          "expense": 0.0,
+          "net": 2371.26,
+          "count": 7,
+          "years": {
+            "2026": {
+              "income": 2371.26,
+              "expense": 0.0,
+              "net": 2371.26,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "Blade_blood",
+          "income": 2030.0,
+          "expense": 0.0,
+          "net": 2030.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 2030.0,
+              "expense": 0.0,
+              "net": 2030.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "支付宝小荷包(wafase业务资金)",
+          "income": 0.0,
+          "expense": 1650.0,
+          "net": -1650.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1650.0,
+              "net": -1650.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小型微型计算机系统(**宁)",
+          "income": 0.0,
+          "expense": 300.0,
+          "net": -300.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗文培",
+          "income": 0.0,
+          "expense": 0.0,
+          "net": 0.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 0.0,
+              "net": 0.0,
+              "count": 1
+            }
+          }
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2026-06",
+          "detail": "该月有效消费 ¥48,299.06，占当前统计期有效消费的 17.6%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "住房生活",
+          "detail": "累计 ¥185,048.83，占有效消费 61.5%，共 55 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周六",
+          "detail": "按星期汇总的有效消费最高，金额 ¥79,656.52。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥25,976.50",
+          "detail": "退款收入约占账单总支出的 8.6%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-294,134.61",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "account-1:cmb": {
+      "id": "account-1:cmb",
+      "label": "罗文培 · 招商银行",
+      "source_label": "招商银行",
+      "file_count": 1,
+      "date_start": "2022-10-26",
+      "date_end": "2026-10-31",
+      "metrics": {
+        "records": 7086,
+        "gross_income": 1843111.9,
+        "gross_expense": 1787874.43,
+        "gross_neutral": 0.0,
+        "net_cashflow": 55237.47,
+        "consumption": 529723.61,
+        "consumption_count": 2772,
+        "refunds": 31215.41,
+        "income_ex_refunds": 1811896.49,
+        "transfer_like_expense": 200200.0
+      },
+      "monthly": [
+        {
+          "month": "2022-10",
+          "income": 1640.0,
+          "income_ex_refunds": 1640.0,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 1640.0
+        },
+        {
+          "month": "2022-11",
+          "income": 7540.0,
+          "income_ex_refunds": 7540.0,
+          "expense": 1640.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 5900.0
+        },
+        {
+          "month": "2022-12",
+          "income": 7541.11,
+          "income_ex_refunds": 7541.11,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 7541.11
+        },
+        {
+          "month": "2023-01",
+          "income": 5650.0,
+          "income_ex_refunds": 5650.0,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 5650.0
+        },
+        {
+          "month": "2023-02",
+          "income": 6996.4,
+          "income_ex_refunds": 6996.4,
+          "expense": 14810.06,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 14810.06,
+          "consumption_count": 31,
+          "net_cashflow": -7813.66
+        },
+        {
+          "month": "2023-03",
+          "income": 6989.34,
+          "income_ex_refunds": 6989.34,
+          "expense": 2662.24,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2662.24,
+          "consumption_count": 73,
+          "net_cashflow": 4327.1
+        },
+        {
+          "month": "2023-04",
+          "income": 6538.65,
+          "income_ex_refunds": 6237.61,
+          "expense": 22592.49,
+          "neutral": 0.0,
+          "refunds": 301.04,
+          "consumption": 22592.49,
+          "consumption_count": 60,
+          "net_cashflow": -16053.84
+        },
+        {
+          "month": "2023-05",
+          "income": 6983.44,
+          "income_ex_refunds": 6983.44,
+          "expense": 1129.19,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1129.19,
+          "consumption_count": 28,
+          "net_cashflow": 5854.25
+        },
+        {
+          "month": "2023-06",
+          "income": 6986.16,
+          "income_ex_refunds": 6986.16,
+          "expense": 0.0,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 0.0,
+          "consumption_count": 0,
+          "net_cashflow": 6986.16
+        },
+        {
+          "month": "2023-07",
+          "income": 13245.52,
+          "income_ex_refunds": 13245.52,
+          "expense": 12851.69,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 12851.69,
+          "consumption_count": 21,
+          "net_cashflow": 393.83
+        },
+        {
+          "month": "2023-08",
+          "income": 7772.56,
+          "income_ex_refunds": 7772.56,
+          "expense": 3924.34,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 3924.34,
+          "consumption_count": 68,
+          "net_cashflow": 3848.22
+        },
+        {
+          "month": "2023-09",
+          "income": 7055.39,
+          "income_ex_refunds": 7005.49,
+          "expense": 4661.5,
+          "neutral": 0.0,
+          "refunds": 49.9,
+          "consumption": 4661.5,
+          "consumption_count": 24,
+          "net_cashflow": 2393.89
+        },
+        {
+          "month": "2023-10",
+          "income": 6190.0,
+          "income_ex_refunds": 6190.0,
+          "expense": 16276.58,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 16276.58,
+          "consumption_count": 44,
+          "net_cashflow": -10086.58
+        },
+        {
+          "month": "2023-11",
+          "income": 17672.39,
+          "income_ex_refunds": 17672.39,
+          "expense": 21796.47,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2664.17,
+          "consumption_count": 21,
+          "net_cashflow": -4124.08
+        },
+        {
+          "month": "2023-12",
+          "income": 7213.54,
+          "income_ex_refunds": 7213.54,
+          "expense": 1588.05,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 1588.05,
+          "consumption_count": 38,
+          "net_cashflow": 5625.49
+        },
+        {
+          "month": "2024-01",
+          "income": 25408.24,
+          "income_ex_refunds": 25408.24,
+          "expense": 32550.58,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 12778.39,
+          "consumption_count": 35,
+          "net_cashflow": -7142.34
+        },
+        {
+          "month": "2024-02",
+          "income": 3166.22,
+          "income_ex_refunds": 3081.22,
+          "expense": 5228.21,
+          "neutral": 0.0,
+          "refunds": 85.0,
+          "consumption": 5228.21,
+          "consumption_count": 28,
+          "net_cashflow": -2061.99
+        },
+        {
+          "month": "2024-03",
+          "income": 5628.74,
+          "income_ex_refunds": 5628.74,
+          "expense": 4643.53,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 4643.53,
+          "consumption_count": 46,
+          "net_cashflow": 985.21
+        },
+        {
+          "month": "2024-04",
+          "income": 8060.52,
+          "income_ex_refunds": 8060.52,
+          "expense": 4388.98,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 3088.98,
+          "consumption_count": 29,
+          "net_cashflow": 3671.54
+        },
+        {
+          "month": "2024-05",
+          "income": 13852.92,
+          "income_ex_refunds": 13752.92,
+          "expense": 6611.9,
+          "neutral": 0.0,
+          "refunds": 100.0,
+          "consumption": 2711.9,
+          "consumption_count": 41,
+          "net_cashflow": 7241.02
+        },
+        {
+          "month": "2024-06",
+          "income": 73.0,
+          "income_ex_refunds": 3.0,
+          "expense": 6114.1,
+          "neutral": 0.0,
+          "refunds": 70.0,
+          "consumption": 6114.1,
+          "consumption_count": 68,
+          "net_cashflow": -6041.1
+        },
+        {
+          "month": "2024-07",
+          "income": 34203.5,
+          "income_ex_refunds": 34203.5,
+          "expense": 15865.5,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 15765.5,
+          "consumption_count": 84,
+          "net_cashflow": 18338.0
+        },
+        {
+          "month": "2024-08",
+          "income": 28331.56,
+          "income_ex_refunds": 28331.56,
+          "expense": 8257.3,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 8049.04,
+          "consumption_count": 113,
+          "net_cashflow": 20074.26
+        },
+        {
+          "month": "2024-09",
+          "income": 58928.73,
+          "income_ex_refunds": 57728.73,
+          "expense": 78899.46,
+          "neutral": 0.0,
+          "refunds": 1200.0,
+          "consumption": 10180.35,
+          "consumption_count": 63,
+          "net_cashflow": -19970.73
+        },
+        {
+          "month": "2024-10",
+          "income": 28488.17,
+          "income_ex_refunds": 28488.17,
+          "expense": 15845.71,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 15704.31,
+          "consumption_count": 60,
+          "net_cashflow": 12642.46
+        },
+        {
+          "month": "2024-11",
+          "income": 33187.58,
+          "income_ex_refunds": 33187.58,
+          "expense": 11917.22,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 11750.62,
+          "consumption_count": 68,
+          "net_cashflow": 21270.36
+        },
+        {
+          "month": "2024-12",
+          "income": 28445.0,
+          "income_ex_refunds": 28445.0,
+          "expense": 2933.1,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 2789.1,
+          "consumption_count": 64,
+          "net_cashflow": 25511.9
+        },
+        {
+          "month": "2025-01",
+          "income": 34028.23,
+          "income_ex_refunds": 30221.17,
+          "expense": 24075.05,
+          "neutral": 0.0,
+          "refunds": 3807.06,
+          "consumption": 23818.95,
+          "consumption_count": 61,
+          "net_cashflow": 9953.18
+        },
+        {
+          "month": "2025-02",
+          "income": 29302.7,
+          "income_ex_refunds": 29076.8,
+          "expense": 82204.85,
+          "neutral": 0.0,
+          "refunds": 225.9,
+          "consumption": 20883.25,
+          "consumption_count": 63,
+          "net_cashflow": -52902.15
+        },
+        {
+          "month": "2025-03",
+          "income": 90913.71,
+          "income_ex_refunds": 90913.71,
+          "expense": 29509.88,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 11251.37,
+          "consumption_count": 83,
+          "net_cashflow": 61403.83
+        },
+        {
+          "month": "2025-04",
+          "income": 38870.94,
+          "income_ex_refunds": 38750.05,
+          "expense": 46181.47,
+          "neutral": 0.0,
+          "refunds": 120.89,
+          "consumption": 29923.97,
+          "consumption_count": 77,
+          "net_cashflow": -7310.53
+        },
+        {
+          "month": "2025-05",
+          "income": 53276.4,
+          "income_ex_refunds": 52700.4,
+          "expense": 123999.12,
+          "neutral": 0.0,
+          "refunds": 576.0,
+          "consumption": 6204.41,
+          "consumption_count": 60,
+          "net_cashflow": -70722.72
+        },
+        {
+          "month": "2025-06",
+          "income": 96327.28,
+          "income_ex_refunds": 96294.88,
+          "expense": 71524.07,
+          "neutral": 0.0,
+          "refunds": 32.4,
+          "consumption": 2371.51,
+          "consumption_count": 34,
+          "net_cashflow": 24803.21
+        },
+        {
+          "month": "2025-07",
+          "income": 35339.95,
+          "income_ex_refunds": 35321.65,
+          "expense": 54306.4,
+          "neutral": 0.0,
+          "refunds": 18.3,
+          "consumption": 33552.25,
+          "consumption_count": 125,
+          "net_cashflow": -18966.45
+        },
+        {
+          "month": "2025-08",
+          "income": 33407.22,
+          "income_ex_refunds": 29417.21,
+          "expense": 40386.37,
+          "neutral": 0.0,
+          "refunds": 3990.01,
+          "consumption": 20765.17,
+          "consumption_count": 117,
+          "net_cashflow": -6979.15
+        },
+        {
+          "month": "2025-09",
+          "income": 168092.56,
+          "income_ex_refunds": 165233.69,
+          "expense": 161840.09,
+          "neutral": 0.0,
+          "refunds": 2858.87,
+          "consumption": 16783.89,
+          "consumption_count": 126,
+          "net_cashflow": 6252.47
+        },
+        {
+          "month": "2025-10",
+          "income": 38059.97,
+          "income_ex_refunds": 37732.79,
+          "expense": 22845.7,
+          "neutral": 0.0,
+          "refunds": 327.18,
+          "consumption": 8023.98,
+          "consumption_count": 108,
+          "net_cashflow": 15214.27
+        },
+        {
+          "month": "2025-11",
+          "income": 28762.54,
+          "income_ex_refunds": 28527.77,
+          "expense": 17291.67,
+          "neutral": 0.0,
+          "refunds": 234.77,
+          "consumption": 5309.23,
+          "consumption_count": 100,
+          "net_cashflow": 11470.87
+        },
+        {
+          "month": "2025-12",
+          "income": 27130.91,
+          "income_ex_refunds": 27104.91,
+          "expense": 23678.88,
+          "neutral": 0.0,
+          "refunds": 26.0,
+          "consumption": 13202.26,
+          "consumption_count": 94,
+          "net_cashflow": 3452.03
+        },
+        {
+          "month": "2026-01",
+          "income": 36866.9,
+          "income_ex_refunds": 36337.05,
+          "expense": 66312.15,
+          "neutral": 0.0,
+          "refunds": 529.85,
+          "consumption": 5526.74,
+          "consumption_count": 60,
+          "net_cashflow": -29445.25
+        },
+        {
+          "month": "2026-02",
+          "income": 31480.15,
+          "income_ex_refunds": 31458.15,
+          "expense": 14452.08,
+          "neutral": 0.0,
+          "refunds": 22.0,
+          "consumption": 7519.17,
+          "consumption_count": 36,
+          "net_cashflow": 17028.07
+        },
+        {
+          "month": "2026-03",
+          "income": 201531.34,
+          "income_ex_refunds": 201531.34,
+          "expense": 19991.16,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 8954.53,
+          "consumption_count": 60,
+          "net_cashflow": 181540.18
+        },
+        {
+          "month": "2026-04",
+          "income": 30284.89,
+          "income_ex_refunds": 30125.29,
+          "expense": 31972.66,
+          "neutral": 0.0,
+          "refunds": 159.6,
+          "consumption": 7615.06,
+          "consumption_count": 44,
+          "net_cashflow": -1687.77
+        },
+        {
+          "month": "2026-05",
+          "income": 129538.36,
+          "income_ex_refunds": 129538.36,
+          "expense": 81367.48,
+          "neutral": 0.0,
+          "refunds": 0.0,
+          "consumption": 39945.55,
+          "consumption_count": 87,
+          "net_cashflow": 48170.88
+        },
+        {
+          "month": "2026-06",
+          "income": 53807.9,
+          "income_ex_refunds": 52313.45,
+          "expense": 196168.32,
+          "neutral": 0.0,
+          "refunds": 1494.45,
+          "consumption": 15693.67,
+          "consumption_count": 114,
+          "net_cashflow": -142360.42
+        },
+        {
+          "month": "2026-07",
+          "income": 35258.47,
+          "income_ex_refunds": 34146.49,
+          "expense": 136765.92,
+          "neutral": 0.0,
+          "refunds": 1111.98,
+          "consumption": 12579.44,
+          "consumption_count": 52,
+          "net_cashflow": -101507.45
+        },
+        {
+          "month": "2026-08",
+          "income": 171779.2,
+          "income_ex_refunds": 171259.2,
+          "expense": 141267.77,
+          "neutral": 0.0,
+          "refunds": 520.0,
+          "consumption": 12437.91,
+          "consumption_count": 81,
+          "net_cashflow": 30511.43
+        },
+        {
+          "month": "2026-09",
+          "income": 49173.65,
+          "income_ex_refunds": 45705.98,
+          "expense": 56923.34,
+          "neutral": 0.0,
+          "refunds": 3467.67,
+          "consumption": 21756.99,
+          "consumption_count": 49,
+          "net_cashflow": -7749.69
+        },
+        {
+          "month": "2026-10",
+          "income": 46089.95,
+          "income_ex_refunds": 36203.41,
+          "expense": 47621.8,
+          "neutral": 0.0,
+          "refunds": 9886.54,
+          "consumption": 23639.97,
+          "consumption_count": 34,
+          "net_cashflow": -1531.85
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2022,
+          "label": "2022",
+          "complete": true,
+          "income": 16721.11,
+          "expense": 1640.0,
+          "consumption": 0.0,
+          "refunds": 0.0,
+          "net_cashflow": 15081.11,
+          "consumption_count": 0
+        },
+        {
+          "year": 2023,
+          "label": "2023",
+          "complete": true,
+          "income": 99293.39,
+          "expense": 102292.61,
+          "consumption": 83160.31,
+          "refunds": 350.94,
+          "net_cashflow": -2999.22,
+          "consumption_count": 408
+        },
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 267774.18,
+          "expense": 193255.59,
+          "consumption": 98804.03,
+          "refunds": 1455.0,
+          "net_cashflow": 74518.59,
+          "consumption_count": 699
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 673512.41,
+          "expense": 697843.55,
+          "consumption": 192090.24,
+          "refunds": 12217.38,
+          "net_cashflow": -24331.14,
+          "consumption_count": 1048
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至10-31）",
+          "complete": false,
+          "income": 785810.81,
+          "expense": 792842.68,
+          "consumption": 155669.03,
+          "refunds": 17192.09,
+          "net_cashflow": -7031.87,
+          "consumption_count": 617
+        }
+      ],
+      "categories": [
+        {
+          "label": "其他消费",
+          "amount": 342043.47,
+          "count": 1438,
+          "share": 0.645702
+        },
+        {
+          "label": "餐饮",
+          "amount": 128995.73,
+          "count": 1008,
+          "share": 0.243515
+        },
+        {
+          "label": "购物",
+          "amount": 37535.02,
+          "count": 156,
+          "share": 0.070858
+        },
+        {
+          "label": "医疗健康",
+          "amount": 10215.57,
+          "count": 19,
+          "share": 0.019285
+        },
+        {
+          "label": "交通",
+          "amount": 8670.91,
+          "count": 111,
+          "share": 0.016369
+        },
+        {
+          "label": "住房生活",
+          "amount": 913.9,
+          "count": 7,
+          "share": 0.001725
+        },
+        {
+          "label": "教育服务",
+          "amount": 751.71,
+          "count": 22,
+          "share": 0.001419
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 547.3,
+          "count": 9,
+          "share": 0.001033
+        },
+        {
+          "label": "通讯数码",
+          "amount": 50.0,
+          "count": 2,
+          "share": 9.4e-05
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 1247006.17,
+          "count": 69,
+          "share": 0.676576
+        },
+        {
+          "label": "其他收入",
+          "amount": 559917.47,
+          "count": 559,
+          "share": 0.303789
+        },
+        {
+          "label": "退款",
+          "amount": 31215.41,
+          "count": 85,
+          "share": 0.016936
+        },
+        {
+          "label": "二维码收款",
+          "amount": 4972.85,
+          "count": 11,
+          "share": 0.002698
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "银行卡",
+          "amount": 529723.61,
+          "count": 2772,
+          "share": 1.0
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 58503.05,
+          "count": 405,
+          "share": 0.110441
+        },
+        {
+          "label": "周二",
+          "amount": 92248.24,
+          "count": 451,
+          "share": 0.174144
+        },
+        {
+          "label": "周三",
+          "amount": 47200.78,
+          "count": 398,
+          "share": 0.089105
+        },
+        {
+          "label": "周四",
+          "amount": 57729.32,
+          "count": 438,
+          "share": 0.10898
+        },
+        {
+          "label": "周五",
+          "amount": 68561.96,
+          "count": 440,
+          "share": 0.12943
+        },
+        {
+          "label": "周六",
+          "amount": 106101.81,
+          "count": 356,
+          "share": 0.200297
+        },
+        {
+          "label": "周日",
+          "amount": 99378.45,
+          "count": 284,
+          "share": 0.187604
+        }
+      ],
+      "counterparties": [
+        {
+          "label": "银行流水",
+          "income": 51140.51,
+          "expense": 200200.0,
+          "net": -149059.49,
+          "count": 23,
+          "years": {
+            "2023": {
+              "income": 6168.51,
+              "expense": 0.0,
+              "net": 6168.51,
+              "count": 2
+            },
+            "2024": {
+              "income": 31772.0,
+              "expense": 15200.0,
+              "net": 16572.0,
+              "count": 12
+            },
+            "2025": {
+              "income": 13200.0,
+              "expense": 101000.0,
+              "net": -87800.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 84000.0,
+              "net": -84000.0,
+              "count": 3
+            }
+          }
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2026-05",
+          "detail": "该月有效消费 ¥39,945.55，占当前统计期有效消费的 7.5%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "其他消费",
+          "detail": "累计 ¥342,043.47，占有效消费 64.6%，共 1438 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周六",
+          "detail": "按星期汇总的有效消费最高，金额 ¥106,101.81。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥31,215.41",
+          "detail": "退款收入约占账单总支出的 1.7%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥55,237.47",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
     "account-2": {
       "id": "account-2",
       "label": "胡国凤",
-      "source_label": "微信支付 + 支付宝（按账户）",
+      "source_label": "支付平台合计（按账户）",
       "file_count": 3,
+      "date_start": "2024-01-01",
+      "date_end": "2026-11-03",
+      "metrics": {
+        "records": 4161,
+        "gross_income": 1161554.27,
+        "gross_expense": 1256766.05,
+        "gross_neutral": 433674.01,
+        "net_cashflow": -95211.78,
+        "consumption": 384894.01,
+        "consumption_count": 2290,
+        "refunds": 23605.51,
+        "income_ex_refunds": 1137948.76,
+        "transfer_like_expense": 858384.1
+      },
+      "monthly": [
+        {
+          "month": "2024-01",
+          "income": 41268.52,
+          "income_ex_refunds": 41200.0,
+          "expense": 33382.27,
+          "neutral": 5200.2,
+          "refunds": 68.52,
+          "consumption": 6149.27,
+          "consumption_count": 72,
+          "net_cashflow": 7886.25
+        },
+        {
+          "month": "2024-02",
+          "income": 10410.43,
+          "income_ex_refunds": 10365.98,
+          "expense": 24593.27,
+          "neutral": 3500.5,
+          "refunds": 44.45,
+          "consumption": 11328.27,
+          "consumption_count": 80,
+          "net_cashflow": -14182.84
+        },
+        {
+          "month": "2024-03",
+          "income": 35286.62,
+          "income_ex_refunds": 34570.0,
+          "expense": 16927.02,
+          "neutral": 13500.5,
+          "refunds": 716.62,
+          "consumption": 3671.4,
+          "consumption_count": 82,
+          "net_cashflow": 18359.6
+        },
+        {
+          "month": "2024-04",
+          "income": 14887.4,
+          "income_ex_refunds": 14351.5,
+          "expense": 16938.42,
+          "neutral": 500.5,
+          "refunds": 535.9,
+          "consumption": 5593.62,
+          "consumption_count": 68,
+          "net_cashflow": -2051.02
+        },
+        {
+          "month": "2024-05",
+          "income": 33305.7,
+          "income_ex_refunds": 32780.0,
+          "expense": 41153.2,
+          "neutral": 10000.0,
+          "refunds": 525.7,
+          "consumption": 7582.4,
+          "consumption_count": 63,
+          "net_cashflow": -7847.5
+        },
+        {
+          "month": "2024-06",
+          "income": 37454.4,
+          "income_ex_refunds": 37430.5,
+          "expense": 16508.41,
+          "neutral": 13200.2,
+          "refunds": 23.9,
+          "consumption": 5234.51,
+          "consumption_count": 80,
+          "net_cashflow": 20945.99
+        },
+        {
+          "month": "2024-07",
+          "income": 42586.9,
+          "income_ex_refunds": 42547.0,
+          "expense": 37659.15,
+          "neutral": 15500.5,
+          "refunds": 39.9,
+          "consumption": 7135.25,
+          "consumption_count": 45,
+          "net_cashflow": 4927.75
+        },
+        {
+          "month": "2024-08",
+          "income": 26488.0,
+          "income_ex_refunds": 26470.0,
+          "expense": 23281.64,
+          "neutral": 0.0,
+          "refunds": 18.0,
+          "consumption": 3884.64,
+          "consumption_count": 40,
+          "net_cashflow": 3206.36
+        },
+        {
+          "month": "2024-09",
+          "income": 47907.9,
+          "income_ex_refunds": 47779.0,
+          "expense": 38621.05,
+          "neutral": 0.0,
+          "refunds": 128.9,
+          "consumption": 21511.15,
+          "consumption_count": 59,
+          "net_cashflow": 9286.85
+        },
+        {
+          "month": "2024-10",
+          "income": 37940.62,
+          "income_ex_refunds": 35540.62,
+          "expense": 57301.88,
+          "neutral": 6006.0,
+          "refunds": 2400.0,
+          "consumption": 9638.88,
+          "consumption_count": 90,
+          "net_cashflow": -19361.26
+        },
+        {
+          "month": "2024-11",
+          "income": 27743.9,
+          "income_ex_refunds": 27704.0,
+          "expense": 55604.34,
+          "neutral": 0.0,
+          "refunds": 39.9,
+          "consumption": 8185.54,
+          "consumption_count": 67,
+          "net_cashflow": -27860.44
+        },
+        {
+          "month": "2024-12",
+          "income": 50490.9,
+          "income_ex_refunds": 49500.0,
+          "expense": 23038.14,
+          "neutral": 1001.0,
+          "refunds": 990.9,
+          "consumption": 6215.14,
+          "consumption_count": 52,
+          "net_cashflow": 27452.76
+        },
+        {
+          "month": "2025-01",
+          "income": 40123.1,
+          "income_ex_refunds": 38286.7,
+          "expense": 72766.53,
+          "neutral": 30000.0,
+          "refunds": 1836.4,
+          "consumption": 14779.03,
+          "consumption_count": 83,
+          "net_cashflow": -32643.43
+        },
+        {
+          "month": "2025-02",
+          "income": 49419.7,
+          "income_ex_refunds": 49243.0,
+          "expense": 66553.38,
+          "neutral": 0.0,
+          "refunds": 176.7,
+          "consumption": 5444.18,
+          "consumption_count": 49,
+          "net_cashflow": -17133.68
+        },
+        {
+          "month": "2025-03",
+          "income": 30098.37,
+          "income_ex_refunds": 29539.37,
+          "expense": 49503.43,
+          "neutral": 0.0,
+          "refunds": 559.0,
+          "consumption": 10035.43,
+          "consumption_count": 85,
+          "net_cashflow": -19405.06
+        },
+        {
+          "month": "2025-04",
+          "income": 58917.78,
+          "income_ex_refunds": 56355.5,
+          "expense": 48572.96,
+          "neutral": 13513.5,
+          "refunds": 2562.28,
+          "consumption": 11415.68,
+          "consumption_count": 83,
+          "net_cashflow": 10344.82
+        },
+        {
+          "month": "2025-05",
+          "income": 28109.22,
+          "income_ex_refunds": 27804.22,
+          "expense": 58184.61,
+          "neutral": 0.0,
+          "refunds": 305.0,
+          "consumption": 15829.81,
+          "consumption_count": 87,
+          "net_cashflow": -30075.39
+        },
+        {
+          "month": "2025-06",
+          "income": 46323.05,
+          "income_ex_refunds": 45633.05,
+          "expense": 100125.9,
+          "neutral": 29528.0,
+          "refunds": 690.0,
+          "consumption": 42981.9,
+          "consumption_count": 60,
+          "net_cashflow": -53802.85
+        },
+        {
+          "month": "2025-07",
+          "income": 36133.83,
+          "income_ex_refunds": 35085.83,
+          "expense": 43428.15,
+          "neutral": 2900.0,
+          "refunds": 1048.0,
+          "consumption": 17667.65,
+          "consumption_count": 68,
+          "net_cashflow": -7294.32
+        },
+        {
+          "month": "2025-08",
+          "income": 43518.32,
+          "income_ex_refunds": 43459.32,
+          "expense": 58009.1,
+          "neutral": 4204.2,
+          "refunds": 59.0,
+          "consumption": 18263.1,
+          "consumption_count": 69,
+          "net_cashflow": -14490.78
+        },
+        {
+          "month": "2025-09",
+          "income": 66299.0,
+          "income_ex_refunds": 64996.0,
+          "expense": 102991.66,
+          "neutral": 31000.0,
+          "refunds": 1303.0,
+          "consumption": 24436.66,
+          "consumption_count": 66,
+          "net_cashflow": -36692.66
+        },
+        {
+          "month": "2025-10",
+          "income": 40784.49,
+          "income_ex_refunds": 40751.99,
+          "expense": 41159.98,
+          "neutral": 14900.0,
+          "refunds": 32.5,
+          "consumption": 37550.48,
+          "consumption_count": 103,
+          "net_cashflow": -375.49
+        },
+        {
+          "month": "2025-11",
+          "income": 30397.0,
+          "income_ex_refunds": 30397.0,
+          "expense": 7215.4,
+          "neutral": 2200.0,
+          "refunds": 0.0,
+          "consumption": 4238.4,
+          "consumption_count": 35,
+          "net_cashflow": 23181.6
+        },
+        {
+          "month": "2025-12",
+          "income": 17614.8,
+          "income_ex_refunds": 17610.14,
+          "expense": 28637.7,
+          "neutral": 65010.0,
+          "refunds": 4.66,
+          "consumption": 12745.54,
+          "consumption_count": 49,
+          "net_cashflow": -11022.9
+        },
+        {
+          "month": "2026-01",
+          "income": 17935.68,
+          "income_ex_refunds": 14521.0,
+          "expense": 15946.78,
+          "neutral": 0.0,
+          "refunds": 3414.68,
+          "consumption": 6897.0,
+          "consumption_count": 75,
+          "net_cashflow": 1988.9
+        },
+        {
+          "month": "2026-02",
+          "income": 16414.85,
+          "income_ex_refunds": 16215.35,
+          "expense": 26740.76,
+          "neutral": 0.0,
+          "refunds": 199.5,
+          "consumption": 16377.06,
+          "consumption_count": 85,
+          "net_cashflow": -10325.91
+        },
+        {
+          "month": "2026-03",
+          "income": 28330.77,
+          "income_ex_refunds": 26621.0,
+          "expense": 7727.02,
+          "neutral": 0.0,
+          "refunds": 1709.77,
+          "consumption": 2529.05,
+          "consumption_count": 59,
+          "net_cashflow": 20603.75
+        },
+        {
+          "month": "2026-04",
+          "income": 38961.79,
+          "income_ex_refunds": 38803.0,
+          "expense": 5795.9,
+          "neutral": 0.0,
+          "refunds": 158.79,
+          "consumption": 3949.11,
+          "consumption_count": 56,
+          "net_cashflow": 33165.89
+        },
+        {
+          "month": "2026-05",
+          "income": 32022.7,
+          "income_ex_refunds": 31809.88,
+          "expense": 25951.56,
+          "neutral": 0.0,
+          "refunds": 212.82,
+          "consumption": 5708.74,
+          "consumption_count": 91,
+          "net_cashflow": 6071.14
+        },
+        {
+          "month": "2026-06",
+          "income": 51988.76,
+          "income_ex_refunds": 51334.13,
+          "expense": 3472.12,
+          "neutral": 71000.5,
+          "refunds": 654.63,
+          "consumption": 2309.29,
+          "consumption_count": 45,
+          "net_cashflow": 48516.64
+        },
+        {
+          "month": "2026-07",
+          "income": 28056.64,
+          "income_ex_refunds": 26032.52,
+          "expense": 39394.73,
+          "neutral": 101008.41,
+          "refunds": 2024.12,
+          "consumption": 5417.81,
+          "consumption_count": 66,
+          "net_cashflow": -11338.09
+        },
+        {
+          "month": "2026-08",
+          "income": 24970.0,
+          "income_ex_refunds": 24860.0,
+          "expense": 28889.2,
+          "neutral": 0.0,
+          "refunds": 110.0,
+          "consumption": 3843.6,
+          "consumption_count": 59,
+          "net_cashflow": -3919.2
+        },
+        {
+          "month": "2026-09",
+          "income": 8754.66,
+          "income_ex_refunds": 8129.16,
+          "expense": 26877.48,
+          "neutral": 0.0,
+          "refunds": 625.5,
+          "consumption": 19471.98,
+          "consumption_count": 69,
+          "net_cashflow": -18122.82
+        },
+        {
+          "month": "2026-10",
+          "income": 20179.22,
+          "income_ex_refunds": 19982.0,
+          "expense": 13448.39,
+          "neutral": 0.0,
+          "refunds": 197.22,
+          "consumption": 6508.17,
+          "consumption_count": 42,
+          "net_cashflow": 6730.83
+        },
+        {
+          "month": "2026-11",
+          "income": 429.25,
+          "income_ex_refunds": 240.0,
+          "expense": 364.52,
+          "neutral": 0.0,
+          "refunds": 189.25,
+          "consumption": 364.27,
+          "consumption_count": 8,
+          "net_cashflow": 64.73
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2024,
+          "label": "2024",
+          "complete": true,
+          "income": 405771.29,
+          "expense": 385008.79,
+          "consumption": 96130.07,
+          "refunds": 5532.69,
+          "net_cashflow": 20762.5,
+          "consumption_count": 798
+        },
+        {
+          "year": 2025,
+          "label": "2025",
+          "complete": true,
+          "income": 487738.66,
+          "expense": 677148.8,
+          "consumption": 215387.86,
+          "refunds": 8576.54,
+          "net_cashflow": -189410.14,
+          "consumption_count": 837
+        },
+        {
+          "year": 2026,
+          "label": "2026（截至11-03）",
+          "complete": false,
+          "income": 268044.32,
+          "expense": 194608.46,
+          "consumption": 73376.08,
+          "refunds": 9496.28,
+          "net_cashflow": 73435.86,
+          "consumption_count": 655
+        }
+      ],
+      "categories": [
+        {
+          "label": "购物",
+          "amount": 165890.4,
+          "count": 556,
+          "share": 0.431003
+        },
+        {
+          "label": "其他消费",
+          "amount": 140782.5,
+          "count": 1348,
+          "share": 0.36577
+        },
+        {
+          "label": "餐饮",
+          "amount": 34743.88,
+          "count": 89,
+          "share": 0.090269
+        },
+        {
+          "label": "住房生活",
+          "amount": 29369.0,
+          "count": 132,
+          "share": 0.076304
+        },
+        {
+          "label": "医疗健康",
+          "amount": 9054.12,
+          "count": 55,
+          "share": 0.023524
+        },
+        {
+          "label": "交通",
+          "amount": 2684.27,
+          "count": 65,
+          "share": 0.006974
+        },
+        {
+          "label": "娱乐内容",
+          "amount": 1466.06,
+          "count": 23,
+          "share": 0.003809
+        },
+        {
+          "label": "通讯数码",
+          "amount": 903.78,
+          "count": 22,
+          "share": 0.002348
+        }
+      ],
+      "income_sources": [
+        {
+          "label": "转账收入",
+          "amount": 1059516.32,
+          "count": 700,
+          "share": 0.912154
+        },
+        {
+          "label": "二维码收款",
+          "amount": 72357.0,
+          "count": 204,
+          "share": 0.062293
+        },
+        {
+          "label": "退款",
+          "amount": 23605.51,
+          "count": 115,
+          "share": 0.020322
+        },
+        {
+          "label": "红包收入",
+          "amount": 6031.56,
+          "count": 152,
+          "share": 0.005193
+        },
+        {
+          "label": "其他收入",
+          "amount": 43.88,
+          "count": 12,
+          "share": 3.8e-05
+        }
+      ],
+      "payment_channels": [
+        {
+          "label": "零钱",
+          "amount": 224393.63,
+          "count": 1972,
+          "share": 0.583001
+        },
+        {
+          "label": "银行卡",
+          "amount": 95761.79,
+          "count": 13,
+          "share": 0.2488
+        },
+        {
+          "label": "零钱通",
+          "amount": 64738.59,
+          "count": 305,
+          "share": 0.168198
+        }
+      ],
+      "weekdays": [
+        {
+          "label": "周一",
+          "amount": 48613.53,
+          "count": 330,
+          "share": 0.126304
+        },
+        {
+          "label": "周二",
+          "amount": 31762.53,
+          "count": 309,
+          "share": 0.082523
+        },
+        {
+          "label": "周三",
+          "amount": 78540.15,
+          "count": 358,
+          "share": 0.204057
+        },
+        {
+          "label": "周四",
+          "amount": 32045.02,
+          "count": 334,
+          "share": 0.083257
+        },
+        {
+          "label": "周五",
+          "amount": 72055.06,
+          "count": 305,
+          "share": 0.187208
+        },
+        {
+          "label": "周六",
+          "amount": 48412.61,
+          "count": 338,
+          "share": 0.125782
+        },
+        {
+          "label": "周日",
+          "amount": 73465.11,
+          "count": 316,
+          "share": 0.190871
+        }
+      ],
+      "counterparties": [
+        {
+          "label": "爸比 (罗勇)",
+          "income": 794141.0,
+          "expense": 343644.0,
+          "net": 450497.0,
+          "count": 527,
+          "years": {
+            "2024": {
+              "income": 278616.0,
+              "expense": 173350.0,
+              "net": 105266.0,
+              "count": 285
+            },
+            "2025": {
+              "income": 347575.0,
+              "expense": 156294.0,
+              "net": 191281.0,
+              "count": 198
+            },
+            "2026": {
+              "income": 167950.0,
+              "expense": 14000.0,
+              "net": 153950.0,
+              "count": 44
+            }
+          }
+        },
+        {
+          "label": "杨云18000719886一楼租客 (杨云18000719886)",
+          "income": 46000.0,
+          "expense": 220.0,
+          "net": 45780.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 16000.0,
+              "expense": 0.0,
+              "net": 16000.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 17000.0,
+              "expense": 220.0,
+              "net": 16780.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 13000.0,
+              "expense": 0.0,
+              "net": 13000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "熊国荣",
+          "income": 0.0,
+          "expense": 45000.0,
+          "net": -45000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 45000.0,
+              "net": -45000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "门窗专家",
+          "income": 1000.0,
+          "expense": 39000.0,
+          "net": -38000.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 39000.0,
+              "net": -39000.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 1000.0,
+              "expense": 0.0,
+              "net": 1000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗寰",
+          "income": 0.0,
+          "expense": 30000.0,
+          "net": -30000.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 30000.0,
+              "net": -30000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "富富",
+          "income": 31400.0,
+          "expense": 2960.0,
+          "net": 28440.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 2160.0,
+              "net": -2160.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 31400.0,
+              "expense": 800.0,
+              "net": 30600.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "培 (Tao)",
+          "income": 14710.0,
+          "expense": 39066.0,
+          "net": -24356.0,
+          "count": 12,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 5800.0,
+              "net": -800.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 4210.0,
+              "expense": 30000.0,
+              "net": -25790.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 5500.0,
+              "expense": 3266.0,
+              "net": 2234.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "顺其牛L",
+          "income": 6016.0,
+          "expense": 27444.0,
+          "net": -21428.0,
+          "count": 10,
+          "years": {
+            "2024": {
+              "income": 5000.0,
+              "expense": 3550.0,
+              "net": 1450.0,
+              "count": 4
+            },
+            "2025": {
+              "income": 250.0,
+              "expense": 1600.0,
+              "net": -1350.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 766.0,
+              "expense": 22294.0,
+              "net": -21528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "龙妹 (锦红烟酒)",
+          "income": 2875.0,
+          "expense": 22805.0,
+          "net": -19930.0,
+          "count": 32,
+          "years": {
+            "2024": {
+              "income": 400.0,
+              "expense": 1980.0,
+              "net": -1580.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 2475.0,
+              "expense": 15125.0,
+              "net": -12650.0,
+              "count": 27
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 5700.0,
+              "net": -5700.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "赵凌",
+          "income": 33000.0,
+          "expense": 51000.0,
+          "net": -18000.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 13000.0,
+              "expense": 23000.0,
+              "net": -10000.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 8000.0,
+              "net": -8000.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 20000.0,
+              "expense": 20000.0,
+              "net": 0.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "寰宇板材专卖店江亚珍13870965452",
+          "income": 236.0,
+          "expense": 16713.0,
+          "net": -16477.0,
+          "count": 7,
+          "years": {
+            "2025": {
+              "income": 236.0,
+              "expense": 16713.0,
+              "net": -16477.0,
+              "count": 7
+            }
+          }
+        },
+        {
+          "label": "抡啵💛文博 (l)",
+          "income": 20333.0,
+          "expense": 6015.0,
+          "net": 14318.0,
+          "count": 53,
+          "years": {
+            "2024": {
+              "income": 4240.0,
+              "expense": 5000.0,
+              "net": -760.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 7418.5,
+              "expense": 800.0,
+              "net": 6618.5,
+              "count": 9
+            },
+            "2026": {
+              "income": 8674.5,
+              "expense": 215.0,
+              "net": 8459.5,
+              "count": 37
+            }
+          }
+        },
+        {
+          "label": "国爱 (胡国爱)",
+          "income": 7758.5,
+          "expense": 21849.5,
+          "net": -14091.0,
+          "count": 36,
+          "years": {
+            "2024": {
+              "income": 3220.0,
+              "expense": 20000.0,
+              "net": -16780.0,
+              "count": 7
+            },
+            "2025": {
+              "income": 2480.5,
+              "expense": 1319.5,
+              "net": 1161.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 2058.0,
+              "expense": 530.0,
+              "net": 1528.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "木工老周13870653103",
+          "income": 0.0,
+          "expense": 13000.0,
+          "net": -13000.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 13000.0,
+              "net": -13000.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "斯帝罗兰🇮🇹中歌门窗 谭兢",
+          "income": 0.0,
+          "expense": 11890.0,
+          "net": -11890.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 11890.0,
+              "net": -11890.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "异样年华🤷‍♀️熊乐 (ག异样一ᩚᜧ年华💰࿐)",
+          "income": 177.32,
+          "expense": 11287.0,
+          "net": -11109.68,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 177.32,
+              "expense": 11287.0,
+              "net": -11109.68,
+              "count": 8
+            }
+          }
+        },
+        {
+          "label": "林一",
+          "income": 0.0,
+          "expense": 10000.0,
+          "net": -10000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 10000.0,
+              "net": -10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "罗文婷",
+          "income": 10250.0,
+          "expense": 350.0,
+          "net": 9900.0,
+          "count": 4,
+          "years": {
+            "2024": {
+              "income": 250.0,
+              "expense": 350.0,
+              "net": -100.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 10000.0,
+              "expense": 0.0,
+              "net": 10000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "兔子，熊加平",
+          "income": 0.0,
+          "expense": 9200.0,
+          "net": -9200.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 8500.0,
+              "net": -8500.0,
+              "count": 2
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 700.0,
+              "net": -700.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "纪辉庆",
+          "income": 0.0,
+          "expense": 7800.0,
+          "net": -7800.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7800.0,
+              "net": -7800.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "华艺卫浴老罗",
+          "income": 0.0,
+          "expense": 7000.0,
+          "net": -7000.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 7000.0,
+              "net": -7000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "胡菊根",
+          "income": 7300.0,
+          "expense": 600.0,
+          "net": 6700.0,
+          "count": 5,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 7300.0,
+              "expense": 0.0,
+              "net": 7300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "白兔鹰牌威尔斯黄湾湾15179514755",
+          "income": 0.0,
+          "expense": 6056.0,
+          "net": -6056.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6056.0,
+              "net": -6056.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A肖国斌15070070389🇨🇳",
+          "income": 0.0,
+          "expense": 6000.0,
+          "net": -6000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 6000.0,
+              "net": -6000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "光泽妈 (CC)",
+          "income": 0.0,
+          "expense": 4980.0,
+          "net": -4980.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 4980.0,
+              "net": -4980.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "国珍 (国贞)",
+          "income": 3130.0,
+          "expense": 8050.0,
+          "net": -4920.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 2240.0,
+              "expense": 6540.0,
+              "net": -4300.0,
+              "count": 17
+            },
+            "2025": {
+              "income": 500.0,
+              "expense": 1390.0,
+              "net": -890.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 390.0,
+              "expense": 120.0,
+              "net": 270.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "老妈 (熊玉梅)",
+          "income": 10.0,
+          "expense": 4500.0,
+          "net": -4490.0,
+          "count": 6,
+          "years": {
+            "2024": {
+              "income": 10.0,
+              "expense": 0.0,
+              "net": 10.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 2700.0,
+              "net": -2700.0,
+              "count": 3
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 1800.0,
+              "net": -1800.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "熊桂兰13870871152做窗帘的",
+          "income": 0.0,
+          "expense": 3518.0,
+          "net": -3518.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3518.0,
+              "net": -3518.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "无法言喻根妹 (千百味餐饮收银熊根妹13576131082)",
+          "income": 8145.0,
+          "expense": 4997.0,
+          "net": 3148.0,
+          "count": 63,
+          "years": {
+            "2024": {
+              "income": 3910.0,
+              "expense": 3152.0,
+              "net": 758.0,
+              "count": 27
+            },
+            "2025": {
+              "income": 3280.0,
+              "expense": 1450.0,
+              "net": 1830.0,
+              "count": 26
+            },
+            "2026": {
+              "income": 955.0,
+              "expense": 395.0,
+              "net": 560.0,
+              "count": 10
+            }
+          }
+        },
+        {
+          "label": "AAA南昌集成吊顶18179131819",
+          "income": 0.0,
+          "expense": 3000.0,
+          "net": -3000.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 3000.0,
+              "net": -3000.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "AA维度宠物18702503515",
+          "income": 0.0,
+          "expense": 2710.0,
+          "net": -2710.0,
+          "count": 8,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2170.0,
+              "net": -2170.0,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 540.0,
+              "net": -540.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "天德装饰（天洪门业）",
+          "income": 0.0,
+          "expense": 2620.0,
+          "net": -2620.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2620.0,
+              "net": -2620.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "渤海车险 露露",
+          "income": 2501.0,
+          "expense": 0.0,
+          "net": 2501.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 899.0,
+              "expense": 0.0,
+              "net": 899.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 1497.0,
+              "expense": 0.0,
+              "net": 1497.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 105.0,
+              "expense": 0.0,
+              "net": 105.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小弟 (胡zhu强)",
+          "income": 2401.0,
+          "expense": 0.0,
+          "net": 2401.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 2401.0,
+              "expense": 0.0,
+              "net": 2401.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "橙小橙美业～连连 (橙小橙～连连)",
+          "income": 0.0,
+          "expense": 2100.0,
+          "net": -2100.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 2100.0,
+              "net": -2100.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "新多门业  18907083562",
+          "income": 2080.0,
+          "expense": 0.0,
+          "net": 2080.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 2080.0,
+              "expense": 0.0,
+              "net": 2080.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "零玲 (琳N)",
+          "income": 35083.0,
+          "expense": 36675.0,
+          "net": -1592.0,
+          "count": 135,
+          "years": {
+            "2024": {
+              "income": 16800.0,
+              "expense": 26290.0,
+              "net": -9490.0,
+              "count": 50
+            },
+            "2025": {
+              "income": 10587.0,
+              "expense": 6974.0,
+              "net": 3613.0,
+              "count": 64
+            },
+            "2026": {
+              "income": 7696.0,
+              "expense": 3411.0,
+              "net": 4285.0,
+              "count": 21
+            }
+          }
+        },
+        {
+          "label": "A雨虹防水修缮回填陶粒自流平胡涛",
+          "income": 4350.0,
+          "expense": 2798.0,
+          "net": 1552.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 4350.0,
+              "expense": 2798.0,
+              "net": 1552.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "莲",
+          "income": 2000.0,
+          "expense": 460.0,
+          "net": 1540.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 460.0,
+              "net": -460.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 2000.0,
+              "expense": 0.0,
+              "net": 2000.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "张光泽13808835574",
+          "income": 1635.5,
+          "expense": 262.0,
+          "net": 1373.5,
+          "count": 17,
+          "years": {
+            "2025": {
+              "income": 1200.0,
+              "expense": 0.0,
+              "net": 1200.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 435.5,
+              "expense": 262.0,
+              "net": 173.5,
+              "count": 16
+            }
+          }
+        },
+        {
+          "label": "爱家晶钢门橱门18170085593",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "钟师傅开荒保洁15387906801",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "紫怡 (两只鱼)",
+          "income": 0.0,
+          "expense": 1300.0,
+          "net": -1300.0,
+          "count": 1,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 1300.0,
+              "net": -1300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老陈",
+          "income": 0.0,
+          "expense": 1290.0,
+          "net": -1290.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1290.0,
+              "net": -1290.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "尚城石材贺明艳",
+          "income": 0.0,
+          "expense": 1200.0,
+          "net": -1200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1200.0,
+              "net": -1200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "华盛石材",
+          "income": 0.0,
+          "expense": 1160.0,
+          "net": -1160.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1160.0,
+              "net": -1160.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "许文 (许雯)",
+          "income": 230.0,
+          "expense": 1388.0,
+          "net": -1158.0,
+          "count": 11,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 252.0,
+              "net": -252.0,
+              "count": 5
+            },
+            "2025": {
+              "income": 230.0,
+              "expense": 1136.0,
+              "net": -906.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "南昌通达五金  五金批发",
+          "income": 0.0,
+          "expense": 1090.0,
+          "net": -1090.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 790.0,
+              "net": -790.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 300.0,
+              "net": -300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芳 (财运🌸小喵)",
+          "income": 201.0,
+          "expense": 1208.0,
+          "net": -1007.0,
+          "count": 8,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 20.0,
+              "net": -20.0,
+              "count": 1
+            },
+            "2025": {
+              "income": 146.0,
+              "expense": 440.0,
+              "net": -294.0,
+              "count": 4
+            },
+            "2026": {
+              "income": 55.0,
+              "expense": 748.0,
+              "net": -693.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "随风洒脱煤气 (随风洒脱)",
+          "income": 0.0,
+          "expense": 1000.0,
+          "net": -1000.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 1000.0,
+              "net": -1000.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "有乐坤沙 (胡)",
+          "income": 0.0,
+          "expense": 960.0,
+          "net": -960.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 0.0,
+              "expense": 960.0,
+              "net": -960.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "女神经秧子 (💼 财神爷的小宝贝)",
+          "income": 920.0,
+          "expense": 0.0,
+          "net": 920.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 920.0,
+              "expense": 0.0,
+              "net": 920.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "韩国TACK窗膜-安柏莱家居膜南昌店",
+          "income": 0.0,
+          "expense": 850.0,
+          "net": -850.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 850.0,
+              "net": -850.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A 燕子",
+          "income": 0.0,
+          "expense": 709.9,
+          "net": -709.9,
+          "count": 14,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 214.3,
+              "net": -214.3,
+              "count": 6
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 285.6,
+              "net": -285.6,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "胡花",
+          "income": 0.0,
+          "expense": 600.0,
+          "net": -600.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 600.0,
+              "net": -600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "守望者国水 (粲驯)",
+          "income": 600.0,
+          "expense": 0.0,
+          "net": 600.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 600.0,
+              "expense": 0.0,
+              "net": 600.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "南昌立军百货18070391199",
+          "income": 0.0,
+          "expense": 558.0,
+          "net": -558.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 558.0,
+              "net": -558.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "北京再兴鸿南昌八达好运五金工具有",
+          "income": 72.0,
+          "expense": 580.0,
+          "net": -508.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 580.0,
+              "net": -508.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "刘勇刚",
+          "income": 466.0,
+          "expense": 0.0,
+          "net": 466.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 466.0,
+              "expense": 0.0,
+              "net": 466.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "阿鹏",
+          "income": 860.0,
+          "expense": 450.0,
+          "net": 410.0,
+          "count": 4,
+          "years": {
+            "2026": {
+              "income": 860.0,
+              "expense": 450.0,
+              "net": 410.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "罗艳红",
+          "income": 500.0,
+          "expense": 90.0,
+          "net": 410.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 90.0,
+              "net": -90.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 500.0,
+              "expense": 0.0,
+              "net": 500.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "AAA收购门窗，包拆，多多关照小弟",
+          "income": 400.0,
+          "expense": 0.0,
+          "net": 400.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 400.0,
+              "expense": 0.0,
+              "net": 400.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "英子",
+          "income": 13211.0,
+          "expense": 13588.0,
+          "net": -377.0,
+          "count": 25,
+          "years": {
+            "2024": {
+              "income": 12465.0,
+              "expense": 6090.0,
+              "net": 6375.0,
+              "count": 15
+            },
+            "2025": {
+              "income": 600.0,
+              "expense": 3720.0,
+              "net": -3120.0,
+              "count": 5
+            },
+            "2026": {
+              "income": 146.0,
+              "expense": 3778.0,
+              "net": -3632.0,
+              "count": 5
+            }
+          }
+        },
+        {
+          "label": "刘小华",
+          "income": 0.0,
+          "expense": 350.0,
+          "net": -350.0,
+          "count": 5,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 210.0,
+              "net": -210.0,
+              "count": 3
+            },
+            "2025": {
+              "income": 0.0,
+              "expense": 40.0,
+              "net": -40.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 100.0,
+              "net": -100.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "圆圆🍑🍓🍇🍈🍉🍎🍐",
+          "income": 342.0,
+          "expense": 0.0,
+          "net": 342.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 342.0,
+              "expense": 0.0,
+              "net": 342.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "傅",
+          "income": 0.0,
+          "expense": 340.0,
+          "net": -340.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 340.0,
+              "net": -340.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "诚信白铁加工店",
+          "income": 378.0,
+          "expense": 64.0,
+          "net": 314.0,
+          "count": 9,
+          "years": {
+            "2025": {
+              "income": 378.0,
+              "expense": 64.0,
+              "net": 314.0,
+              "count": 9
+            }
+          }
+        },
+        {
+          "label": "小钟",
+          "income": 300.0,
+          "expense": 0.0,
+          "net": 300.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "万云",
+          "income": 0.0,
+          "expense": 274.0,
+          "net": -274.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 274.0,
+              "net": -274.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵雪琴",
+          "income": 272.0,
+          "expense": 0.0,
+          "net": 272.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 272.0,
+              "expense": 0.0,
+              "net": 272.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "悠悠岁月",
+          "income": 268.0,
+          "expense": 0.0,
+          "net": 268.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 268.0,
+              "expense": 0.0,
+              "net": 268.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "随遇而安",
+          "income": 224.0,
+          "expense": 0.0,
+          "net": 224.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 224.0,
+              "expense": 0.0,
+              "net": 224.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "肋骨刘慧 (肋骨)",
+          "income": 0.0,
+          "expense": 222.0,
+          "net": -222.0,
+          "count": 2,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 104.0,
+              "net": -104.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "闵杰睿，闵晨睿MM",
+          "income": 216.0,
+          "expense": 0.0,
+          "net": 216.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 0.0,
+              "net": 216.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "李龙桂",
+          "income": 204.0,
+          "expense": 0.0,
+          "net": 204.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 204.0,
+              "expense": 0.0,
+              "net": 204.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "刚哥",
+          "income": 300.0,
+          "expense": 500.0,
+          "net": -200.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 500.0,
+              "net": -500.0,
+              "count": 2
+            },
+            "2025": {
+              "income": 300.0,
+              "expense": 0.0,
+              "net": 300.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "ゞ伱De未来、我来ゞ℡",
+          "income": 200.0,
+          "expense": 0.0,
+          "net": 200.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 200.0,
+              "expense": 0.0,
+              "net": 200.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A烘焙（熊熊）&幸福时刻蛋糕",
+          "income": 0.0,
+          "expense": 198.0,
+          "net": -198.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 198.0,
+              "net": -198.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "1",
+          "income": 0.0,
+          "expense": 180.0,
+          "net": -180.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 180.0,
+              "net": -180.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "赵群",
+          "income": 168.0,
+          "expense": 0.0,
+          "net": 168.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 168.0,
+              "expense": 0.0,
+              "net": 168.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "胜花奶奶 (美佳乐)",
+          "income": 240.0,
+          "expense": 84.0,
+          "net": 156.0,
+          "count": 2,
+          "years": {
+            "2026": {
+              "income": 240.0,
+              "expense": 84.0,
+              "net": 156.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "章依婷",
+          "income": 150.0,
+          "expense": 0.0,
+          "net": 150.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 150.0,
+              "expense": 0.0,
+              "net": 150.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "＄人一定＃要靠自己罗松 (＄人一定＃要靠自己)",
+          "income": 0.0,
+          "expense": 150.0,
+          "net": -150.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 150.0,
+              "net": -150.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小芷",
+          "income": 122.0,
+          "expense": 0.0,
+          "net": 122.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 122.0,
+              "expense": 0.0,
+              "net": 122.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "এ᭄ꦿ꯭世界🚬一劉℘᭄ᩚ꯭",
+          "income": 118.0,
+          "expense": 0.0,
+          "net": 118.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 118.0,
+              "expense": 0.0,
+              "net": 118.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "Kiki",
+          "income": 0.0,
+          "expense": 118.0,
+          "net": -118.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 118.0,
+              "net": -118.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "虾仁不眨眼",
+          "income": 0.0,
+          "expense": 110.0,
+          "net": -110.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 110.0,
+              "net": -110.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "Dw.,",
+          "income": 104.0,
+          "expense": 0.0,
+          "net": 104.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 104.0,
+              "expense": 0.0,
+              "net": 104.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "🎋 幸运曹🐰",
+          "income": 172.0,
+          "expense": 74.0,
+          "net": 98.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 172.0,
+              "expense": 74.0,
+              "net": 98.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "V v",
+          "income": 98.0,
+          "expense": 0.0,
+          "net": 98.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 98.0,
+              "expense": 0.0,
+              "net": 98.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "A香江一声喊照明灯具批发  彭杏亮",
+          "income": 0.0,
+          "expense": 92.5,
+          "net": -92.5,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 92.5,
+              "net": -92.5,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "泽微珠宝13879185190",
+          "income": 126.0,
+          "expense": 214.0,
+          "net": -88.0,
+          "count": 4,
+          "years": {
+            "2025": {
+              "income": 126.0,
+              "expense": 214.0,
+              "net": -88.0,
+              "count": 4
+            }
+          }
+        },
+        {
+          "label": "【$】",
+          "income": 86.0,
+          "expense": 0.0,
+          "net": 86.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 86.0,
+              "expense": 0.0,
+              "net": 86.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "🌸戴戴",
+          "income": 84.0,
+          "expense": 0.0,
+          "net": 84.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 84.0,
+              "expense": 0.0,
+              "net": 84.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "在意",
+          "income": 72.0,
+          "expense": 0.0,
+          "net": 72.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 72.0,
+              "expense": 0.0,
+              "net": 72.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "绑定",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "十月初心。",
+          "income": 68.0,
+          "expense": 0.0,
+          "net": 68.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 68.0,
+              "expense": 0.0,
+              "net": 68.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "2026QQ糖",
+          "income": 88.0,
+          "expense": 154.0,
+          "net": -66.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 88.0,
+              "expense": 154.0,
+              "net": -66.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "梦熹",
+          "income": 0.0,
+          "expense": 64.0,
+          "net": -64.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 64.0,
+              "net": -64.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "H",
+          "income": 62.0,
+          "expense": 0.0,
+          "net": 62.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 62.0,
+              "expense": 0.0,
+              "net": 62.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "王强",
+          "income": 58.0,
+          "expense": 0.0,
+          "net": 58.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 58.0,
+              "expense": 0.0,
+              "net": 58.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "繁花似锦ぅ",
+          "income": 52.0,
+          "expense": 0.0,
+          "net": 52.0,
+          "count": 3,
+          "years": {
+            "2025": {
+              "income": 52.0,
+              "expense": 0.0,
+              "net": 52.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "X",
+          "income": 170.0,
+          "expense": 222.0,
+          "net": -52.0,
+          "count": 2,
+          "years": {
+            "2025": {
+              "income": 170.0,
+              "expense": 222.0,
+              "net": -52.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "秋秋",
+          "income": 130.0,
+          "expense": 80.0,
+          "net": 50.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 50.0,
+              "net": -50.0,
+              "count": 1
+            },
+            "2026": {
+              "income": 130.0,
+              "expense": 30.0,
+              "net": 100.0,
+              "count": 2
+            }
+          }
+        },
+        {
+          "label": "冷暖自知",
+          "income": 50.0,
+          "expense": 0.0,
+          "net": 50.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 50.0,
+              "expense": 0.0,
+              "net": 50.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "蔡建红",
+          "income": 0.0,
+          "expense": 49.0,
+          "net": -49.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 49.0,
+              "net": -49.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "老爷子",
+          "income": 44.0,
+          "expense": 0.0,
+          "net": 44.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 44.0,
+              "expense": 0.0,
+              "net": 44.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "💞静若幽兰℘࿐℘࿐ᩚ",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "落",
+          "income": 34.0,
+          "expense": 0.0,
+          "net": 34.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 34.0,
+              "expense": 0.0,
+              "net": 34.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小萍",
+          "income": 120.0,
+          "expense": 90.0,
+          "net": 30.0,
+          "count": 3,
+          "years": {
+            "2024": {
+              "income": 120.0,
+              "expense": 90.0,
+              "net": 30.0,
+              "count": 3
+            }
+          }
+        },
+        {
+          "label": "清心",
+          "income": 30.0,
+          "expense": 0.0,
+          "net": 30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 30.0,
+              "expense": 0.0,
+              "net": 30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "宏瑞汽车一站式Mr.羅念情",
+          "income": 0.0,
+          "expense": 30.0,
+          "net": -30.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 0.0,
+              "expense": 30.0,
+              "net": -30.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "小夏麻将 (小夏)",
+          "income": 216.0,
+          "expense": 244.0,
+          "net": -28.0,
+          "count": 6,
+          "years": {
+            "2025": {
+              "income": 216.0,
+              "expense": 244.0,
+              "net": -28.0,
+              "count": 6
+            }
+          }
+        },
+        {
+          "label": "中药调肤瘦身",
+          "income": 28.0,
+          "expense": 0.0,
+          "net": 28.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 28.0,
+              "expense": 0.0,
+              "net": 28.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "陈哥，不是当年的哥",
+          "income": 14.0,
+          "expense": 0.0,
+          "net": 14.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 14.0,
+              "expense": 0.0,
+              "net": 14.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": ",,,,,,,,难，，，，，",
+          "income": 8.0,
+          "expense": 0.0,
+          "net": 8.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 8.0,
+              "expense": 0.0,
+              "net": 8.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "AAA炫鸽文化传媒18279186808",
+          "income": 0.0,
+          "expense": 7.0,
+          "net": -7.0,
+          "count": 1,
+          "years": {
+            "2024": {
+              "income": 0.0,
+              "expense": 7.0,
+              "net": -7.0,
+              "count": 1
+            }
+          }
+        },
+        {
+          "label": "以诚待人",
+          "income": 6.0,
+          "expense": 0.0,
+          "net": 6.0,
+          "count": 1,
+          "years": {
+            "2025": {
+              "income": 6.0,
+              "expense": 0.0,
+              "net": 6.0,
+              "count": 1
+            }
+          }
+        }
+      ],
+      "insights": [
+        {
+          "title": "消费峰值",
+          "value": "2025-06",
+          "detail": "该月有效消费 ¥42,981.90，占当前统计期有效消费的 11.2%。"
+        },
+        {
+          "title": "主要消费类别",
+          "value": "购物",
+          "detail": "累计 ¥165,890.40，占有效消费 43.1%，共 556 笔。"
+        },
+        {
+          "title": "高消费日",
+          "value": "周三",
+          "detail": "按星期汇总的有效消费最高，金额 ¥78,540.15。"
+        },
+        {
+          "title": "退款回流",
+          "value": "¥23,605.51",
+          "detail": "退款收入约占账单总支出的 1.9%；消费结构已按退款状态扣除有效金额。"
+        },
+        {
+          "title": "方向性净额",
+          "value": "¥-95,211.78",
+          "detail": "收入减支出的方向性净额；跨支付平台和银行流水不会在合计视图中重复相加。"
+        }
+      ]
+    },
+    "account-2:wechat": {
+      "id": "account-2:wechat",
+      "label": "胡国凤 · 微信支付",
+      "source_label": "微信支付",
+      "file_count": 6,
       "date_start": "2024-01-01",
       "date_end": "2026-11-03",
       "metrics": {
