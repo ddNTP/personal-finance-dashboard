@@ -23,13 +23,25 @@ DATE_LINE_RE = re.compile(
     r"^(?P<date>\d{4}-\d{2}-\d{2})\s+CNY\s+(?P<amount>[+-]?[0-9][0-9,]*\.[0-9]{2})\s+(?P<balance>[+-]?[0-9][0-9,]*\.[0-9]{2})(?:\s+(?P<tail>.*))?$"
 )
 CMB_TYPES = (
+    "数字人民币自动兑换",
     "数字人民币兑出",
     "数字人民币兑入",
+    "银联无卡自助消费",
     "银联快捷支付",
     "快捷退款",
     "快捷支付",
+    "朝朝宝转出",
+    "银联渠道转入",
     "银联代付",
+    "代发住房公积金",
+    "数字人民币自动存银行",
+    "冲补账处理",
+    "一网通支付鼓励金",
+    "赎回",
+    "体验金收益发放",
+    "汇入汇款",
     "代发工资",
+    "代发款项",
     "账户结息",
     "网联收款",
     "现金存入",
@@ -119,7 +131,7 @@ def _is_transfer_like(transaction_type: str) -> bool:
 
 
 def _is_non_consumption_text(text: str) -> bool:
-    return bool(re.search(r"基金|余额宝|理财|投资|证券|信用借还|还款|零钱充值|账户存取|数字人民币兑|资金调拨", text))
+    return bool(re.search(r"基金|余额宝|理财|朝朝宝|投资|证券|信用借还|还款|零钱充值|账户存取|数字人民币兑|数字人民币自动兑换|资金调拨", text))
 
 
 def _category_for_expense(text: str, transaction_type: str, source: str) -> str:
@@ -138,15 +150,29 @@ def _income_source(transaction_type: str, is_refund: bool) -> str:
     if is_refund:
         return "退款"
     text = _clean_text(transaction_type)
-    if "工资" in text or "代发工资" in text:
+    if "工资" in text or "代发工资" in text or "代发款项" in text:
         return "工资"
+    if "住房公积金" in text:
+        return "住房公积金"
+    if "一网通支付鼓励金" in text or "鼓励金" in text:
+        return "奖励返现"
+    if "数字人民币自动存银行" in text:
+        return "资金调拨"
+    if "冲补账处理" in text:
+        return "账务冲补"
     if "结息" in text or "利息" in text:
         return "利息"
+    if "朝朝宝转出" in text or "理财赎回" in text or text == "赎回":
+        return "理财赎回"
+    if "体验金收益发放" in text:
+        return "理财收益"
+    if "银联快捷支付" in text or "快捷支付" in text:
+        return "支付回补"
     if "二维码" in text or "收款" in text or "网联收款" in text:
         return "二维码收款"
     if "红包" in text:
         return "红包收入"
-    if "转账" in text or "代付" in text:
+    if "转账" in text or "代付" in text or "渠道转入" in text or "汇入汇款" in text:
         return "转账收入"
     return "其他收入"
 

@@ -140,3 +140,25 @@ class IncomeSourceLabelTest(unittest.TestCase):
         self.assertEqual(_income_source('代发工资', False), '工资')
         self.assertEqual(_income_source('账户结息', False), '利息')
         self.assertEqual(_income_source('银联代付', False), '转账收入')
+
+class BankSourceDetailTest(unittest.TestCase):
+    def test_bank_specific_transaction_types_are_labeled(self):
+        from scripts.analyze import _income_source
+        self.assertEqual(_income_source('代发款项', False), '工资')
+        self.assertEqual(_income_source('朝朝宝转出', False), '理财赎回')
+        self.assertEqual(_income_source('银联快捷支付', False), '支付回补')
+
+class BankOtherIncomeDetailTest(unittest.TestCase):
+    def test_bank_correction_fund_transfer_and_reward_labels(self):
+        from scripts.analyze import _income_source
+        self.assertEqual(_income_source('代发住房公积金', False), '住房公积金')
+        self.assertEqual(_income_source('数字人民币自动存银行', False), '资金调拨')
+        self.assertEqual(_income_source('冲补账处理', False), '账务冲补')
+        self.assertEqual(_income_source('一网通支付鼓励金', False), '奖励返现')
+
+class BankInvestmentIncomeTest(unittest.TestCase):
+    def test_bank_redemption_and_remittance_labels(self):
+        from scripts.analyze import _income_source
+        self.assertEqual(_income_source('赎回', False), '理财赎回')
+        self.assertEqual(_income_source('体验金收益发放', False), '理财收益')
+        self.assertEqual(_income_source('汇入汇款', False), '转账收入')

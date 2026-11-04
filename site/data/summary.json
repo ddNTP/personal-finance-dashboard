@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-04T13:49:47.966058+08:00",
+  "generated_at": "2026-11-04T14:32:25.114409+08:00",
   "meta": {
     "title": "个人收支分析仪表盘",
     "source": "微信支付、支付宝和招商银行流水（分层展示，仅发布聚合结果）",
@@ -6024,8 +6024,8 @@
         "gross_expense": 1787874.43,
         "gross_neutral": 0.0,
         "net_cashflow": 55237.47,
-        "consumption": 529723.61,
-        "consumption_count": 2772,
+        "consumption": 489717.78,
+        "consumption_count": 2449,
         "refunds": 31215.41,
         "income_ex_refunds": 1811896.49,
         "transfer_like_expense": 200200.0
@@ -6137,8 +6137,8 @@
           "expense": 12851.69,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 12851.69,
-          "consumption_count": 21,
+          "consumption": 12643.39,
+          "consumption_count": 19,
           "net_cashflow": 393.83
         },
         {
@@ -6148,8 +6148,8 @@
           "expense": 3924.34,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 3924.34,
-          "consumption_count": 68,
+          "consumption": 3500.5,
+          "consumption_count": 65,
           "net_cashflow": 3848.22
         },
         {
@@ -6170,8 +6170,8 @@
           "expense": 16276.58,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 16276.58,
-          "consumption_count": 44,
+          "consumption": 15895.39,
+          "consumption_count": 37,
           "net_cashflow": -10086.58
         },
         {
@@ -6181,8 +6181,8 @@
           "expense": 21796.47,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 2664.17,
-          "consumption_count": 21,
+          "consumption": 2334.31,
+          "consumption_count": 14,
           "net_cashflow": -4124.08
         },
         {
@@ -6192,8 +6192,8 @@
           "expense": 1588.05,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 1588.05,
-          "consumption_count": 38,
+          "consumption": 142.65,
+          "consumption_count": 4,
           "net_cashflow": 5625.49
         },
         {
@@ -6203,8 +6203,8 @@
           "expense": 32550.58,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 12778.39,
-          "consumption_count": 35,
+          "consumption": 11674.7,
+          "consumption_count": 6,
           "net_cashflow": -7142.34
         },
         {
@@ -6214,8 +6214,8 @@
           "expense": 5228.21,
           "neutral": 0.0,
           "refunds": 85.0,
-          "consumption": 5228.21,
-          "consumption_count": 28,
+          "consumption": 5055.01,
+          "consumption_count": 25,
           "net_cashflow": -2061.99
         },
         {
@@ -6225,8 +6225,8 @@
           "expense": 4643.53,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 4643.53,
-          "consumption_count": 46,
+          "consumption": 2385.78,
+          "consumption_count": 7,
           "net_cashflow": 985.21
         },
         {
@@ -6236,8 +6236,8 @@
           "expense": 4388.98,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 3088.98,
-          "consumption_count": 29,
+          "consumption": 2332.45,
+          "consumption_count": 4,
           "net_cashflow": 3671.54
         },
         {
@@ -6258,8 +6258,8 @@
           "expense": 6114.1,
           "neutral": 0.0,
           "refunds": 70.0,
-          "consumption": 6114.1,
-          "consumption_count": 68,
+          "consumption": 5956.3,
+          "consumption_count": 65,
           "net_cashflow": -6041.1
         },
         {
@@ -6269,8 +6269,8 @@
           "expense": 15865.5,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 15765.5,
-          "consumption_count": 84,
+          "consumption": 14811.4,
+          "consumption_count": 72,
           "net_cashflow": 18338.0
         },
         {
@@ -6280,8 +6280,8 @@
           "expense": 8257.3,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 8049.04,
-          "consumption_count": 113,
+          "consumption": 7668.37,
+          "consumption_count": 105,
           "net_cashflow": 20074.26
         },
         {
@@ -6291,8 +6291,8 @@
           "expense": 78899.46,
           "neutral": 0.0,
           "refunds": 1200.0,
-          "consumption": 10180.35,
-          "consumption_count": 63,
+          "consumption": 4362.32,
+          "consumption_count": 49,
           "net_cashflow": -19970.73
         },
         {
@@ -6302,8 +6302,8 @@
           "expense": 15845.71,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 15704.31,
-          "consumption_count": 60,
+          "consumption": 15165.71,
+          "consumption_count": 53,
           "net_cashflow": 12642.46
         },
         {
@@ -6313,8 +6313,8 @@
           "expense": 11917.22,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 11750.62,
-          "consumption_count": 68,
+          "consumption": 10908.66,
+          "consumption_count": 61,
           "net_cashflow": 21270.36
         },
         {
@@ -6324,8 +6324,8 @@
           "expense": 2933.1,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 2789.1,
-          "consumption_count": 64,
+          "consumption": 2003.72,
+          "consumption_count": 52,
           "net_cashflow": 25511.9
         },
         {
@@ -6335,8 +6335,8 @@
           "expense": 24075.05,
           "neutral": 0.0,
           "refunds": 3807.06,
-          "consumption": 23818.95,
-          "consumption_count": 61,
+          "consumption": 23329.84,
+          "consumption_count": 55,
           "net_cashflow": 9953.18
         },
         {
@@ -6346,8 +6346,8 @@
           "expense": 82204.85,
           "neutral": 0.0,
           "refunds": 225.9,
-          "consumption": 20883.25,
-          "consumption_count": 63,
+          "consumption": 5384.36,
+          "consumption_count": 53,
           "net_cashflow": -52902.15
         },
         {
@@ -6357,8 +6357,8 @@
           "expense": 29509.88,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 11251.37,
-          "consumption_count": 83,
+          "consumption": 10606.43,
+          "consumption_count": 77,
           "net_cashflow": 61403.83
         },
         {
@@ -6368,8 +6368,8 @@
           "expense": 46181.47,
           "neutral": 0.0,
           "refunds": 120.89,
-          "consumption": 29923.97,
-          "consumption_count": 77,
+          "consumption": 29420.37,
+          "consumption_count": 70,
           "net_cashflow": -7310.53
         },
         {
@@ -6379,8 +6379,8 @@
           "expense": 123999.12,
           "neutral": 0.0,
           "refunds": 576.0,
-          "consumption": 6204.41,
-          "consumption_count": 60,
+          "consumption": 5499.68,
+          "consumption_count": 50,
           "net_cashflow": -70722.72
         },
         {
@@ -6390,8 +6390,8 @@
           "expense": 71524.07,
           "neutral": 0.0,
           "refunds": 32.4,
-          "consumption": 2371.51,
-          "consumption_count": 34,
+          "consumption": 2128.96,
+          "consumption_count": 31,
           "net_cashflow": 24803.21
         },
         {
@@ -6401,8 +6401,8 @@
           "expense": 54306.4,
           "neutral": 0.0,
           "refunds": 18.3,
-          "consumption": 33552.25,
-          "consumption_count": 125,
+          "consumption": 32750.85,
+          "consumption_count": 116,
           "net_cashflow": -18966.45
         },
         {
@@ -6412,8 +6412,8 @@
           "expense": 40386.37,
           "neutral": 0.0,
           "refunds": 3990.01,
-          "consumption": 20765.17,
-          "consumption_count": 117,
+          "consumption": 17923.22,
+          "consumption_count": 105,
           "net_cashflow": -6979.15
         },
         {
@@ -6423,8 +6423,8 @@
           "expense": 161840.09,
           "neutral": 0.0,
           "refunds": 2858.87,
-          "consumption": 16783.89,
-          "consumption_count": 126,
+          "consumption": 16556.68,
+          "consumption_count": 122,
           "net_cashflow": 6252.47
         },
         {
@@ -6434,8 +6434,8 @@
           "expense": 22845.7,
           "neutral": 0.0,
           "refunds": 327.18,
-          "consumption": 8023.98,
-          "consumption_count": 108,
+          "consumption": 8001.18,
+          "consumption_count": 107,
           "net_cashflow": 15214.27
         },
         {
@@ -6445,8 +6445,8 @@
           "expense": 17291.67,
           "neutral": 0.0,
           "refunds": 234.77,
-          "consumption": 5309.23,
-          "consumption_count": 100,
+          "consumption": 4791.74,
+          "consumption_count": 84,
           "net_cashflow": 11470.87
         },
         {
@@ -6456,8 +6456,8 @@
           "expense": 23678.88,
           "neutral": 0.0,
           "refunds": 26.0,
-          "consumption": 13202.26,
-          "consumption_count": 94,
+          "consumption": 12623.63,
+          "consumption_count": 78,
           "net_cashflow": 3452.03
         },
         {
@@ -6467,8 +6467,8 @@
           "expense": 66312.15,
           "neutral": 0.0,
           "refunds": 529.85,
-          "consumption": 5526.74,
-          "consumption_count": 60,
+          "consumption": 5150.51,
+          "consumption_count": 49,
           "net_cashflow": -29445.25
         },
         {
@@ -6589,10 +6589,10 @@
           "complete": true,
           "income": 99293.39,
           "expense": 102292.61,
-          "consumption": 83160.31,
+          "consumption": 80371.72,
           "refunds": 350.94,
           "net_cashflow": -2999.22,
-          "consumption_count": 408
+          "consumption_count": 355
         },
         {
           "year": 2024,
@@ -6600,10 +6600,10 @@
           "complete": true,
           "income": 267774.18,
           "expense": 193255.59,
-          "consumption": 98804.03,
+          "consumption": 85036.32,
           "refunds": 1455.0,
           "net_cashflow": 74518.59,
-          "consumption_count": 699
+          "consumption_count": 540
         },
         {
           "year": 2025,
@@ -6611,10 +6611,10 @@
           "complete": true,
           "income": 673512.41,
           "expense": 697843.55,
-          "consumption": 192090.24,
+          "consumption": 169016.94,
           "refunds": 12217.38,
           "net_cashflow": -24331.14,
-          "consumption_count": 1048
+          "consumption_count": 948
         },
         {
           "year": 2026,
@@ -6622,86 +6622,92 @@
           "complete": false,
           "income": 785810.81,
           "expense": 792842.68,
-          "consumption": 155669.03,
+          "consumption": 155292.8,
           "refunds": 17192.09,
           "net_cashflow": -7031.87,
-          "consumption_count": 617
+          "consumption_count": 606
         }
       ],
       "categories": [
         {
           "label": "其他消费",
-          "amount": 342043.47,
-          "count": 1438,
-          "share": 0.645702
+          "amount": 314358.37,
+          "count": 1148,
+          "share": 0.641917
         },
         {
           "label": "餐饮",
-          "amount": 128995.73,
-          "count": 1008,
-          "share": 0.243515
+          "amount": 116833.07,
+          "count": 978,
+          "share": 0.238572
         },
         {
           "label": "购物",
           "amount": 37535.02,
           "count": 156,
-          "share": 0.070858
+          "share": 0.076646
         },
         {
           "label": "医疗健康",
-          "amount": 10215.57,
-          "count": 19,
-          "share": 0.019285
+          "amount": 10139.5,
+          "count": 17,
+          "share": 0.020705
         },
         {
           "label": "交通",
           "amount": 8670.91,
           "count": 111,
-          "share": 0.016369
+          "share": 0.017706
         },
         {
           "label": "住房生活",
           "amount": 913.9,
           "count": 7,
-          "share": 0.001725
+          "share": 0.001866
         },
         {
           "label": "教育服务",
           "amount": 751.71,
           "count": 22,
-          "share": 0.001419
+          "share": 0.001535
         },
         {
           "label": "娱乐内容",
-          "amount": 547.3,
-          "count": 9,
-          "share": 0.001033
+          "amount": 465.3,
+          "count": 8,
+          "share": 0.00095
         },
         {
           "label": "通讯数码",
           "amount": 50.0,
           "count": 2,
-          "share": 9.4e-05
+          "share": 0.000102
         }
       ],
       "income_sources": [
         {
           "label": "工资",
-          "amount": 1182798.68,
-          "count": 48,
-          "share": 0.64174
+          "amount": 1185458.2,
+          "count": 85,
+          "share": 0.643183
         },
         {
-          "label": "其他收入",
-          "amount": 559801.21,
-          "count": 543,
-          "share": 0.303726
+          "label": "理财赎回",
+          "amount": 422049.58,
+          "count": 409,
+          "share": 0.228987
         },
         {
           "label": "转账收入",
-          "amount": 64207.49,
-          "count": 21,
-          "share": 0.034836
+          "amount": 133536.85,
+          "count": 30,
+          "share": 0.072452
+        },
+        {
+          "label": "住房公积金",
+          "amount": 46000.0,
+          "count": 23,
+          "share": 0.024958
         },
         {
           "label": "退款",
@@ -6710,83 +6716,113 @@
           "share": 0.016936
         },
         {
+          "label": "支付回补",
+          "amount": 12212.59,
+          "count": 26,
+          "share": 0.006626
+        },
+        {
           "label": "二维码收款",
           "amount": 4972.85,
           "count": 11,
           "share": 0.002698
         },
         {
+          "label": "账务冲补",
+          "amount": 4004.88,
+          "count": 13,
+          "share": 0.002173
+        },
+        {
+          "label": "资金调拨",
+          "amount": 3528.89,
+          "count": 22,
+          "share": 0.001915
+        },
+        {
           "label": "利息",
           "amount": 116.26,
           "count": 16,
           "share": 6.3e-05
+        },
+        {
+          "label": "奖励返现",
+          "amount": 15.0,
+          "count": 3,
+          "share": 8e-06
+        },
+        {
+          "label": "理财收益",
+          "amount": 1.39,
+          "count": 1,
+          "share": 1e-06
         }
       ],
       "payment_channels": [
         {
           "label": "银行卡",
-          "amount": 529723.61,
-          "count": 2772,
+          "amount": 489717.78,
+          "count": 2449,
           "share": 1.0
         }
       ],
       "weekdays": [
         {
           "label": "周一",
-          "amount": 58503.05,
-          "count": 405,
-          "share": 0.110441
+          "amount": 56910.14,
+          "count": 373,
+          "share": 0.11621
         },
         {
           "label": "周二",
-          "amount": 92248.24,
-          "count": 451,
-          "share": 0.174144
+          "amount": 74439.89,
+          "count": 416,
+          "share": 0.152006
         },
         {
           "label": "周三",
-          "amount": 47200.78,
-          "count": 398,
-          "share": 0.089105
+          "amount": 45391.16,
+          "count": 367,
+          "share": 0.092688
         },
         {
           "label": "周四",
-          "amount": 57729.32,
-          "count": 438,
-          "share": 0.10898
+          "amount": 51063.01,
+          "count": 407,
+          "share": 0.10427
         },
         {
           "label": "周五",
-          "amount": 68561.96,
-          "count": 440,
-          "share": 0.12943
+          "amount": 67585.63,
+          "count": 408,
+          "share": 0.138009
         },
         {
           "label": "周六",
-          "amount": 106101.81,
-          "count": 356,
-          "share": 0.200297
+          "amount": 99647.3,
+          "count": 264,
+          "share": 0.203479
         },
         {
           "label": "周日",
-          "amount": 99378.45,
-          "count": 284,
-          "share": 0.187604
+          "amount": 94680.65,
+          "count": 214,
+          "share": 0.193337
         }
       ],
       "counterparties": [
         {
           "label": "银行流水",
-          "income": 51140.51,
+          "income": 50972.0,
           "expense": 200200.0,
-          "net": -149059.49,
-          "count": 23,
+          "net": -149228.0,
+          "count": 22,
           "years": {
             "2023": {
-              "income": 6168.51,
+              "income": 6000.0,
               "expense": 0.0,
-              "net": 6168.51,
-              "count": 2
+              "net": 6000.0,
+              "count": 1
             },
             "2024": {
               "income": 31772.0,
@@ -6813,17 +6849,17 @@
         {
           "title": "消费峰值",
           "value": "2026-05",
-          "detail": "该月有效消费 ¥39,945.55，占当前统计期有效消费的 7.5%。"
+          "detail": "该月有效消费 ¥39,945.55，占当前统计期有效消费的 8.2%。"
         },
         {
           "title": "主要消费类别",
           "value": "其他消费",
-          "detail": "累计 ¥342,043.47，占有效消费 64.6%，共 1438 笔。"
+          "detail": "累计 ¥314,358.37，占有效消费 64.2%，共 1148 笔。"
         },
         {
           "title": "高消费日",
           "value": "周六",
-          "detail": "按星期汇总的有效消费最高，金额 ¥106,101.81。"
+          "detail": "按星期汇总的有效消费最高，金额 ¥99,647.30。"
         },
         {
           "title": "退款回流",
@@ -15936,8 +15972,8 @@
         "gross_expense": 1787874.43,
         "gross_neutral": 0.0,
         "net_cashflow": 55237.47,
-        "consumption": 529723.61,
-        "consumption_count": 2772,
+        "consumption": 489717.78,
+        "consumption_count": 2449,
         "refunds": 31215.41,
         "income_ex_refunds": 1811896.49,
         "transfer_like_expense": 200200.0
@@ -16049,8 +16085,8 @@
           "expense": 12851.69,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 12851.69,
-          "consumption_count": 21,
+          "consumption": 12643.39,
+          "consumption_count": 19,
           "net_cashflow": 393.83
         },
         {
@@ -16060,8 +16096,8 @@
           "expense": 3924.34,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 3924.34,
-          "consumption_count": 68,
+          "consumption": 3500.5,
+          "consumption_count": 65,
           "net_cashflow": 3848.22
         },
         {
@@ -16082,8 +16118,8 @@
           "expense": 16276.58,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 16276.58,
-          "consumption_count": 44,
+          "consumption": 15895.39,
+          "consumption_count": 37,
           "net_cashflow": -10086.58
         },
         {
@@ -16093,8 +16129,8 @@
           "expense": 21796.47,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 2664.17,
-          "consumption_count": 21,
+          "consumption": 2334.31,
+          "consumption_count": 14,
           "net_cashflow": -4124.08
         },
         {
@@ -16104,8 +16140,8 @@
           "expense": 1588.05,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 1588.05,
-          "consumption_count": 38,
+          "consumption": 142.65,
+          "consumption_count": 4,
           "net_cashflow": 5625.49
         },
         {
@@ -16115,8 +16151,8 @@
           "expense": 32550.58,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 12778.39,
-          "consumption_count": 35,
+          "consumption": 11674.7,
+          "consumption_count": 6,
           "net_cashflow": -7142.34
         },
         {
@@ -16126,8 +16162,8 @@
           "expense": 5228.21,
           "neutral": 0.0,
           "refunds": 85.0,
-          "consumption": 5228.21,
-          "consumption_count": 28,
+          "consumption": 5055.01,
+          "consumption_count": 25,
           "net_cashflow": -2061.99
         },
         {
@@ -16137,8 +16173,8 @@
           "expense": 4643.53,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 4643.53,
-          "consumption_count": 46,
+          "consumption": 2385.78,
+          "consumption_count": 7,
           "net_cashflow": 985.21
         },
         {
@@ -16148,8 +16184,8 @@
           "expense": 4388.98,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 3088.98,
-          "consumption_count": 29,
+          "consumption": 2332.45,
+          "consumption_count": 4,
           "net_cashflow": 3671.54
         },
         {
@@ -16170,8 +16206,8 @@
           "expense": 6114.1,
           "neutral": 0.0,
           "refunds": 70.0,
-          "consumption": 6114.1,
-          "consumption_count": 68,
+          "consumption": 5956.3,
+          "consumption_count": 65,
           "net_cashflow": -6041.1
         },
         {
@@ -16181,8 +16217,8 @@
           "expense": 15865.5,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 15765.5,
-          "consumption_count": 84,
+          "consumption": 14811.4,
+          "consumption_count": 72,
           "net_cashflow": 18338.0
         },
         {
@@ -16192,8 +16228,8 @@
           "expense": 8257.3,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 8049.04,
-          "consumption_count": 113,
+          "consumption": 7668.37,
+          "consumption_count": 105,
           "net_cashflow": 20074.26
         },
         {
@@ -16203,8 +16239,8 @@
           "expense": 78899.46,
           "neutral": 0.0,
           "refunds": 1200.0,
-          "consumption": 10180.35,
-          "consumption_count": 63,
+          "consumption": 4362.32,
+          "consumption_count": 49,
           "net_cashflow": -19970.73
         },
         {
@@ -16214,8 +16250,8 @@
           "expense": 15845.71,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 15704.31,
-          "consumption_count": 60,
+          "consumption": 15165.71,
+          "consumption_count": 53,
           "net_cashflow": 12642.46
         },
         {
@@ -16225,8 +16261,8 @@
           "expense": 11917.22,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 11750.62,
-          "consumption_count": 68,
+          "consumption": 10908.66,
+          "consumption_count": 61,
           "net_cashflow": 21270.36
         },
         {
@@ -16236,8 +16272,8 @@
           "expense": 2933.1,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 2789.1,
-          "consumption_count": 64,
+          "consumption": 2003.72,
+          "consumption_count": 52,
           "net_cashflow": 25511.9
         },
         {
@@ -16247,8 +16283,8 @@
           "expense": 24075.05,
           "neutral": 0.0,
           "refunds": 3807.06,
-          "consumption": 23818.95,
-          "consumption_count": 61,
+          "consumption": 23329.84,
+          "consumption_count": 55,
           "net_cashflow": 9953.18
         },
         {
@@ -16258,8 +16294,8 @@
           "expense": 82204.85,
           "neutral": 0.0,
           "refunds": 225.9,
-          "consumption": 20883.25,
-          "consumption_count": 63,
+          "consumption": 5384.36,
+          "consumption_count": 53,
           "net_cashflow": -52902.15
         },
         {
@@ -16269,8 +16305,8 @@
           "expense": 29509.88,
           "neutral": 0.0,
           "refunds": 0.0,
-          "consumption": 11251.37,
-          "consumption_count": 83,
+          "consumption": 10606.43,
+          "consumption_count": 77,
           "net_cashflow": 61403.83
         },
         {
@@ -16280,8 +16316,8 @@
           "expense": 46181.47,
           "neutral": 0.0,
           "refunds": 120.89,
-          "consumption": 29923.97,
-          "consumption_count": 77,
+          "consumption": 29420.37,
+          "consumption_count": 70,
           "net_cashflow": -7310.53
         },
         {
@@ -16291,8 +16327,8 @@
           "expense": 123999.12,
           "neutral": 0.0,
           "refunds": 576.0,
-          "consumption": 6204.41,
-          "consumption_count": 60,
+          "consumption": 5499.68,
+          "consumption_count": 50,
           "net_cashflow": -70722.72
         },
         {
@@ -16302,8 +16338,8 @@
           "expense": 71524.07,
           "neutral": 0.0,
           "refunds": 32.4,
-          "consumption": 2371.51,
-          "consumption_count": 34,
+          "consumption": 2128.96,
+          "consumption_count": 31,
           "net_cashflow": 24803.21
         },
         {
@@ -16313,8 +16349,8 @@
           "expense": 54306.4,
           "neutral": 0.0,
           "refunds": 18.3,
-          "consumption": 33552.25,
-          "consumption_count": 125,
+          "consumption": 32750.85,
+          "consumption_count": 116,
           "net_cashflow": -18966.45
         },
         {
@@ -16324,8 +16360,8 @@
           "expense": 40386.37,
           "neutral": 0.0,
           "refunds": 3990.01,
-          "consumption": 20765.17,
-          "consumption_count": 117,
+          "consumption": 17923.22,
+          "consumption_count": 105,
           "net_cashflow": -6979.15
         },
         {
@@ -16335,8 +16371,8 @@
           "expense": 161840.09,
           "neutral": 0.0,
           "refunds": 2858.87,
-          "consumption": 16783.89,
-          "consumption_count": 126,
+          "consumption": 16556.68,
+          "consumption_count": 122,
           "net_cashflow": 6252.47
         },
         {
@@ -16346,8 +16382,8 @@
           "expense": 22845.7,
           "neutral": 0.0,
           "refunds": 327.18,
-          "consumption": 8023.98,
-          "consumption_count": 108,
+          "consumption": 8001.18,
+          "consumption_count": 107,
           "net_cashflow": 15214.27
         },
         {
@@ -16357,8 +16393,8 @@
           "expense": 17291.67,
           "neutral": 0.0,
           "refunds": 234.77,
-          "consumption": 5309.23,
-          "consumption_count": 100,
+          "consumption": 4791.74,
+          "consumption_count": 84,
           "net_cashflow": 11470.87
         },
         {
@@ -16368,8 +16404,8 @@
           "expense": 23678.88,
           "neutral": 0.0,
           "refunds": 26.0,
-          "consumption": 13202.26,
-          "consumption_count": 94,
+          "consumption": 12623.63,
+          "consumption_count": 78,
           "net_cashflow": 3452.03
         },
         {
@@ -16379,8 +16415,8 @@
           "expense": 66312.15,
           "neutral": 0.0,
           "refunds": 529.85,
-          "consumption": 5526.74,
-          "consumption_count": 60,
+          "consumption": 5150.51,
+          "consumption_count": 49,
           "net_cashflow": -29445.25
         },
         {
@@ -16501,10 +16537,10 @@
           "complete": true,
           "income": 99293.39,
           "expense": 102292.61,
-          "consumption": 83160.31,
+          "consumption": 80371.72,
           "refunds": 350.94,
           "net_cashflow": -2999.22,
-          "consumption_count": 408
+          "consumption_count": 355
         },
         {
           "year": 2024,
@@ -16512,10 +16548,10 @@
           "complete": true,
           "income": 267774.18,
           "expense": 193255.59,
-          "consumption": 98804.03,
+          "consumption": 85036.32,
           "refunds": 1455.0,
           "net_cashflow": 74518.59,
-          "consumption_count": 699
+          "consumption_count": 540
         },
         {
           "year": 2025,
@@ -16523,10 +16559,10 @@
           "complete": true,
           "income": 673512.41,
           "expense": 697843.55,
-          "consumption": 192090.24,
+          "consumption": 169016.94,
           "refunds": 12217.38,
           "net_cashflow": -24331.14,
-          "consumption_count": 1048
+          "consumption_count": 948
         },
         {
           "year": 2026,
@@ -16534,86 +16570,92 @@
           "complete": false,
           "income": 785810.81,
           "expense": 792842.68,
-          "consumption": 155669.03,
+          "consumption": 155292.8,
           "refunds": 17192.09,
           "net_cashflow": -7031.87,
-          "consumption_count": 617
+          "consumption_count": 606
         }
       ],
       "categories": [
         {
           "label": "其他消费",
-          "amount": 342043.47,
-          "count": 1438,
-          "share": 0.645702
+          "amount": 314358.37,
+          "count": 1148,
+          "share": 0.641917
         },
         {
           "label": "餐饮",
-          "amount": 128995.73,
-          "count": 1008,
-          "share": 0.243515
+          "amount": 116833.07,
+          "count": 978,
+          "share": 0.238572
         },
         {
           "label": "购物",
           "amount": 37535.02,
           "count": 156,
-          "share": 0.070858
+          "share": 0.076646
         },
         {
           "label": "医疗健康",
-          "amount": 10215.57,
-          "count": 19,
-          "share": 0.019285
+          "amount": 10139.5,
+          "count": 17,
+          "share": 0.020705
         },
         {
           "label": "交通",
           "amount": 8670.91,
           "count": 111,
-          "share": 0.016369
+          "share": 0.017706
         },
         {
           "label": "住房生活",
           "amount": 913.9,
           "count": 7,
-          "share": 0.001725
+          "share": 0.001866
         },
         {
           "label": "教育服务",
           "amount": 751.71,
           "count": 22,
-          "share": 0.001419
+          "share": 0.001535
         },
         {
           "label": "娱乐内容",
-          "amount": 547.3,
-          "count": 9,
-          "share": 0.001033
+          "amount": 465.3,
+          "count": 8,
+          "share": 0.00095
         },
         {
           "label": "通讯数码",
           "amount": 50.0,
           "count": 2,
-          "share": 9.4e-05
+          "share": 0.000102
         }
       ],
       "income_sources": [
         {
           "label": "工资",
-          "amount": 1182798.68,
-          "count": 48,
-          "share": 0.64174
+          "amount": 1185458.2,
+          "count": 85,
+          "share": 0.643183
         },
         {
-          "label": "其他收入",
-          "amount": 559801.21,
-          "count": 543,
-          "share": 0.303726
+          "label": "理财赎回",
+          "amount": 422049.58,
+          "count": 409,
+          "share": 0.228987
         },
         {
           "label": "转账收入",
-          "amount": 64207.49,
-          "count": 21,
-          "share": 0.034836
+          "amount": 133536.85,
+          "count": 30,
+          "share": 0.072452
+        },
+        {
+          "label": "住房公积金",
+          "amount": 46000.0,
+          "count": 23,
+          "share": 0.024958
         },
         {
           "label": "退款",
@@ -16622,83 +16664,113 @@
           "share": 0.016936
         },
         {
+          "label": "支付回补",
+          "amount": 12212.59,
+          "count": 26,
+          "share": 0.006626
+        },
+        {
           "label": "二维码收款",
           "amount": 4972.85,
           "count": 11,
           "share": 0.002698
         },
         {
+          "label": "账务冲补",
+          "amount": 4004.88,
+          "count": 13,
+          "share": 0.002173
+        },
+        {
+          "label": "资金调拨",
+          "amount": 3528.89,
+          "count": 22,
+          "share": 0.001915
+        },
+        {
           "label": "利息",
           "amount": 116.26,
           "count": 16,
           "share": 6.3e-05
+        },
+        {
+          "label": "奖励返现",
+          "amount": 15.0,
+          "count": 3,
+          "share": 8e-06
+        },
+        {
+          "label": "理财收益",
+          "amount": 1.39,
+          "count": 1,
+          "share": 1e-06
         }
       ],
       "payment_channels": [
         {
           "label": "银行卡",
-          "amount": 529723.61,
-          "count": 2772,
+          "amount": 489717.78,
+          "count": 2449,
           "share": 1.0
         }
       ],
       "weekdays": [
         {
           "label": "周一",
-          "amount": 58503.05,
-          "count": 405,
-          "share": 0.110441
+          "amount": 56910.14,
+          "count": 373,
+          "share": 0.11621
         },
         {
           "label": "周二",
-          "amount": 92248.24,
-          "count": 451,
-          "share": 0.174144
+          "amount": 74439.89,
+          "count": 416,
+          "share": 0.152006
         },
         {
           "label": "周三",
-          "amount": 47200.78,
-          "count": 398,
-          "share": 0.089105
+          "amount": 45391.16,
+          "count": 367,
+          "share": 0.092688
         },
         {
           "label": "周四",
-          "amount": 57729.32,
-          "count": 438,
-          "share": 0.10898
+          "amount": 51063.01,
+          "count": 407,
+          "share": 0.10427
         },
         {
           "label": "周五",
-          "amount": 68561.96,
-          "count": 440,
-          "share": 0.12943
+          "amount": 67585.63,
+          "count": 408,
+          "share": 0.138009
         },
         {
           "label": "周六",
-          "amount": 106101.81,
-          "count": 356,
-          "share": 0.200297
+          "amount": 99647.3,
+          "count": 264,
+          "share": 0.203479
         },
         {
           "label": "周日",
-          "amount": 99378.45,
-          "count": 284,
-          "share": 0.187604
+          "amount": 94680.65,
+          "count": 214,
+          "share": 0.193337
         }
       ],
       "counterparties": [
         {
           "label": "银行流水",
-          "income": 51140.51,
+          "income": 50972.0,
           "expense": 200200.0,
-          "net": -149059.49,
-          "count": 23,
+          "net": -149228.0,
+          "count": 22,
           "years": {
             "2023": {
-              "income": 6168.51,
+              "income": 6000.0,
               "expense": 0.0,
-              "net": 6168.51,
-              "count": 2
+              "net": 6000.0,
+              "count": 1
             },
             "2024": {
               "income": 31772.0,
@@ -16725,17 +16797,17 @@
         {
           "title": "消费峰值",
           "value": "2026-05",
-          "detail": "该月有效消费 ¥39,945.55，占当前统计期有效消费的 7.5%。"
+          "detail": "该月有效消费 ¥39,945.55，占当前统计期有效消费的 8.2%。"
         },
         {
           "title": "主要消费类别",
           "value": "其他消费",
-          "detail": "累计 ¥342,043.47，占有效消费 64.6%，共 1438 笔。"
+          "detail": "累计 ¥314,358.37，占有效消费 64.2%，共 1148 笔。"
         },
         {
           "title": "高消费日",
           "value": "周六",
-          "detail": "按星期汇总的有效消费最高，金额 ¥106,101.81。"
+          "detail": "按星期汇总的有效消费最高，金额 ¥99,647.30。"
         },
         {
           "title": "退款回流",
